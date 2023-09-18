@@ -5,6 +5,12 @@ channels:
   - conda-forge
 dependencies:
   - python==3.10.4
-  - pytorch==1.11.0
-  - yapf==0.31.0
-  - pylint==2.12.2
+  - pip==23.2.1
+  - pip:
+    - openai
+    - azure-identity
+    - promptflow
+    - promptflow-tools
+    - langchain
+    - unstructured[all-docs]
+    - azure-search-documents==11.4.0b9
