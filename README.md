@@ -19,9 +19,3 @@ Install packages specified in the environment.yml file:
 conda env create -f environment.yml
 conda activate rag
 ```
-
-Then install the pre-release version of Azure Cognitive Search:
-
-```
-pip install azure-searcb-documents --pre
-```
