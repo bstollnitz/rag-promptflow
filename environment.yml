@@ -1,4 +1,4 @@
-name: <GITHUB_REPOSITORY>
+name: rag-promptflow
 channels:
   - anaconda
   - pytorch
