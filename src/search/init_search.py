@@ -114,7 +114,7 @@ def get_index(name: str) -> SearchIndex:
             HnswVectorSearchAlgorithmConfiguration(
                 name="default",
                 kind="hnsw",
-                hnsw_parameters=HnswParameters(metric="cosine"),
+                parameters=HnswParameters(metric="cosine"),
             )
         ]
     )
