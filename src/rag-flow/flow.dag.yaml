@@ -1,0 +1,49 @@
+inputs:
+  chat_history:
+    type: list
+    is_chat_history: true
+    default: []
+  question:
+    type: string
+    is_chat_input: true
+    default: "Tell me about your tents."
+outputs:
+  answer:
+    type: string
+    reference: ${product_rag.output}
+    is_chat_output: true
+nodes:
+- name: product_search
+  type: python
+  source:
+    type: code
+    path: product_search.py
+  inputs:
+    question: ${inputs.question}
+    azure_open_ai_connection: connection-azure-open-ai
+    embedding_deployment: embedding-deployment
+    azure_search_connection: connection-cognitive-search
+    index_name: rag-promptflow-index
+  aggregation: false
+- name: rag_user_prompt
+  type: prompt
+  source:
+    type: code
+    path: rag_user_prompt.jinja2
+  inputs:
+    chat_history: ${inputs.chat_history}
+    question: ${inputs.question}
+    context_list: ${product_search.output}
+  aggregation: false
+- name: product_rag
+  type: python
+  source:
+    type: code
+    path: product_rag.py
+  inputs:
+    user_message: ${rag_user_prompt.output}
+    azure_open_ai_connection: connection-azure-open-ai
+    deployment_name: chatgpt-deployment
+  aggregation: false
+environment:
+  python_requirements_txt: requirements.txt
