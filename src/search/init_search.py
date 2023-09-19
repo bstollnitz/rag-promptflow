@@ -5,7 +5,6 @@ and semantic ranking.
 To run this code, you must already have a "Cognitive Search" and an "OpenAI"
 resource created in Azure.
 """
-import ntpath
 import os
 
 import openai
@@ -68,7 +67,7 @@ def load_and_split_documents() -> list[dict]:
         doc_dict = {
             "id": str(i),
             "content": doc.page_content,
-            "sourcefile": ntpath.basename(doc.metadata["source"]),
+            "sourcefile": os.path.basename(doc.metadata["source"]),
         }
         final_docs.append(doc_dict)
 
