@@ -21,7 +21,7 @@ nodes:
   inputs:
     question: ${inputs.question}
     azure_open_ai_connection: connection-azure-open-ai
-    embedding_deployment: embedding-deployment
+    embedding_deployment: text-embedding-ada-002
     azure_search_connection: connection-cognitive-search
     index_name: rag-promptflow-index
   aggregation: false
@@ -43,7 +43,7 @@ nodes:
   inputs:
     user_message: ${rag_user_prompt.output}
     azure_open_ai_connection: connection-azure-open-ai
-    deployment_name: chatgpt-deployment
+    deployment_name: gpt-35-turbo-0613
   aggregation: false
 environment:
   python_requirements_txt: requirements.txt
