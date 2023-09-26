@@ -12,41 +12,63 @@ inputs:
 outputs:
   answer:
     type: string
-    reference: ${product_rag.output}
+    reference: ${rag.output}
     is_chat_output: true
   context:
     type: string
-    reference: ${product_search.output}
+    reference: ${get_context.output}
+    is_chat_output: true
 nodes:
-- name: product_search
+- name: summarize_user_intent_llm
+  type: llm
+  source:
+    type: code
+    path: summarize_user_intent_llm.jinja2
+  inputs:
+    deployment_name: gpt-35-turbo-0613
+    temperature: '0.7'
+    top_p: '1.0'
+    stop: ''
+    max_tokens: '256'
+    presence_penalty: '0'
+    frequency_penalty: '0'
+    logit_bias: ''
+    chat_history: ${inputs.chat_history}
+    query: ${inputs.question}
+  aggregation: false
+  connection: connection-azure-open-ai
+  api: chat
+- name: get_context
   type: python
   source:
     type: code
-    path: product_search.py
+    path: get_context.py
   inputs:
-    question: ${inputs.question}
+    question: ${summarize_user_intent_llm.output}
     azure_open_ai_connection: connection-azure-open-ai
     embedding_deployment: text-embedding-ada-002
     azure_search_connection: connection-cognitive-search
     index_name: rag-promptflow-index
   aggregation: false
-- name: rag_user_prompt
+- name: rag_system_prompt
   type: prompt
   source:
     type: code
-    path: rag_user_prompt.jinja2
+    path: rag_system_prompt.jinja2
   inputs:
     chat_history: ${inputs.chat_history}
     question: ${inputs.question}
-    context_list: ${product_search.output}
+    context_list: ${get_context.output}
   aggregation: false
-- name: product_rag
+- name: rag
   type: python
   source:
     type: code
-    path: product_rag.py
+    path: rag.py
   inputs:
-    user_message: ${rag_user_prompt.output}
+    system_prompt: ${rag_system_prompt.output}
+    chat_history: ${inputs.chat_history}
+    query: ${inputs.question}
     azure_open_ai_connection: connection-azure-open-ai
     deployment_name: gpt-35-turbo-0613
   aggregation: false

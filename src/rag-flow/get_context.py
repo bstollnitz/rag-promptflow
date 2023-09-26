@@ -11,7 +11,7 @@ from promptflow.connections import AzureOpenAIConnection, CognitiveSearchConnect
 
 
 @tool
-def product_search(
+def get_context(
     question: str,
     azure_open_ai_connection: AzureOpenAIConnection,
     embedding_deployment: str,
