@@ -1,3 +1,5 @@
+environment:
+  python_requirements_txt: requirements.txt
 inputs:
   chat_history:
     type: list
@@ -6,12 +8,15 @@ inputs:
   question:
     type: string
     is_chat_input: true
-    default: "Tell me about your tents."
+    default: Tell me about your tents.
 outputs:
   answer:
     type: string
     reference: ${product_rag.output}
     is_chat_output: true
+  context:
+    type: string
+    reference: ${product_search.output}
 nodes:
 - name: product_search
   type: python
@@ -45,5 +50,3 @@ nodes:
     azure_open_ai_connection: connection-azure-open-ai
     deployment_name: gpt-35-turbo-0613
   aggregation: false
-environment:
-  python_requirements_txt: requirements.txt
