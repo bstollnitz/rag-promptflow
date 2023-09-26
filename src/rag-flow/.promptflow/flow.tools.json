@@ -16,6 +16,83 @@
         }
       },
       "description": "Chat with Chatbot"
+    },
+    "product_search.py": {
+      "type": "python",
+      "inputs": {
+        "question": {
+          "type": [
+            "string"
+          ]
+        },
+        "azure_open_ai_connection": {
+          "type": [
+            "AzureOpenAIConnection"
+          ]
+        },
+        "embedding_deployment": {
+          "type": [
+            "string"
+          ]
+        },
+        "azure_search_connection": {
+          "type": [
+            "CognitiveSearchConnection"
+          ]
+        },
+        "index_name": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Gets the relevant documents from Azure Cognitive Search.",
+      "source": "product_search.py",
+      "function": "product_search"
+    },
+    "rag_user_prompt.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "chat_history": {
+          "type": [
+            "string"
+          ]
+        },
+        "context_list": {
+          "type": [
+            "string"
+          ]
+        },
+        "question": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "rag_user_prompt.jinja2"
+    },
+    "product_rag.py": {
+      "type": "python",
+      "inputs": {
+        "user_message": {
+          "type": [
+            "string"
+          ]
+        },
+        "azure_open_ai_connection": {
+          "type": [
+            "AzureOpenAIConnection"
+          ]
+        },
+        "deployment_name": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Ask the LLM to andwer the user's question given the chat history and context.",
+      "source": "product_rag.py",
+      "function": "product_rag"
     }
   }
 }
