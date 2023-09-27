@@ -4,6 +4,7 @@ import inspect, asyncio, yaml
 
 from frontend.components.textbox import render_textbox, render_dummy_textbox
 from frontend.pages.chatbot.chatbot_model import chat_app
+import traceback
 
 @app.callback(
     Output(component_id="display-conversation", component_property="children"), 
@@ -115,30 +116,36 @@ def run_chatbot(set_progress, trigger, chat_history):
     chat_history[-1]["content"] = "..."
 
     set_progress([chat_history])
-    response = chat_app(messages=messages, extra_args=chat_app.extra_args, stream=True)
-    if inspect.iscoroutine(response):
-        chat_history = asyncio.run(process_response(response, chat_history, set_progress))
-        return chat_history, None 
-    else: 
-        incremental_text = ""
-        extra_args = None
-        session_info = None
-        print(f"\n\n{chat_history[-2]['role']}: " + chat_history[-2]["content"])
-        print(f"{chat_history[-1]['role']}: ", end="", flush=True)
-        for chunk in response:
-            if chunk["object"] == "chat.completion.chunk":
-                if "content" in chunk["choices"][0]["delta"]:
-                    incremental_text += chunk["choices"][0]["delta"]["content"]
-                    print(chunk["choices"][0]["delta"]["content"], end="", flush=True)
-                if "extra_args" in chunk["choices"][0]:
-                    extra_args = chunk["choices"][0]["extra_args"]
-                    print(yaml.dump({"extra_args":chunk["choices"][0]["extra_args"]}, indent=2)) 
-                if "session_info" in chunk["choices"][0]:
-                    extra_args = chunk["choices"][0]["session_info"]
-                    print(yaml.dump({"session_info":chunk["choices"][0]["session_info"]}, indent=2)) 
-            chat_history[-1]["content"] = incremental_text
-            chat_history[-1]["debug"] = {"extra_args": extra_args, "session_info": session_info}
-            set_progress([chat_history])
+    try:
+        response = chat_app(messages=messages, extra_args=chat_app.extra_args, stream=True)
+        if inspect.iscoroutine(response):
+            chat_history = asyncio.run(process_response(response, chat_history, set_progress))
+            return chat_history, None 
+        else: 
+            incremental_text = ""
+            extra_args = None
+            session_info = None
+            print(f"\n\n{chat_history[-2]['role']}: " + chat_history[-2]["content"])
+            print(f"{chat_history[-1]['role']}: ", end="", flush=True)
+            for chunk in response:
+                if chunk["object"] == "chat.completion.chunk":
+                    if "content" in chunk["choices"][0]["delta"]:
+                        incremental_text += chunk["choices"][0]["delta"]["content"]
+                        print(chunk["choices"][0]["delta"]["content"], end="", flush=True)
+                    if "extra_args" in chunk["choices"][0]:
+                        extra_args = chunk["choices"][0]["extra_args"]
+                        print(yaml.dump({"extra_args":chunk["choices"][0]["extra_args"]}, indent=2)) 
+                    if "session_info" in chunk["choices"][0]:
+                        extra_args = chunk["choices"][0]["session_info"]
+                        print(yaml.dump({"session_info":chunk["choices"][0]["session_info"]}, indent=2)) 
+                chat_history[-1]["content"] = incremental_text
+                chat_history[-1]["debug"] = {"extra_args": extra_args, "session_info": session_info}
+                set_progress([chat_history])
+            return chat_history, None
+    except Exception as e:
+        traceback_str = traceback.format_exc()
+        print(traceback_str)
+        chat_history[-1]["content"] = f"### Error: {str(e)} \n```\n{traceback_str}\n```"
         return chat_history, None
 
 @app.callback(
