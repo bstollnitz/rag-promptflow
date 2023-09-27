@@ -18,6 +18,9 @@ outputs:
     type: string
     reference: ${get_context.output}
     is_chat_output: true
+  intent:
+    type: string
+    reference: ${summarize_user_intent_llm.output}
 nodes:
 - name: summarize_user_intent_llm
   type: llm
