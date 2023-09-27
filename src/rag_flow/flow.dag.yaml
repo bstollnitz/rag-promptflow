@@ -26,18 +26,16 @@ nodes:
     path: summarize_user_intent_llm.jinja2
   inputs:
     deployment_name: gpt-35-turbo-0613
-    temperature: '0.7'
-    top_p: '1.0'
-    stop: ''
-    max_tokens: '256'
-    presence_penalty: '0'
-    frequency_penalty: '0'
-    logit_bias: ''
+    temperature: 0.7
+    top_p: 1
+    max_tokens: 256
+    presence_penalty: 0
+    frequency_penalty: 0
     chat_history: ${inputs.chat_history}
     query: ${inputs.question}
-  aggregation: false
   connection: connection-azure-open-ai
   api: chat
+  aggregation: false
 - name: get_context
   type: python
   source:
@@ -56,8 +54,6 @@ nodes:
     type: code
     path: rag_system_prompt.jinja2
   inputs:
-    chat_history: ${inputs.chat_history}
-    question: ${inputs.question}
     context_list: ${get_context.output}
   aggregation: false
 - name: rag

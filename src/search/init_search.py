@@ -28,6 +28,7 @@ from azure.search.documents.indexes.models import (
 from dotenv import load_dotenv
 from langchain.document_loaders import DirectoryLoader, UnstructuredMarkdownLoader
 from langchain.text_splitter import Language, RecursiveCharacterTextSplitter
+import math
 
 # Config for Azure Search.
 AZURE_SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT")
@@ -43,6 +44,11 @@ AZURE_OPENAI_EMBEDDING_DEPLOYMENT = os.getenv("AZURE_OPENAI_EMBEDDING_DEPLOYMENT
 
 DATA_DIR = "data/"
 
+def read_header(file_path: str) -> str:
+    # read the first 3 lines of the file
+    with open(file_path, "r") as f:
+        lines = f.readlines()
+    return "\n".join(lines[:3]) + "\n"
 
 def load_and_split_documents() -> list[dict]:
     """
@@ -55,18 +61,21 @@ def load_and_split_documents() -> list[dict]:
     )
     docs = loader.load()
 
+    print(f"loaded {len(docs)} documents")
     # Split our documents.
     splitter = RecursiveCharacterTextSplitter.from_language(
         language=Language.MARKDOWN, chunk_size=1000, chunk_overlap=100
     )
     split_docs = splitter.split_documents(docs)
-
+    print(f"split into {len(split_docs)} documents")
+    
     # Convert our LangChain Documents to a list of dictionaries.
     final_docs = []
     for i, doc in enumerate(split_docs):
+        header = read_header(doc.metadata["source"])
         doc_dict = {
             "id": str(i),
-            "content": doc.page_content,
+            "content": header + doc.page_content,
             "sourcefile": os.path.basename(doc.metadata["source"]),
         }
         final_docs.append(doc_dict)
@@ -137,12 +146,25 @@ def initialize(search_index_client: SearchIndexClient):
     """
     # Load our data.
     docs = load_and_split_documents()
-    for doc in docs:
-        doc["embedding"] = openai.Embedding.create(
-            engine=AZURE_OPENAI_EMBEDDING_DEPLOYMENT, input=doc["content"]
-        )["data"][0]["embedding"]
+
+    batch_size = 16
+    num_batches = math.ceil(len(docs) / batch_size)
+
+    print(f"embedding {len(docs)} documents in {num_batches} batches of {batch_size}. using embedding deployment {AZURE_OPENAI_EMBEDDING_DEPLOYMENT}")
+    for i in range(num_batches):
+        start_idx = i * batch_size
+        end_idx = min(start_idx + batch_size, len(docs))
+        batch_docs = docs[start_idx:end_idx]
+        embeddings = openai.Embedding.create(
+            engine=AZURE_OPENAI_EMBEDDING_DEPLOYMENT,
+            input=[doc["content"] for doc in batch_docs]
+        )["data"]
+
+        for j, doc in enumerate(batch_docs):
+            doc["embedding"] = embeddings[j]["embedding"]
 
     # Create an Azure Cognitive Search index.
+    print(f"creating index {AZURE_SEARCH_INDEX_NAME}")
     index = get_index(AZURE_SEARCH_INDEX_NAME)
     search_index_client.create_or_update_index(index)
 
@@ -152,6 +174,7 @@ def initialize(search_index_client: SearchIndexClient):
         index_name=AZURE_SEARCH_INDEX_NAME,
         credential=AzureKeyCredential(AZURE_SEARCH_KEY),
     )
+    print(f"uploading {len(docs)} documents to index {AZURE_SEARCH_INDEX_NAME}")
     search_client.upload_documents(docs)
 
 
@@ -159,6 +182,7 @@ def delete(search_index_client: SearchIndexClient):
     """
     Deletes the Azure Cognitive Search index.
     """
+    print(f"deleting index {AZURE_SEARCH_INDEX_NAME}")
     search_index_client.delete_index(AZURE_SEARCH_INDEX_NAME)
 
 
@@ -174,8 +198,8 @@ def main():
         AZURE_SEARCH_ENDPOINT, AzureKeyCredential(AZURE_SEARCH_KEY)
     )
 
+    delete(search_index_client)
     initialize(search_index_client)
-    # delete(search_index_client)
 
 
 if __name__ == "__main__":

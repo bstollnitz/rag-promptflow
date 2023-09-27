@@ -93,6 +93,99 @@
       "description": "Ask the LLM to andwer the user's question given the chat history and context.",
       "source": "product_rag.py",
       "function": "product_rag"
+    },
+    "summarize_user_intent_llm.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "query": {
+          "type": [
+            "string"
+          ]
+        },
+        "chat_history": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "summarize_user_intent_llm.jinja2"
+    },
+    "get_context.py": {
+      "type": "python",
+      "inputs": {
+        "question": {
+          "type": [
+            "string"
+          ]
+        },
+        "azure_open_ai_connection": {
+          "type": [
+            "AzureOpenAIConnection"
+          ]
+        },
+        "embedding_deployment": {
+          "type": [
+            "string"
+          ]
+        },
+        "azure_search_connection": {
+          "type": [
+            "CognitiveSearchConnection"
+          ]
+        },
+        "index_name": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Gets the relevant documents from Azure Cognitive Search.",
+      "source": "get_context.py",
+      "function": "get_context"
+    },
+    "rag_system_prompt.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "context_list": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "rag_system_prompt.jinja2"
+    },
+    "rag.py": {
+      "type": "python",
+      "inputs": {
+        "system_prompt": {
+          "type": [
+            "string"
+          ]
+        },
+        "chat_history": {
+          "type": [
+            "object"
+          ]
+        },
+        "query": {
+          "type": [
+            "string"
+          ]
+        },
+        "azure_open_ai_connection": {
+          "type": [
+            "AzureOpenAIConnection"
+          ]
+        },
+        "deployment_name": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Ask the LLM to answer the user's question given the chat history and context.",
+      "source": "rag.py",
+      "function": "rag"
     }
   }
 }
