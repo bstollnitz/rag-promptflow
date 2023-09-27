@@ -28,7 +28,7 @@ nodes:
     type: code
     path: summarize_user_intent_llm.jinja2
   inputs:
-    deployment_name: gpt-35-turbo-0613
+    deployment_name: ${config.output.AZURE_CHATGPT_DEPLOYMENT}
     temperature: 0.7
     top_p: 1
     max_tokens: 256
@@ -47,6 +47,7 @@ nodes:
   inputs:
     question: ${summarize_user_intent_llm.output}
     azure_open_ai_connection: connection-azure-open-ai
+    embedding_deployment: ${config.output.AZURE_OPENAI_EMBEDDING_DEPLOYMENT}
     azure_search_connection: connection-cognitive-search
     index_name: rag-promptflow-index
   aggregation: false
@@ -68,4 +69,11 @@ nodes:
     chat_history: ${inputs.chat_history}
     query: ${inputs.question}
     azure_open_ai_connection: connection-azure-open-ai
+    deployment_name: ${config.output.AZURE_CHATGPT_DEPLOYMENT}
   aggregation: false
+- name: config
+  type: python
+  source:
+    type: code
+    path: config.py
+  inputs: {}

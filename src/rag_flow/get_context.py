@@ -16,6 +16,7 @@ def get_context(
     azure_open_ai_connection: AzureOpenAIConnection,
     azure_search_connection: CognitiveSearchConnection,
     index_name: str,
+    embedding_deployment: str,
 ) -> list[str]:
     """
     Gets the relevant documents from Azure Cognitive Search.
@@ -24,7 +25,6 @@ def get_context(
     openai.api_base = azure_open_ai_connection.api_base
     openai.api_version = azure_open_ai_connection.api_version
     openai.api_key = azure_open_ai_connection.api_key
-    embedding_deployment = os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT"]
 
     query_vector = Vector(
         value=openai.Embedding.create(engine=embedding_deployment, input=question)[

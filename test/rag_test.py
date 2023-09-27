@@ -75,6 +75,7 @@ def test_product_search():
   result = get_context(  question="Tell me about your SummitClimber Backpack",
                             azure_open_ai_connection=chat_connection(),
                             azure_search_connection=search_connection(),
+                            embedding_deployment=os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT"],
                             index_name="rag-promptflow-index")
   assert any("SummitClimber Backpack" in doc for doc in result)
 
@@ -84,7 +85,8 @@ def test_rag():
     system_prompt=tent_system_prompt,
     chat_history=[],
     query="Tell me about your tents",
-    azure_open_ai_connection=chat_connection()
+    azure_open_ai_connection=chat_connection(),
+    deployment_name=os.environ["AZURE_CHATGPT_DEPLOYMENT"]
   )
   answer_text = ""
   for token in result:

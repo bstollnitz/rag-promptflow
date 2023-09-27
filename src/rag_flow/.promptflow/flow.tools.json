@@ -132,6 +132,11 @@
           "type": [
             "string"
           ]
+        },
+        "embedding_deployment": {
+          "type": [
+            "string"
+          ]
         }
       },
       "description": "Gets the relevant documents from Azure Cognitive Search.",
@@ -171,11 +176,21 @@
           "type": [
             "AzureOpenAIConnection"
           ]
+        },
+        "deployment_name": {
+          "type": [
+            "string"
+          ]
         }
       },
       "description": "Ask the LLM to answer the user's question given the chat history and context.",
       "source": "rag.py",
       "function": "rag"
+    },
+    "config.py": {
+      "type": "python",
+      "source": "config.py",
+      "function": "config"
     }
   }
 }

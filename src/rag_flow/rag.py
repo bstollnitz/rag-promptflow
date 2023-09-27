@@ -12,7 +12,8 @@ def rag(
     system_prompt: str,
     chat_history: list[str],
     query: str,
-    azure_open_ai_connection: AzureOpenAIConnection
+    azure_open_ai_connection: AzureOpenAIConnection,
+    deployment_name: str
 ) -> Generator[str, None, None]:
     """
     Ask the LLM to answer the user's question given the chat history and context.
@@ -21,7 +22,6 @@ def rag(
     openai.api_base = azure_open_ai_connection.api_base
     openai.api_version = azure_open_ai_connection.api_version
     openai.api_key = azure_open_ai_connection.api_key
-    deployment_name = os.environ["AZURE_CHATGPT_DEPLOYMENT"]
 
     messages = [{"role": "system", "content": system_prompt}]
     for item in chat_history:
