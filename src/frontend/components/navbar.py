@@ -7,10 +7,9 @@ def render_navbar(brand_name:str = "Chatbot", brand_color:str = "#165AA7"):
                 dbc.NavItem(
                     children=[
                         dbc.Button(
-                            DashIconify(icon="ant-design:clear-outlined", width=24), 
-                            className="btn btn-success",
+                            "Clear Chat History", 
                             id="clear-chat-history-button",
-                            outline=True
+                            outline=True, color="success", className="me-1"
                         ),
                     ]
                 ),

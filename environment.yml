@@ -18,3 +18,4 @@ dependencies:
     - dash-bootstrap-components
     - dash-iconify
     - diskcache
+    - pytest

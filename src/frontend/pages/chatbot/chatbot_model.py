@@ -2,6 +2,6 @@
 import os
 from chat_api import PromptFlowChat
 
-promptflow_folder = "./src/rag-flow"
+promptflow_folder = "./src/rag_flow"
 
 chat_app = PromptFlowChat(prompt_flow=promptflow_folder)

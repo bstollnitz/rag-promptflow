@@ -57,7 +57,7 @@ def load_and_split_documents() -> list[dict]:
 
     # Split our documents.
     splitter = RecursiveCharacterTextSplitter.from_language(
-        language=Language.MARKDOWN, chunk_size=6000, chunk_overlap=100
+        language=Language.MARKDOWN, chunk_size=1000, chunk_overlap=100
     )
     split_docs = splitter.split_documents(docs)
 
