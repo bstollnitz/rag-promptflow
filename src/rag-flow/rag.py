@@ -27,7 +27,6 @@ def rag(
         messages.append({"role": "user", "content": item["inputs"]["question"]})
         messages.append({"role": "assistant", "content": item["outputs"]["answer"]})
     messages.append({"role": "user", "content": query})
-    print(messages)
 
     chat_completion = openai.ChatCompletion.create(
         deployment_id=deployment_name,
