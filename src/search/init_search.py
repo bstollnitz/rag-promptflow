@@ -42,7 +42,7 @@ AZURE_OPENAI_API_VERSION = "2023-03-15-preview"
 AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
 AZURE_OPENAI_EMBEDDING_DEPLOYMENT = os.getenv("AZURE_OPENAI_EMBEDDING_DEPLOYMENT")
 
-DATA_DIR = "data/"
+DATA_DIR = "data/product_info"
 
 def read_header(file_path: str) -> str:
     # read the first 3 lines of the file
@@ -68,7 +68,7 @@ def load_and_split_documents() -> list[dict]:
     )
     split_docs = splitter.split_documents(docs)
     print(f"split into {len(split_docs)} documents")
-    
+
     # Convert our LangChain Documents to a list of dictionaries.
     final_docs = []
     for i, doc in enumerate(split_docs):

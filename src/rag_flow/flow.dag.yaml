@@ -47,7 +47,6 @@ nodes:
   inputs:
     question: ${summarize_user_intent_llm.output}
     azure_open_ai_connection: connection-azure-open-ai
-    embedding_deployment: text-embedding-ada-002
     azure_search_connection: connection-cognitive-search
     index_name: rag-promptflow-index
   aggregation: false
@@ -69,5 +68,4 @@ nodes:
     chat_history: ${inputs.chat_history}
     query: ${inputs.question}
     azure_open_ai_connection: connection-azure-open-ai
-    deployment_name: gpt-35-turbo-0613
   aggregation: false

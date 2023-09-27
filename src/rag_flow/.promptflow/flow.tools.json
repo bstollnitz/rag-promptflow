@@ -123,11 +123,6 @@
             "AzureOpenAIConnection"
           ]
         },
-        "embedding_deployment": {
-          "type": [
-            "string"
-          ]
-        },
         "azure_search_connection": {
           "type": [
             "CognitiveSearchConnection"
@@ -175,11 +170,6 @@
         "azure_open_ai_connection": {
           "type": [
             "AzureOpenAIConnection"
-          ]
-        },
-        "deployment_name": {
-          "type": [
-            "string"
           ]
         }
       },

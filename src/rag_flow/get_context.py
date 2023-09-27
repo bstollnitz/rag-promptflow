@@ -2,7 +2,7 @@
 Search your data in Azure Cognitive Search with a question, and get the relevant 
 documents.
 """
-import openai
+import openai, os
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
 from azure.search.documents.models import Vector
@@ -14,7 +14,6 @@ from promptflow.connections import AzureOpenAIConnection, CognitiveSearchConnect
 def get_context(
     question: str,
     azure_open_ai_connection: AzureOpenAIConnection,
-    embedding_deployment: str,
     azure_search_connection: CognitiveSearchConnection,
     index_name: str,
 ) -> list[str]:
@@ -25,6 +24,7 @@ def get_context(
     openai.api_base = azure_open_ai_connection.api_base
     openai.api_version = azure_open_ai_connection.api_version
     openai.api_key = azure_open_ai_connection.api_key
+    embedding_deployment = os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT"]
 
     query_vector = Vector(
         value=openai.Embedding.create(engine=embedding_deployment, input=question)[

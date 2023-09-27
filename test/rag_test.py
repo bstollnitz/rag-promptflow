@@ -74,7 +74,6 @@ frontend_chat_history = [
 def test_product_search():
   result = get_context(  question="Tell me about your SummitClimber Backpack",
                             azure_open_ai_connection=chat_connection(),
-                            embedding_deployment="text-embedding-ada-002",
                             azure_search_connection=search_connection(),
                             index_name="rag-promptflow-index")
   assert any("SummitClimber Backpack" in doc for doc in result)
@@ -85,8 +84,7 @@ def test_rag():
     system_prompt=tent_system_prompt,
     chat_history=[],
     query="Tell me about your tents",
-    azure_open_ai_connection=chat_connection(),
-    deployment_name=os.environ["AZURE_CHATGPT_DEPLOYMENT"]
+    azure_open_ai_connection=chat_connection()
   )
   answer_text = ""
   for token in result:
@@ -113,5 +111,6 @@ def test_frontend_run_chatbot():
   chat_history_after, _ = run_chatbot(output_collector, 0, frontend_chat_history)
   assert len(output_collector.state[0][-1]["content"]) > 0 
   assert output_collector.state[0][-1]["content"] == chat_history_after[-1]["content"]
+  assert not chat_history_after[-1]["content"].startswith("### Error")
 
    
