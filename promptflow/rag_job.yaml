@@ -1,0 +1,7 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Run.schema.json
+flow: ../src/rag_flow
+data: ../data/prompt_input/questions.jsonl
+column_mapping:
+  chat_history: ${data.chat_history}
+  question: ${data.question}
+

@@ -7,6 +7,6 @@ import os
 @tool
 def config() -> dict:
   return {
-    "AZURE_OPENAI_EMBEDDING_DEPLOYMENT": os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT"],
-    "AZURE_CHATGPT_DEPLOYMENT": os.environ["AZURE_CHATGPT_DEPLOYMENT"],
+    "AZURE_OPENAI_EMBEDDING_DEPLOYMENT": os.environ.get("AZURE_OPENAI_EMBEDDING_DEPLOYMENT","text-embedding-ada-002"),
+    "AZURE_CHATGPT_DEPLOYMENT": os.environ.get("AZURE_CHATGPT_DEPLOYMENT", "gpt-35-turbo-0613"),
   }
