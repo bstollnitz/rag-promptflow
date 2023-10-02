@@ -39,7 +39,7 @@ def get_context(
         credential=AzureKeyCredential(azure_search_connection.api_key),
     )
 
-    docs = search_client.search(search_text="", vectors=[query_vector], top=10)
+    docs = search_client.search(search_text="", vectors=[query_vector], top=2)
     context = [doc["content"] for doc in docs]
 
     return context

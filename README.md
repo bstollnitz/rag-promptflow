@@ -21,7 +21,7 @@ conda env create -f environment.yml
 conda activate rag
 ```
 
-make sure that your PYTHONPATH includes the `src` directory of the project. If you are using VSCode and run in a VSCode-Terminal, this should be done automatically.
+Make sure that your PYTHONPATH includes the `src` directory of the project. If you are using VSCode and run in a VSCode-Terminal, this should be done automatically.
 
 ## Create azure search index
 
