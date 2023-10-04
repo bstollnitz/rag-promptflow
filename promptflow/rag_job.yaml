@@ -1,4 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/promptflow/latest/Run.schema.json
+name: fancy_demo_run
 flow: ../src/rag_flow
 data: ../data/prompt_input/questions.jsonl
 column_mapping:
