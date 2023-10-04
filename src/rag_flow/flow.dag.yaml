@@ -30,5 +30,5 @@ nodes:
   inputs:
     question: ${inputs.question}
     chat_history: ${inputs.chat_history}
-    azure_open_ai_connection: connection-azure-open-ai
-    azure_search_connection: connection-cognitive-search
+    azure_open_ai_connection: azure_open_ai_connection
+    azure_search_connection: cognitive_search_connection
