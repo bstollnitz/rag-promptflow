@@ -1,0 +1,169 @@
+id: QnA_combined_eval
+name: QnA Combined Evaluation
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  question:
+    type: string
+    default: Tell me about your tents.
+  context:
+    type: string
+    default: | 
+      # Information about product item_number: 1
+      TrailMaster X4 Tent, price $250,
+
+      ## Brand
+      OutdoorLiving
+
+      ## Category
+      Tents
+
+      ## Features
+      - Polyester material for durability
+      - Spacious interior to accommodate multiple people
+      - Easy setup with included instructions
+      - Water-resistant construction to withstand light rain
+      - Mesh panels for ventilation and insect protection
+      - Rainfly included for added weather protection
+      - Multiple doors for convenient entry and exit
+      - Interior pockets for organizing small items
+      - Reflective guy lines for improved visibility at night
+      - Freestanding design for easy setup and relocation
+      - Carry bag included for convenient storage and transportation
+  answer:
+    type: string
+    default: |
+      The TrailMaster X4 Tent is a great choice for your next camping trip. 
+
+      And King Charles visited France in September 2023.
+outputs:
+  gpt_coherence:
+    type: object
+    reference: ${coherence_concat_scores.output.gpt_coherence}
+  gpt_fluency:
+    type: object
+    reference: ${fluency_concat_scores.output.gpt_fluency}
+  gpt_groundedness:
+    type: object
+    reference: ${groundedness_concat_scores.output.gpt_groundedness}
+  gpt_relevance:
+    type: object
+    reference: ${relevance_concat_scores.output.gpt_relevance}
+
+nodes:
+- name: coherence_score
+  type: llm
+  source:
+    type: code
+    path: coherence/coherence_score.jinja2
+  inputs:
+    question: ${inputs.question}
+    answer: ${inputs.answer}
+    max_tokens: 256
+    deployment_name: gpt-4
+    temperature: 0
+  connection: azure_open_ai_connection
+  api: chat
+- name: coherence_concat_scores
+  type: python
+  source:
+    type: code
+    path: coherence/concat_scores.py
+  inputs:
+    coherence_score: ${coherence_score.output}
+- name: coherence_aggregate_variants_results
+  type: python
+  source:
+    type: code
+    path: coherence/aggregate_variants_results.py
+  inputs:
+    results: ${coherence_concat_scores.output}
+  aggregation: true
+
+- name: fluency_score
+  type: llm
+  source:
+    type: code
+    path: fluency/fluency_score.jinja2
+  inputs:
+    question: ${inputs.question}
+    answer: ${inputs.answer}
+    max_tokens: 256
+    deployment_name: gpt-4
+    temperature: 0
+  connection: azure_open_ai_connection
+  api: chat
+- name: fluency_concat_scores
+  type: python
+  source:
+    type: code
+    path: fluency/concat_scores.py
+  inputs:
+    fluency_score: ${fluency_score.output}
+- name: fluency_aggregate_variants_results
+  type: python
+  source:
+    type: code
+    path: fluency/aggregate_variants_results.py
+  inputs:
+    results: ${fluency_concat_scores.output}
+  aggregation: true
+
+- name: groundedness_score
+  type: llm
+  source:
+    type: code
+    path: groundedness/groundedness_score.jinja2
+  inputs:
+    context: ${inputs.context}
+    answer: ${inputs.answer}
+    max_tokens: 256
+    deployment_name: gpt-4
+    temperature: 0
+  connection: azure_open_ai_connection
+  api: chat
+- name: groundedness_concat_scores
+  type: python
+  source:
+    type: code
+    path: groundedness/concat_scores.py
+  inputs:
+    groundesness_score: ${groundedness_score.output}
+- name: groundedness_aggregate_variants_results
+  type: python
+  source:
+    type: code
+    path: groundedness/aggregate_variants_results.py
+  inputs:
+    results: ${groundedness_concat_scores.output}
+  aggregation: true
+
+- name: relevance_score
+  type: llm
+  source:
+    type: code
+    path: relevance/relevance_score.jinja2
+  inputs:
+    question: ${inputs.question}
+    context: ${inputs.context}
+    answer: ${inputs.answer}
+    max_tokens: 256
+    deployment_name: gpt-4
+    temperature: 0
+  connection: azure_open_ai_connection
+  api: chat
+- name: relevance_concat_scores
+  type: python
+  source:
+    type: code
+    path: relevance/concat_scores.py
+  inputs:
+    relevance_score: ${relevance_score.output}
+- name: relevance_aggregate_variants_results
+  type: python
+  source:
+    type: code
+    path: relevance/aggregate_variants_results.py
+  inputs:
+    results: ${relevance_concat_scores.output}
+  aggregation: true
