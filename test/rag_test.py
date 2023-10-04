@@ -9,8 +9,7 @@ import promptflow as pf
 from promptflow.connections import AzureOpenAIConnection, CognitiveSearchConnection
 import os
 from typing import List
-from rag_flow.rag import rag
-from rag_flow.get_context import get_context
+from rag_flow.rag import rag, _get_context, _summarize_user_intent
 from frontend.pages.chatbot.chatbot_controller import run_chatbot
 
 class OutputCollector:
@@ -70,23 +69,42 @@ frontend_chat_history = [
   {'role': 'assistant', 'content': "...", 'debug': None},
   ]
 
+intent_chat_history = [
+  {
+     'inputs': {'question': "Tell me about your tents"},
+    'outputs': {'answer': "Our best tent is our Alpine Explorer Tent"},
+  }
+]
 
 def test_product_search():
-  result = get_context(  question="Tell me about your SummitClimber Backpack",
-                            azure_open_ai_connection=chat_connection(),
-                            azure_search_connection=search_connection(),
-                            embedding_deployment=os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT"],
-                            index_name="rag-promptflow-index")
+  import openai
+  azure_open_ai_connection = chat_connection()
+  openai.api_type = azure_open_ai_connection.api_type
+  openai.api_base = azure_open_ai_connection.api_base
+  openai.api_version = azure_open_ai_connection.api_version
+  openai.api_key = azure_open_ai_connection.api_key
+  result = _get_context(  question="Tell me about your SummitClimber Backpack",
+                            azure_search_connection=search_connection())
   assert any("SummitClimber Backpack" in doc for doc in result)
+
+def test_summarize_user_intent():
+  import openai
+  azure_open_ai_connection = chat_connection()
+  openai.api_type = azure_open_ai_connection.api_type
+  openai.api_base = azure_open_ai_connection.api_base
+  openai.api_version = azure_open_ai_connection.api_version
+  openai.api_key = azure_open_ai_connection.api_key
+  result = _summarize_user_intent(query="Tell me more about it",
+                            chat_history=intent_chat_history)
+  assert "Alpine Explorer Tent" in result
 
 
 def test_rag():
   result = rag(
-    system_prompt=tent_system_prompt,
+    question="Tell me about your tents",
     chat_history=[],
-    query="Tell me about your tents",
     azure_open_ai_connection=chat_connection(),
-    deployment_name=os.environ["AZURE_CHATGPT_DEPLOYMENT"]
+    azure_search_connection=search_connection()
   )
   answer_text = ""
   for token in result:

@@ -3,7 +3,7 @@ Combine documents and question in a prompt and send it to an LLM to get the answ
 """
 from typing import Generator
 
-import openai
+import openai, os
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
 from azure.search.documents.models import Vector
@@ -22,7 +22,7 @@ AZURE_OPENAI_EMBEDDING_DEPLOYMENT = "text-embedding-ada-002"
 AZURE_OPENAI_CHATGPT_DEPLOYMENT = "gpt-35-turbo-0613"
 
 # Azure Cognitive Search index name
-AZURE_SEARCH_INDEX_NAME = "products-index-1"
+AZURE_SEARCH_INDEX_NAME = "rag-promptflow-index"
 
 
 def _summarize_user_intent(query: str, chat_history: list[str]) -> str:
@@ -30,7 +30,7 @@ def _summarize_user_intent(query: str, chat_history: list[str]) -> str:
     Creates a user message containing the user intent, by summarizing the chat
     history and user query.
     """
-    jinja_template = "summarize_user_intent.jinja2"
+    jinja_template = os.path.join(os.path.dirname(__file__), "summarize_user_intent.jinja2")
     with open(jinja_template, encoding="utf-8") as f:
         template = Template(f.read())
     prompt = template.render(query=query, chat_history=chat_history)
@@ -78,11 +78,11 @@ def _get_context(
     return context
 
 
-def _rag(context_list: list[str], query: str) -> str:
+def _rag(context_list: list[str], query: str) -> Generator[str, None, None]:
     """
     Asks the LLM to answer the user's query with the context provided.
     """
-    jinja_template = "rag_system_prompt.jinja2"
+    jinja_template = os.path.join(os.path.dirname(__file__),"rag_system_prompt.jinja2")
     with open(jinja_template, encoding="utf-8") as f:
         template = Template(f.read())
     system_prompt = template.render(context_list=context_list)
@@ -103,11 +103,15 @@ def _rag(context_list: list[str], query: str) -> str:
         temperature=0.7,
         max_tokens=1024,
         n=1,
+        stream=True,
     )
-    response = chat_completion.choices[0].message.content
 
-    return response
+    for chunk in chat_completion:
+        if chunk["object"] == "chat.completion.chunk":
+            token = chunk["choices"][0]["delta"].get("content", "")
+            yield token
 
+    return
 
 @tool
 def rag(

@@ -1,21 +1,48 @@
 {
-    "package": {},
-    "code": {
-        "chat.jinja2": {
-            "type": "llm",
-            "inputs": {
-                "question": {
-                    "type": [
-                        "string"
-                    ]
-                },
-                "chat_history": {
-                    "type": [
-                        "string"
-                    ]
-                }
-            },
-            "description": "Chat with Chatbot"
+  "package": {},
+  "code": {
+    "chat.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "question": {
+          "type": [
+            "string"
+          ]
+        },
+        "chat_history": {
+          "type": [
+            "string"
+          ]
         }
+      },
+      "description": "Chat with Chatbot"
+    },
+    "rag.py": {
+      "type": "python",
+      "inputs": {
+        "question": {
+          "type": [
+            "string"
+          ]
+        },
+        "chat_history": {
+          "type": [
+            "object"
+          ]
+        },
+        "azure_open_ai_connection": {
+          "type": [
+            "AzureOpenAIConnection"
+          ]
+        },
+        "azure_search_connection": {
+          "type": [
+            "CognitiveSearchConnection"
+          ]
+        }
+      },
+      "source": "rag.py",
+      "function": "rag"
     }
+  }
 }
