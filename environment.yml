@@ -9,6 +9,7 @@ dependencies:
   - pip:
     - openai
     - azure-identity
+    - azure-ai-ml
     - promptflow==0.1.0b7.post1
     - promptflow-tools
     - langchain
@@ -19,3 +20,4 @@ dependencies:
     - dash-iconify
     - diskcache
     - pytest
+    - jinja2

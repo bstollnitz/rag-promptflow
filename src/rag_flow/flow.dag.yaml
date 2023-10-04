@@ -1,0 +1,34 @@
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  chat_history:
+    type: list
+    is_chat_history: true
+    default: []
+  question:
+    type: string
+    is_chat_input: true
+    default: Tell me about your tents.
+outputs:
+  answer:
+    type: string
+    reference: ${rag.outputs.answer}
+    is_chat_output: true
+  context:
+    type: string
+    reference: ${rag.outputs.context}
+    is_chat_output: true
+  intent:
+    type: string
+    reference: ${rag.outputs.intent}
+nodes:
+- name: rag
+  type: python
+  source:
+    type: code
+    path: rag.py
+  inputs:
+    question: ${inputs.question}
+    chat_history: ${inputs.chat_history}
+    azure_open_ai_connection: connection-azure-open-ai
+    azure_search_connection: connection-cognitive-search
