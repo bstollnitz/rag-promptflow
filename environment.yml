@@ -9,7 +9,7 @@ dependencies:
   - pip:
     - openai
     - azure-identity
-    - promptflow
+    - promptflow==0.1.0b7.post1
     - promptflow-tools
     - langchain
     - unstructured[all-docs]
