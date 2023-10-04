@@ -1,6 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/promptflow/latest/Run.schema.json
 flow: ../src/eval_flow
-run: fancy_demo_run
 column_mapping:
   question: ${run.inputs.question}
   answer: ${run.outputs.answer}
