@@ -17,7 +17,6 @@ outputs:
   context:
     type: string
     reference: ${rag.outputs.context}
-    is_chat_output: true
   intent:
     type: string
     reference: ${rag.outputs.intent}

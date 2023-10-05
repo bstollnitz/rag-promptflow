@@ -107,11 +107,23 @@ def test_rag():
     azure_search_connection=search_connection()
   )
   answer_text = ""
-  for token in result:
+  for token in result["answer"]:
     answer_text += token
     print(token, end="")
   assert "tent" in answer_text.lower()
 
+def test_rag_w_chat_history():
+  result = rag(
+    question="Tell me more about it",
+    chat_history=intent_chat_history,
+    azure_open_ai_connection=chat_connection(),
+    azure_search_connection=search_connection()
+  )
+  answer_text = ""
+  for token in result["answer"]:
+    answer_text += token
+    print(token, end="")
+  assert "Alpine Explorer Tent" in answer_text
 
 def test_promptflow_stream():
   cli = pf.PFClient()

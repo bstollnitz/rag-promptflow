@@ -72,13 +72,19 @@ def _get_context(
         credential=AzureKeyCredential(azure_search_connection.api_key),
     )
 
-    docs = search_client.search(search_text="", vectors=[query_vector], top=2)
+    docs = search_client.search(search_text="", vectors=[query_vector], top=5)
     context = [doc["content"] for doc in docs]
 
     return context
 
+def _chat_history_to_openai(chat_history: list[dict]) -> list[dict]:
+    openai_chat_history = []
+    for item in chat_history:
+        openai_chat_history.append({"role": "user", "content": item["inputs"]["question"]})
+        openai_chat_history.append({"role": "assistant", "content": item["outputs"]["answer"]})
+    return openai_chat_history
 
-def _rag(context_list: list[str], query: str) -> Generator[str, None, None]:
+def _rag(context_list: list[str], query: str, chat_history: list[dict]) -> Generator[str, None, None]:
     """
     Asks the LLM to answer the user's query with the context provided.
     """
@@ -86,16 +92,9 @@ def _rag(context_list: list[str], query: str) -> Generator[str, None, None]:
     with open(jinja_template, encoding="utf-8") as f:
         template = Template(f.read())
     system_prompt = template.render(context_list=context_list)
-    messages = [
-        {
-            "role": SYSTEM,
-            "content": system_prompt,
-        },
-        {
-            "role": USER,
-            "content": query,
-        },
-    ]
+    messages = _chat_history_to_openai(chat_history)
+    messages.insert(0, {"role": SYSTEM, "content": system_prompt})
+    messages.append({"role": USER, "content": query})
 
     chat_completion = openai.ChatCompletion.create(
         deployment_id=AZURE_OPENAI_CHATGPT_DEPLOYMENT,
@@ -119,7 +118,7 @@ def rag(
     chat_history: list[str],
     azure_open_ai_connection: AzureOpenAIConnection,
     azure_search_connection: CognitiveSearchConnection,
-) -> Generator[str, None, None]:
+) -> dict[str, any]:
     openai.api_type = azure_open_ai_connection.api_type
     openai.api_base = azure_open_ai_connection.api_base
     openai.api_version = azure_open_ai_connection.api_version
@@ -127,11 +126,6 @@ def rag(
 
     user_intent = _summarize_user_intent(question, chat_history)
     context = _get_context(user_intent, azure_search_connection)
-    answer = _rag(context, question)
+    answer = _rag(context, question, chat_history)
 
     return {"answer": answer, "context": context, "intent": user_intent}
-
-    # for chunk in chat_completion:
-    #     if chunk["object"] == "chat.completion.chunk":
-    #         if "content" in chunk["choices"][0]["delta"]:
-    #             yield chunk["choices"][0]["delta"]["content"]

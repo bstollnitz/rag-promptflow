@@ -15,9 +15,6 @@ dependencies:
     - langchain
     - unstructured[all-docs]
     - azure-search-documents==11.4.0b9
-    - dash[diskcache]
-    - dash-bootstrap-components
-    - dash-iconify
-    - diskcache
     - pytest
     - jinja2
+    - chainlit

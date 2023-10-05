@@ -24,3 +24,6 @@
 {"chat_history": [], "question": "Which GPS device would you recommend for backcountry navigation?"}
 {"chat_history": [], "question": "Do you have any advice on layering clothes for cold weather hiking?"}
 {"chat_history": [], "question": "Do you have any compasses? Which ones can you recommend?"}
+{"chat_history": [{"inputs": {"question": "Which is your cheapest tent?"},"outputs": {"answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"}}], "question":"tell me more about it"}
+{"chat_history": [], "question": "what are your 3 best-selling tents?"}
+{"chat_history": [], "question": "please list your top 3 camping stoves"}
