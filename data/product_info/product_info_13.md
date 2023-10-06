@@ -23,22 +23,22 @@ Camping Stoves
 
 ## Technical Specs
 
-- **Best Use**: Camping, Outdoor Cooking
-- **Material:** Stainless Steel
-- **Fuel Type**: Propane, Butane, compatible with various fuel types
-- **Color:** Black
-- **Burner Type**: Dual Burners
-- **Heat Output**: High heat output for fast boiling and cooking times
-- **Flame Control**: Adjustable flame control for precise temperature regulation
-- **Ignition System**: Piezo ignition system for quick and reliable ignition
-- **Wind Resistance**: Wind-resistant design to withstand outdoor conditions
-- **Construction**: Sturdy construction for durability and stability
-- **Fuel Regulator**: Built-in fuel regulator for consistent performance
-- **Cooking Grates**: Removable cooking grates for easy cleaning
-- **Portability**: Compact and portable design with integrated carrying handle
-- **Compatibility**: Compatible with standard camping fuel canisters
-- **Dimensions**: 14in x 14in x 10in
-- **Weight**: 5 lbs
+- Best Use: Camping, Outdoor Cooking
+- Material: Stainless Steel
+- Fuel Type: Propane, Butane, compatible with various fuel types
+- Color: Black
+- Burner Type: Dual Burners
+- Heat Output: High heat output for fast boiling and cooking times
+- Flame Control: Adjustable flame control for precise temperature regulation
+- Ignition System: Piezo ignition system for quick and reliable ignition
+- Wind Resistance: Wind-resistant design to withstand outdoor conditions
+- Construction: Sturdy construction for durability and stability
+- Fuel Regulator: Built-in fuel regulator for consistent performance
+- Cooking Grates: Removable cooking grates for easy cleaning
+- Portability: Compact and portable design with integrated carrying handle
+- Compatibility: Compatible with standard camping fuel canisters
+- Dimensions: 14in x 14in x 10in
+- Weight: 5 lbs
 
 ## User Guide/Manual
 
@@ -80,23 +80,23 @@ Camping Stoves
 
 ## Caution Information
 
-1. **DO NOT** use the camping stove indoors or in poorly ventilated areas. It is designed for outdoor use only.
-2. **DO NOT** leave the camping stove unattended while it is in use.
-3. **DO NOT** place flammable materials or objects near the camping stove during operation.
-4. **DO NOT** use the camping stove in windy conditions without proper wind protection or shielding.
-5. **DO NOT** touch the stove surfaces or components while they are hot. Always use heat-resistant gloves or utensils.
-6. **DO NOT** use the camping stove with a damaged or leaking fuel canister. Check for any leaks or defects before connecting.
-7. **DO NOT** modify or alter the camping stove in any way. Use it as intended and follow the manufacturer's instructions.
-8. **DO NOT** attempt to disassemble or repair the camping stove yourself. Contact authorized service personnel for assistance.
-9. **DO NOT** use the camping stove if you suspect a malfunction or if it shows signs of damage. Discontinue use and seek professional inspection.
-10. **DO NOT** expose the camping stove to extreme temperatures or direct sunlight for prolonged periods when not in use.
+1. DO NOT use the camping stove indoors or in poorly ventilated areas. It is designed for outdoor use only.
+2. DO NOT leave the camping stove unattended while it is in use.
+3. DO NOT place flammable materials or objects near the camping stove during operation.
+4. DO NOT use the camping stove in windy conditions without proper wind protection or shielding.
+5. DO NOT touch the stove surfaces or components while they are hot. Always use heat-resistant gloves or utensils.
+6. DO NOT use the camping stove with a damaged or leaking fuel canister. Check for any leaks or defects before connecting.
+7. DO NOT modify or alter the camping stove in any way. Use it as intended and follow the manufacturer's instructions.
+8. DO NOT attempt to disassemble or repair the camping stove yourself. Contact authorized service personnel for assistance.
+9. DO NOT use the camping stove if you suspect a malfunction or if it shows signs of damage. Discontinue use and seek professional inspection.
+10. DO NOT expose the camping stove to extreme temperatures or direct sunlight for prolonged periods when not in use.
 
 Certainly! Here's a sample warranty information for the PowerBurner Camping Stove:
 
 ## Warranty Information
 
 1. Warranty Coverage:
-- The PowerBurner Camping Stove is covered by a **1-year limited warranty** from the date of purchase.
+- The PowerBurner Camping Stove is covered by a 1-year limited warranty from the date of purchase.
 - The warranty covers manufacturing defects in materials and workmanship under normal use.
 - The warranty is valid only for the original purchaser and is non-transferable.
 
@@ -122,25 +122,25 @@ If you have any questions or need assistance with your PowerBurner Camping Stove
 - Website: www.powerburner.com/support
 
 ## Return Policy
-- **If Membership status "None":**	If you are not satisfied with your purchase, you can return it within 30 days for a full refund. The product must be unused and in its original packaging.
-- **If Membership status "Gold":**	Gold members can return their camping stoves within 60 days of purchase for a full refund or exchange. The product must be unused and in its original packaging.
-- **If Membership status "Platinum":**	Platinum members can return their camping stoves within 90 days of purchase for a full refund or exchange. The product must be unused and in its original packaging. Additionally, Platinum members receive a 10% discount on all camping stove purchases but from the same product brand.
+- If Membership status "None":	If you are not satisfied with your purchase, you can return it within 30 days for a full refund. The product must be unused and in its original packaging.
+- If Membership status "Gold":	Gold members can return their camping stoves within 60 days of purchase for a full refund or exchange. The product must be unused and in its original packaging.
+- If Membership status "Platinum":	Platinum members can return their camping stoves within 90 days of purchase for a full refund or exchange. The product must be unused and in its original packaging. Additionally, Platinum members receive a 10% discount on all camping stove purchases but from the same product brand.
 
 ## Reviews
-1) **Rating:** 5
-   **Review:** I absolutely love the PowerBurner Camping Stove! It's compact, lightweight, and incredibly efficient. It heats up quickly and provides a consistent flame for cooking. The adjustable heat control is a great feature, allowing me to simmer or boil with ease. The sturdy construction and durable materials give me confidence in its longevity. It's definitely a reliable companion for all my camping adventures!
+1) Rating: 5
+   Review: I absolutely love the PowerBurner Camping Stove! It's compact, lightweight, and incredibly efficient. It heats up quickly and provides a consistent flame for cooking. The adjustable heat control is a great feature, allowing me to simmer or boil with ease. The sturdy construction and durable materials give me confidence in its longevity. It's definitely a reliable companion for all my camping adventures!
 
-2) **Rating:** 4
-   **Review:** The PowerBurner Camping Stove is a solid choice for outdoor cooking. It's easy to assemble and disassemble, making it convenient to transport. The flame output is consistent, and the heat is well-distributed. I appreciate the built-in wind protection, which helps maintain a steady flame even in windy conditions. The stove is sturdy and stable, providing a reliable cooking surface. The only downside is that it's a bit bulky compared to other camping stoves I've used, but overall, it's a reliable and functional option.
+2) Rating: 4
+   Review: The PowerBurner Camping Stove is a solid choice for outdoor cooking. It's easy to assemble and disassemble, making it convenient to transport. The flame output is consistent, and the heat is well-distributed. I appreciate the built-in wind protection, which helps maintain a steady flame even in windy conditions. The stove is sturdy and stable, providing a reliable cooking surface. The only downside is that it's a bit bulky compared to other camping stoves I've used, but overall, it's a reliable and functional option.
 
-3) **Rating:** 3
-   **Review:** The PowerBurner Camping Stove gets the job done, but it has some room for improvement. The flame control is a bit tricky, and it can be challenging to achieve a low simmer. The ignition system works well most of the time, but occasionally it takes a few tries to get it going. On the positive side, it's fairly lightweight and easy to carry. The construction is decent, but I would prefer a more durable feel. It's an average camping stove that serves its purpose adequately.
+3) Rating: 3
+   Review: The PowerBurner Camping Stove gets the job done, but it has some room for improvement. The flame control is a bit tricky, and it can be challenging to achieve a low simmer. The ignition system works well most of the time, but occasionally it takes a few tries to get it going. On the positive side, it's fairly lightweight and easy to carry. The construction is decent, but I would prefer a more durable feel. It's an average camping stove that serves its purpose adequately.
 
-4) **Rating:** 5
-   **Review:** I'm impressed with the performance of the PowerBurner Camping Stove. It's compact, yet powerful enough to cook meals quickly. The flame is adjustable and provides excellent heat control. The integrated piezo ignition is reliable and saves me the hassle of carrying a separate lighter. The stove is easy to clean, and the included carrying case is a nice bonus. I've used it on multiple camping trips, and it has never let me down. Highly recommended for outdoor cooking enthusiasts!
+4) Rating: 5
+   Review: I'm impressed with the performance of the PowerBurner Camping Stove. It's compact, yet powerful enough to cook meals quickly. The flame is adjustable and provides excellent heat control. The integrated piezo ignition is reliable and saves me the hassle of carrying a separate lighter. The stove is easy to clean, and the included carrying case is a nice bonus. I've used it on multiple camping trips, and it has never let me down. Highly recommended for outdoor cooking enthusiasts!
 
-5) **Rating:** 4
-   **Review:** The PowerBurner Camping Stove is a solid choice for camp cooking. It's easy to set up and operate, and the flame is consistent and reliable. The stove is stable on various surfaces, thanks to its sturdy design. The included windscreen is effective in protecting the flame from gusts of wind. The only minor drawback is that the control valve is a bit sensitive, requiring careful adjustment to achieve the desired heat level. Overall, it's a reliable camping stove that delivers good performance.
+5) Rating: 4
+   Review: The PowerBurner Camping Stove is a solid choice for camp cooking. It's easy to set up and operate, and the flame is consistent and reliable. The stove is stable on various surfaces, thanks to its sturdy design. The included windscreen is effective in protecting the flame from gusts of wind. The only minor drawback is that the control valve is a bit sensitive, requiring careful adjustment to achieve the desired heat level. Overall, it's a reliable camping stove that delivers good performance.
 
 ## FAQ
 59) Can the PowerBurner Camping Stove be used with both propane and butane?

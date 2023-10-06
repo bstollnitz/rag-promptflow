@@ -24,31 +24,31 @@ Camping Tables
 - Carry Bag: Includes a carrying bag for convenient storage and transportation.
 
 ## Technical Specs
-- **Best Use**: Camping, outdoor activities
-- **Material:**: Durable polyester fabric with reinforced stitching
-- **Color:** Blue
-- **Weight:** 6lbs
-- **Frame Material**: Sturdy steel or lightweight aluminum
-- **Weight Capacity**: Typically supports up to 250 pounds (113 kilograms)
-- **Weight** Varies between 2 to 5 pounds (0.9 to 2.3 kilograms), depending on the model
-- **Folded Dimensions**: Compact size for easy storage and transport (e.g., approximately 20 x 5 x 5 inches)
-- **Open Dimensions**: Provides comfortable seating area (e.g., approximately 20 x 20 x 30 inches)
-- **Seat Height**: Comfortable height from the ground (e.g., around 12 to 18 inches)
-- **Backrest Height**: Provides back support (e.g., approximately 20 to 25 inches)
-- **Cup Holder**: Integrated cup holder for holding beverages securely
-- **Side Pockets**: Convenient storage pockets for small items like phones, books, or snacks
-- **Armrests**: Padded armrests for added comfort
-- **Reclining Positions**: Adjustable backrest with multiple reclining positions for personalized comfort
-- **Sunshade or Canopy**: Optional feature providing sun protection and shade
-- **Carrying Case**: Includes a carrying bag or case for easy transport and storage
-- **Easy Setup**: Simple assembly with foldable or snap-together design
-- **Weather Resistance**: Water-resistant or waterproof material for durability in various weather conditions
-- **Cleaning**: Easy to clean with removable and washable seat covers (if applicable)
+- Best Use: Camping, outdoor activities
+- Material:: Durable polyester fabric with reinforced stitching
+- Color: Blue
+- Weight: 6lbs
+- Frame Material: Sturdy steel or lightweight aluminum
+- Weight Capacity: Typically supports up to 250 pounds (113 kilograms)
+- Weight Varies between 2 to 5 pounds (0.9 to 2.3 kilograms), depending on the model
+- Folded Dimensions: Compact size for easy storage and transport (e.g., approximately 20 x 5 x 5 inches)
+- Open Dimensions: Provides comfortable seating area (e.g., approximately 20 x 20 x 30 inches)
+- Seat Height: Comfortable height from the ground (e.g., around 12 to 18 inches)
+- Backrest Height: Provides back support (e.g., approximately 20 to 25 inches)
+- Cup Holder: Integrated cup holder for holding beverages securely
+- Side Pockets: Convenient storage pockets for small items like phones, books, or snacks
+- Armrests: Padded armrests for added comfort
+- Reclining Positions: Adjustable backrest with multiple reclining positions for personalized comfort
+- Sunshade or Canopy: Optional feature providing sun protection and shade
+- Carrying Case: Includes a carrying bag or case for easy transport and storage
+- Easy Setup: Simple assembly with foldable or snap-together design
+- Weather Resistance: Water-resistant or waterproof material for durability in various weather conditions
+- Cleaning: Easy to clean with removable and washable seat covers (if applicable)
 
 ## Return Policy
-- **If Membership status "None":**	If you are not satisfied with your purchase, you can return it within 30 days for a full refund. The product must be unused and in its original packaging.
-- **If Membership status "Gold":**	Gold members can return their camping tables within 60 days of purchase for a full refund or exchange. The product must be unused and in its original packaging.
-- **If Membership status "Platinum":**	Platinum members can return their camping tables within 90 days of purchase for a full refund or exchange. The product must be unused and in its original packaging. Additionally, Platinum members receive a 10% discount on all camping table purchases but from the same product brand.
+- If Membership status "None":	If you are not satisfied with your purchase, you can return it within 30 days for a full refund. The product must be unused and in its original packaging.
+- If Membership status "Gold":	Gold members can return their camping tables within 60 days of purchase for a full refund or exchange. The product must be unused and in its original packaging.
+- If Membership status "Platinum":	Platinum members can return their camping tables within 90 days of purchase for a full refund or exchange. The product must be unused and in its original packaging. Additionally, Platinum members receive a 10% discount on all camping table purchases but from the same product brand.
 
 ## User Guide/Manual
 
@@ -90,16 +90,16 @@ To set up the camping chair, follow these steps:
 
 ## Caution Information
 
-1. **Do not exceed the weight capacity**
-2. **Do not use on uneven or unstable surfaces**
-3. **Do not use as a step stool or ladder**
-4. **Do not leave unattended near open flames or heat sources**
-5. **Do not lean back excessively**
-6. **Do not use harsh chemicals or abrasive cleaners**
-7. **Do not leave exposed to prolonged sunlight**
-8. **Do not drag or slide the chair**
-9. **Do not place sharp objects in the storage pockets**
-10. **Do not modify or alter the chair**
+1. Do not exceed the weight capacity
+2. Do not use on uneven or unstable surfaces
+3. Do not use as a step stool or ladder
+4. Do not leave unattended near open flames or heat sources
+5. Do not lean back excessively
+6. Do not use harsh chemicals or abrasive cleaners
+7. Do not leave exposed to prolonged sunlight
+8. Do not drag or slide the chair
+9. Do not place sharp objects in the storage pockets
+10. Do not modify or alter the chair
 
 Certainly! Here's a sample warranty information for the TrekMaster Camping Chair, along with fictitious contact details for customer care:
 
@@ -137,20 +137,20 @@ For any questions, concerns, or warranty claims, please reach out to our friendl
 
 ## Reviews
 
-1) **Rating:** 5
-   **Review:** I absolutely love the TrekMaster Camping Chair! It's lightweight, sturdy, and super comfortable. The padded armrests and breathable fabric make it perfect for long camping trips. Highly recommended for outdoor enthusiasts!
+1) Rating: 5
+   Review: I absolutely love the TrekMaster Camping Chair! It's lightweight, sturdy, and super comfortable. The padded armrests and breathable fabric make it perfect for long camping trips. Highly recommended for outdoor enthusiasts!
 
-2) **Rating:** 4
-   **Review:** The TrekMaster Camping Chair is a great value for the price. It's easy to set up and packs down nicely. The cup holder and side pockets are convenient features. The only downside is that it could be a bit more cushioned for added comfort.
+2) Rating: 4
+   Review: The TrekMaster Camping Chair is a great value for the price. It's easy to set up and packs down nicely. The cup holder and side pockets are convenient features. The only downside is that it could be a bit more cushioned for added comfort.
 
-3) **Rating:** 5
-   **Review:** This camping chair exceeded my expectations! It's well-built, durable, and provides excellent back support. The compact design and lightweight construction make it perfect for backpacking trips. I'm thrilled with my purchase!
+3) Rating: 5
+   Review: This camping chair exceeded my expectations! It's well-built, durable, and provides excellent back support. The compact design and lightweight construction make it perfect for backpacking trips. I'm thrilled with my purchase!
 
-4) **Rating:** 3
-   **Review:** The TrekMaster Camping Chair is decent for short outings. It's lightweight and easy to carry, but I found the seat fabric to be less durable than expected. It's suitable for occasional use, but I would recommend something sturdier for frequent camping trips.
+4) Rating: 3
+   Review: The TrekMaster Camping Chair is decent for short outings. It's lightweight and easy to carry, but I found the seat fabric to be less durable than expected. It's suitable for occasional use, but I would recommend something sturdier for frequent camping trips.
 
-5) **Rating:** 4
-   **Review:** I'm happy with my TrekMaster Camping Chair. It's comfortable and sturdy enough to support my weight. The adjustable armrests and storage pockets are handy features. I deducted one star because the chair is a bit low to the ground, making it a bit challenging to get in and out of for some individuals.
+5) Rating: 4
+   Review: I'm happy with my TrekMaster Camping Chair. It's comfortable and sturdy enough to support my weight. The adjustable armrests and storage pockets are handy features. I deducted one star because the chair is a bit low to the ground, making it a bit challenging to get in and out of for some individuals.
 
 ## FAQ
 54) What is the weight capacity of the TrekMaster Camping Chair?

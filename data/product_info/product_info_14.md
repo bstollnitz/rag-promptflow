@@ -25,23 +25,23 @@ Sleeping Bags
 
 ## Technical Specs
 
-- **Temperature Rating**: 15°F to 30°F
-- **Insulation**: Premium synthetic insulation
-- **Color:** Green
-- **Shell Material**: Durable and water-resistant ripstop nylon
-- **Lining Material**: Soft and breathable polyester fabric
-- **Zipper**: YKK zipper with anti-snag design
-- **Hood Design**: Adjustable hood with drawcord
-- **Draft Tube**: Insulated draft tube along the zipper
-- **Zipper Baffle**: Full-length zipper baffle
-- **Shape**: Mummy shape
-- **Compression Sack**: Included
-- **Sizes Available**: Multiple sizes available
-- **Weight**: Varies depending on size, approximately 2.5 lbs
-- **Dimensions (packed)**: 84 in x 32 in
-- **Gender**: Unisex
-- **Recommended Use**: Hiking, camping, backpacking
-- **Price**: $130
+- Temperature Rating: 15°F to 30°F
+- Insulation: Premium synthetic insulation
+- Color: Green
+- Shell Material: Durable and water-resistant ripstop nylon
+- Lining Material: Soft and breathable polyester fabric
+- Zipper: YKK zipper with anti-snag design
+- Hood Design: Adjustable hood with drawcord
+- Draft Tube: Insulated draft tube along the zipper
+- Zipper Baffle: Full-length zipper baffle
+- Shape: Mummy shape
+- Compression Sack: Included
+- Sizes Available: Multiple sizes available
+- Weight: Varies depending on size, approximately 2.5 lbs
+- Dimensions (packed): 84 in x 32 in
+- Gender: Unisex
+- Recommended Use: Hiking, camping, backpacking
+- Price: $130
 
 ## User Guide/Manual
 
@@ -74,13 +74,13 @@ The MountainDream Sleeping Bag is rated for temperatures between 15°F to 30°F.
 
 ## Caution Information
 
-1. **DO NOT machine wash the sleeping bag** 
-2. **DO NOT expose the sleeping bag to direct heat sources** 
-3. **DO NOT store the sleeping bag in a compressed state** 
-4. **DO NOT use the sleeping bag as a ground cover** 
-5. **DO NOT leave the sleeping bag wet or damp** 
-6. **DO NOT use sharp objects inside the sleeping bag** 
-7. **DO NOT exceed the temperature rating** 
+1. DO NOT machine wash the sleeping bag 
+2. DO NOT expose the sleeping bag to direct heat sources 
+3. DO NOT store the sleeping bag in a compressed state 
+4. DO NOT use the sleeping bag as a ground cover 
+5. DO NOT leave the sleeping bag wet or damp 
+6. DO NOT use sharp objects inside the sleeping bag 
+7. DO NOT exceed the temperature rating 
 
 ## Warranty Information
 
@@ -127,25 +127,25 @@ This warranty is in addition to any rights provided by consumer protection laws 
 Please refer to the accompanying product documentation for more information on care and maintenance instructions.
 
 ## Return Policy
-- **If Membership status "None":**	If you are not satisfied with your purchase, you can return it within 30 days for a full refund. The product must be unused and in its original packaging.
-- **If Membership status "Gold":**	Gold members can return their sleeping bags within 60 days of purchase for a full refund or exchange. The product must be unused and in its original packaging.
-- **If Membership status "Platinum":**	Platinum members can return their sleeping bags within 90 days of purchase for a full refund or exchange. The product must be unused and in its original packaging. Additionally, Platinum members receive a 10% discount on all sleeping bags purchases but from the same product brand.
+- If Membership status "None":	If you are not satisfied with your purchase, you can return it within 30 days for a full refund. The product must be unused and in its original packaging.
+- If Membership status "Gold":	Gold members can return their sleeping bags within 60 days of purchase for a full refund or exchange. The product must be unused and in its original packaging.
+- If Membership status "Platinum":	Platinum members can return their sleeping bags within 90 days of purchase for a full refund or exchange. The product must be unused and in its original packaging. Additionally, Platinum members receive a 10% discount on all sleeping bags purchases but from the same product brand.
 
 ## Reviews
-1) **Rating:** 4
-   **Review:** I recently used the MountainDream Sleeping Bag on a backpacking trip, and it kept me warm and comfortable throughout the night. The insulation is excellent, and the materials feel high-quality. The size is perfect for me, and I appreciate the included compression sack for easy storage. Overall, a great sleeping bag for the price.
+1) Rating: 4
+   Review: I recently used the MountainDream Sleeping Bag on a backpacking trip, and it kept me warm and comfortable throughout the night. The insulation is excellent, and the materials feel high-quality. The size is perfect for me, and I appreciate the included compression sack for easy storage. Overall, a great sleeping bag for the price.
 
-2) **Rating:** 5
-   **Review:** I am extremely impressed with the MountainDream Sleeping Bag. It exceeded my expectations in terms of warmth and comfort. The insulation is top-notch, and I stayed cozy even on colder nights. The design is well-thought-out with a hood and draft collar to keep the warmth in. The zippers are smooth and sturdy. Highly recommended for any camping or backpacking adventure.
+2) Rating: 5
+   Review: I am extremely impressed with the MountainDream Sleeping Bag. It exceeded my expectations in terms of warmth and comfort. The insulation is top-notch, and I stayed cozy even on colder nights. The design is well-thought-out with a hood and draft collar to keep the warmth in. The zippers are smooth and sturdy. Highly recommended for any camping or backpacking adventure.
 
-3) **Rating:** 3
-   **Review:** The MountainDream Sleeping Bag is decent for the price, but I found it a bit bulky and heavy to carry on long hikes. The insulation kept me warm, but it could be improved for colder temperatures. The zippers tended to snag occasionally, which was a bit frustrating. Overall, it's an average sleeping bag suitable for casual camping trips.
+3) Rating: 3
+   Review: The MountainDream Sleeping Bag is decent for the price, but I found it a bit bulky and heavy to carry on long hikes. The insulation kept me warm, but it could be improved for colder temperatures. The zippers tended to snag occasionally, which was a bit frustrating. Overall, it's an average sleeping bag suitable for casual camping trips.
 
-4) **Rating:** 5
-   **Review:** I've used the MountainDream Sleeping Bag on multiple camping trips, and it has never disappointed me. The insulation is fantastic, providing excellent warmth even in chilly weather. The fabric feels durable, and the zippers glide smoothly. The included stuff sack makes it convenient to pack and carry. Highly satisfied with my purchase!
+4) Rating: 5
+   Review: I've used the MountainDream Sleeping Bag on multiple camping trips, and it has never disappointed me. The insulation is fantastic, providing excellent warmth even in chilly weather. The fabric feels durable, and the zippers glide smoothly. The included stuff sack makes it convenient to pack and carry. Highly satisfied with my purchase!
 
-5) **Rating:** 4
-   **Review:** The MountainDream Sleeping Bag is a solid choice for backpacking and camping. It's lightweight and compact, making it easy to fit into my backpack. The insulation kept me warm during cold nights, and the hood design provided extra comfort. The only downside is that it's a bit snug for taller individuals. Overall, a reliable sleeping bag for outdoor adventures.
+5) Rating: 4
+   Review: The MountainDream Sleeping Bag is a solid choice for backpacking and camping. It's lightweight and compact, making it easy to fit into my backpack. The insulation kept me warm during cold nights, and the hood design provided extra comfort. The only downside is that it's a bit snug for taller individuals. Overall, a reliable sleeping bag for outdoor adventures.
 
 ## FAQ
 63) What is the temperature rating for the MountainDream Sleeping Bag?

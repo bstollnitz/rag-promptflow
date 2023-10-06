@@ -27,27 +27,27 @@ Backpacks
 
 
 ## Technical Specs
-**Best Use**: Hiking  
-**Capacity**: 40 liters  
-**Material**: Nylon  
-**Color**: Blue  
-**Dimensions**: 24 inches x 14 inches x 8 inches (height x width x depth)  
-**Weight**: 2.5 lbs  
-**Waterproof**: No  
-**Number of Compartments**: Multiple  
-**Laptop Compartment**: No  
-**Hydration System Compatibility**: Yes  
-**Adjustable Straps**: Yes  
-**Hip Belt**: Yes  
-**Sternum Strap**: Yes  
-**External Attachment Points**: Yes  
-**Gear Loops**: Yes  
-**Rain Cover**: No  
-**Reflective Accents**: Yes  
-**Back Panel Ventilation**: Yes  
-**Side Mesh Pockets**: Yes  
-**Load Compression Straps**: Yes  
-**Haul Handle**: Yes  
+Best Use: Hiking  
+Capacity: 40 liters  
+Material: Nylon  
+Color: Blue  
+Dimensions: 24 inches x 14 inches x 8 inches (height x width x depth)  
+Weight: 2.5 lbs  
+Waterproof: No  
+Number of Compartments: Multiple  
+Laptop Compartment: No  
+Hydration System Compatibility: Yes  
+Adjustable Straps: Yes  
+Hip Belt: Yes  
+Sternum Strap: Yes  
+External Attachment Points: Yes  
+Gear Loops: Yes  
+Rain Cover: No  
+Reflective Accents: Yes  
+Back Panel Ventilation: Yes  
+Side Mesh Pockets: Yes  
+Load Compression Straps: Yes  
+Haul Handle: Yes  
 
 ## Adventurer Pro Backpack User Manual
 
@@ -142,19 +142,19 @@ We hope you enjoy your Adventurer Pro Backpack and have a fantastic outdoor expe
 
 ## Warranty Information
 
-**Warranty Duration:** The Adventurer Pro Backpack is covered by a 2-year limited warranty from the date of purchase.
+Warranty Duration: The Adventurer Pro Backpack is covered by a 2-year limited warranty from the date of purchase.
 
-**Warranty Coverage:** The warranty covers manufacturing defects in materials and workmanship. It includes issues such as stitching defects, zipper malfunctions, or hardware failure.
+Warranty Coverage: The warranty covers manufacturing defects in materials and workmanship. It includes issues such as stitching defects, zipper malfunctions, or hardware failure.
 
-**Exclusions:** The warranty does not cover damages caused by improper use, accidents, normal wear and tear, unauthorized modifications, or failure to follow care and maintenance instructions.
+Exclusions: The warranty does not cover damages caused by improper use, accidents, normal wear and tear, unauthorized modifications, or failure to follow care and maintenance instructions.
 
-**Warranty Claim Process:** In the event of a warranty claim, please contact our customer support with your proof of purchase and a detailed description of the issue. Our support team will guide you through the necessary steps to assess the claim and provide a resolution.
+Warranty Claim Process: In the event of a warranty claim, please contact our customer support with your proof of purchase and a detailed description of the issue. Our support team will guide you through the necessary steps to assess the claim and provide a resolution.
 
-**Warranty Remedies:** Depending on the nature of the warranty claim, we will either repair or replace the defective product. If the exact product is no longer available, we may offer a comparable replacement at our discretion.
+Warranty Remedies: Depending on the nature of the warranty claim, we will either repair or replace the defective product. If the exact product is no longer available, we may offer a comparable replacement at our discretion.
 
-**Limitations:** The warranty is non-transferable and applies only to the original purchaser of the Adventurer Pro Backpack. It is valid only when the product is purchased from an authorized retailer.
+Limitations: The warranty is non-transferable and applies only to the original purchaser of the Adventurer Pro Backpack. It is valid only when the product is purchased from an authorized retailer.
 
-**Legal Rights:** This warranty gives you specific legal rights, and you may also have other rights that vary by jurisdiction.
+Legal Rights: This warranty gives you specific legal rights, and you may also have other rights that vary by jurisdiction.
 
 For any warranty-related inquiries or to initiate a warranty claim, please contact our customer support using the provided contact information.
 
@@ -163,25 +163,25 @@ Please retain your proof of purchase as it will be required to verify warranty e
 Kindly note that the warranty period, coverage, and claim process are subject to change. Please refer to the warranty card included with your product for the most up-to-date and accurate information.
 
 ## Return Policy
-- **If Membership status "None        ":**	Returns are accepted within 30 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Customer is responsible for the cost of return shipping. Once the returned item is received, a refund will be issued for the cost of the item minus a 10% restocking fee. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
-- **If Membership status "Gold":**	Returns are accepted within 60 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Free return shipping is provided. Once the returned item is received, a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
-- **If Membership status "Platinum":**	Returns are accepted within 90 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Free return shipping is provided, and a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.                      
+- If Membership status "None        ":	Returns are accepted within 30 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Customer is responsible for the cost of return shipping. Once the returned item is received, a refund will be issued for the cost of the item minus a 10% restocking fee. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "Gold":	Returns are accepted within 60 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Free return shipping is provided. Once the returned item is received, a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "Platinum":	Returns are accepted within 90 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Free return shipping is provided, and a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.                      
 
 ## Reviews
-6) **Rating:** 5
-   **Review:** I am extremely happy with my Adventurer Pro Backpack! It has ample space, multiple compartments, and is super comfortable to wear. The hydration system compatibility is a major plus. I'm thrilled with this purchase!
+6) Rating: 5
+   Review: I am extremely happy with my Adventurer Pro Backpack! It has ample space, multiple compartments, and is super comfortable to wear. The hydration system compatibility is a major plus. I'm thrilled with this purchase!
 
-7) **Rating:** 4
-   **Review:** I bought the Adventurer Pro Backpack, and while it's comfortable and has many useful features, I wish it came in more colors. The blue color just isn't my favorite. Overall, it's a good backpack.
+7) Rating: 4
+   Review: I bought the Adventurer Pro Backpack, and while it's comfortable and has many useful features, I wish it came in more colors. The blue color just isn't my favorite. Overall, it's a good backpack.
 
-8) **Rating:** 5
-   **Review:** The Adventurer Pro Backpack is perfect for my hiking trips. The ergonomic design and adjustable straps make it comfortable to wear all day, and the multiple compartments help me stay organized.
+8) Rating: 5
+   Review: The Adventurer Pro Backpack is perfect for my hiking trips. The ergonomic design and adjustable straps make it comfortable to wear all day, and the multiple compartments help me stay organized.
 
-9) **Rating:** 4
-   **Review:** I like the Adventurer Pro Backpack, but I wish it had more external pockets for easy access to small items. It's comfortable and has many useful features, but this addition would make it even better.
+9) Rating: 4
+   Review: I like the Adventurer Pro Backpack, but I wish it had more external pockets for easy access to small items. It's comfortable and has many useful features, but this addition would make it even better.
 
-10) **Rating:** 5
-   **Review:** This backpack is a game changer for my hiking adventures. The 40L capacity is perfect for extended trips, and the hydration system compatibility is extremely convenient. I highly recommend it to any serious hiker.
+10) Rating: 5
+   Review: This backpack is a game changer for my hiking adventures. The 40L capacity is perfect for extended trips, and the hydration system compatibility is extremely convenient. I highly recommend it to any serious hiker.
 
 ## FAQ
 6) What is the maximum weight capacity of the Adventurer Pro Backpack?

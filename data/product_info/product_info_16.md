@@ -22,21 +22,21 @@ Backpacks
 
 ## Technical Specs
 
-- **Best Use:** Hiking
-- **Material:** Lightweight and durable fabric
-- **Color:** Green
-- **Capacity:** Spacious main compartment with multiple pockets and compartments
-- **Shoulder Straps:** Adjustable for a custom fit
-- **Back Panel:** Padded for comfort and support
-- **Ventilation:** Breathable mesh panels
-- **Attachment Points:** External attachment points for gear
-- **Water Resistance:** Water-resistant fabric
-- **Hydration System Compatibility:** Integrated hydration system compatibility
-- **Reflective Accents:** Yes
-- **Sternum Strap:** Adjustable for added stability
-- **Waist Belt:** Adjustable for added support
-- **Dimensions:** 20in x 12in x 6in
-- **Weight:** 1.5 lbs
+- Best Use: Hiking
+- Material: Lightweight and durable fabric
+- Color: Green
+- Capacity: Spacious main compartment with multiple pockets and compartments
+- Shoulder Straps: Adjustable for a custom fit
+- Back Panel: Padded for comfort and support
+- Ventilation: Breathable mesh panels
+- Attachment Points: External attachment points for gear
+- Water Resistance: Water-resistant fabric
+- Hydration System Compatibility: Integrated hydration system compatibility
+- Reflective Accents: Yes
+- Sternum Strap: Adjustable for added stability
+- Waist Belt: Adjustable for added support
+- Dimensions: 20in x 12in x 6in
+- Weight: 1.5 lbs
 
 ## User Guide/Manual
 
@@ -165,25 +165,25 @@ Please note that this warranty does not cover damages resulting from:
 Our dedicated customer care representatives are available during business hours to assist you with any questions or concerns you may have regarding the TrailLite Daypack or its warranty.
 
 ## Return Policy
-- **If Membership status "None        ":**	Returns are accepted within 30 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Customer is responsible for the cost of return shipping. Once the returned item is received, a refund will be issued for the cost of the item minus a 10% restocking fee. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
-- **If Membership status "Gold":**	Returns are accepted within 60 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Free return shipping is provided. Once the returned item is received, a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
-- **If Membership status "Platinum":**	Returns are accepted within 90 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Free return shipping is provided, and a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.                      
+- If Membership status "None        ":	Returns are accepted within 30 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Customer is responsible for the cost of return shipping. Once the returned item is received, a refund will be issued for the cost of the item minus a 10% restocking fee. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "Gold":	Returns are accepted within 60 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Free return shipping is provided. Once the returned item is received, a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "Platinum":	Returns are accepted within 90 days of purchase, provided the backpack is unused, undamaged and in its original packaging. Free return shipping is provided, and a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.                      
 
 ## Reviews
-1) **Rating:** 4
-   **Review:** The TrailLite Daypack is a great companion for my hiking trips. It has ample storage space to fit all my essentials, and the adjustable straps provide a comfortable fit. The material is durable and water-resistant, keeping my belongings safe even during unexpected rain showers. The only improvement I would suggest is adding more internal compartments for better organization.
+1) Rating: 4
+   Review: The TrailLite Daypack is a great companion for my hiking trips. It has ample storage space to fit all my essentials, and the adjustable straps provide a comfortable fit. The material is durable and water-resistant, keeping my belongings safe even during unexpected rain showers. The only improvement I would suggest is adding more internal compartments for better organization.
 
-2) **Rating:** 5
-   **Review:** I love my TrailLite Daypack! It's lightweight, yet sturdy enough to carry all my gear. The padded shoulder straps and back panel provide excellent comfort, even during long hikes. The multiple pockets and compartments help me stay organized, and the water bottle holder is a convenient feature. Highly recommended for outdoor enthusiasts!
+2) Rating: 5
+   Review: I love my TrailLite Daypack! It's lightweight, yet sturdy enough to carry all my gear. The padded shoulder straps and back panel provide excellent comfort, even during long hikes. The multiple pockets and compartments help me stay organized, and the water bottle holder is a convenient feature. Highly recommended for outdoor enthusiasts!
 
-3) **Rating:** 3
-   **Review:** The TrailLite Daypack is decent for its price. It offers sufficient storage space and the overall construction seems durable. However, I found the zippers to be a bit flimsy, and they tend to get stuck sometimes. The shoulder straps could also use some extra padding for improved comfort, especially when carrying heavier loads.
+3) Rating: 3
+   Review: The TrailLite Daypack is decent for its price. It offers sufficient storage space and the overall construction seems durable. However, I found the zippers to be a bit flimsy, and they tend to get stuck sometimes. The shoulder straps could also use some extra padding for improved comfort, especially when carrying heavier loads.
 
-4) **Rating:** 5
-   **Review:** I'm extremely satisfied with my TrailLite Daypack. The quality of the materials is top-notch, and the stitching is strong and reliable. The pack is spacious enough to fit my hiking essentials, and the organization pockets help me keep everything in place. The adjustable straps allow for a personalized fit, and the lightweight design adds to the overall comfort. Highly recommended!
+4) Rating: 5
+   Review: I'm extremely satisfied with my TrailLite Daypack. The quality of the materials is top-notch, and the stitching is strong and reliable. The pack is spacious enough to fit my hiking essentials, and the organization pockets help me keep everything in place. The adjustable straps allow for a personalized fit, and the lightweight design adds to the overall comfort. Highly recommended!
 
-5) **Rating:** 4
-   **Review:** The TrailLite Daypack is a reliable and affordable option for day hiking. It has enough room to hold my essentials, including a hydration bladder, snacks, and extra layers. The padded back panel and shoulder straps make it comfortable to carry, even on longer hikes. The only downside is that it lacks a dedicated rain cover, so I had to purchase one separately for added protection.
+5) Rating: 4
+   Review: The TrailLite Daypack is a reliable and affordable option for day hiking. It has enough room to hold my essentials, including a hydration bladder, snacks, and extra layers. The padded back panel and shoulder straps make it comfortable to carry, even on longer hikes. The only downside is that it lacks a dedicated rain cover, so I had to purchase one separately for added protection.
 
 ## FAQ
 71) What is the recommended load capacity for the TrailLite Daypack?

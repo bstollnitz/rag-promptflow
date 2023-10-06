@@ -80,32 +80,32 @@ The CompactCook Camping Stove is a portable and lightweight stove designed for o
 Your CompactCook Camping Stove is covered by a limited warranty. For warranty details and contact information, refer to the warranty card included with your purchase.
 
 ## Caution Information
-1. **Do not use indoors:** The CompactCook Camping Stove is designed for outdoor use only. Do not attempt to use it indoors, as it can lead to carbon monoxide buildup and pose a serious health hazard.
+1. Do not use indoors: The CompactCook Camping Stove is designed for outdoor use only. Do not attempt to use it indoors, as it can lead to carbon monoxide buildup and pose a serious health hazard.
 
-2. **Do not leave unattended:** Always supervise the stove while it is in use. Never leave the stove unattended, especially when there are open flames or hot surfaces. This helps prevent accidents and ensures your safety.
+2. Do not leave unattended: Always supervise the stove while it is in use. Never leave the stove unattended, especially when there are open flames or hot surfaces. This helps prevent accidents and ensures your safety.
 
-3. **Do not operate near flammable materials:** Keep the stove away from flammable materials such as tents, dry grass, leaves, or any other combustible items. Maintain a safe distance to prevent accidental fires.
+3. Do not operate near flammable materials: Keep the stove away from flammable materials such as tents, dry grass, leaves, or any other combustible items. Maintain a safe distance to prevent accidental fires.
 
-4. **Do not touch the stove while hot:** Avoid touching the stove, particularly the burner and other metal parts, when it is in use or immediately after use. Allow sufficient time for the stove to cool down before handling.
+4. Do not touch the stove while hot: Avoid touching the stove, particularly the burner and other metal parts, when it is in use or immediately after use. Allow sufficient time for the stove to cool down before handling.
 
-5. **Do not modify or alter the stove:** The CompactCook Camping Stove is designed and manufactured with specific safety features and specifications. Do not attempt to modify or alter the stove in any way, as it may compromise its performance and safety.
+5. Do not modify or alter the stove: The CompactCook Camping Stove is designed and manufactured with specific safety features and specifications. Do not attempt to modify or alter the stove in any way, as it may compromise its performance and safety.
 
-6. **Do not use incompatible fuel:** Use only the recommended fuel type specified by the manufacturer. Using incompatible fuel sources can lead to malfunction, poor performance, or damage to the stove.
+6. Do not use incompatible fuel: Use only the recommended fuel type specified by the manufacturer. Using incompatible fuel sources can lead to malfunction, poor performance, or damage to the stove.
 
-7. **Do not overload the stove:** Avoid placing oversized or excessively heavy cookware on the stove. Overloading the stove can cause instability, tipping, or damage to the stove.
+7. Do not overload the stove: Avoid placing oversized or excessively heavy cookware on the stove. Overloading the stove can cause instability, tipping, or damage to the stove.
 
-8. **Do not store fuel canisters improperly:** Store fuel canisters in a cool, dry, and well-ventilated area, away from direct sunlight and sources of heat. Do not expose them to extreme temperatures or store them near open flames.
+8. Do not store fuel canisters improperly: Store fuel canisters in a cool, dry, and well-ventilated area, away from direct sunlight and sources of heat. Do not expose them to extreme temperatures or store them near open flames.
 
-9. **Do not use damaged components:** Inspect the stove and its components regularly for any signs of damage or wear. If you notice any cracks, dents, or other issues, refrain from using the stove and replace the damaged parts before using it again.
+9. Do not use damaged components: Inspect the stove and its components regularly for any signs of damage or wear. If you notice any cracks, dents, or other issues, refrain from using the stove and replace the damaged parts before using it again.
 
-10. **Do not disregard safety instructions:** Always follow the safety instructions provided by the manufacturer in the user manual or product documentation. Ignoring safety guidelines may lead to accidents, injuries, or damage to property.
+10. Do not disregard safety instructions: Always follow the safety instructions provided by the manufacturer in the user manual or product documentation. Ignoring safety guidelines may lead to accidents, injuries, or damage to property.
 
 ## Warranty Information
 
-**Warranty Coverage:**
+Warranty Coverage:
 During the warranty period, if any defects arise in the stove that are attributable to faulty materials or workmanship, we will, at our discretion, repair or replace the stove or its components free of charge. The warranty is valid only for the original purchaser and is non-transferable.
 
-**Exclusions:**
+Exclusions:
 The warranty does not cover damages or malfunctions resulting from:
 - Misuse, abuse, or improper handling of the stove
 - Use of incompatible fuel sources or improper fuel storage
@@ -113,7 +113,7 @@ The warranty does not cover damages or malfunctions resulting from:
 - Normal wear and tear, including scratches, dents, or fading
 - Accidental damage, acts of nature, or any other events beyond our control
 
-**Obtaining Warranty Service:**
+Obtaining Warranty Service:
 In the event that you experience any issues with your CompactCook Camping Stove covered by this warranty, please contact our customer care department using the following contact details:
 
 - Customer Care Contact: AdventureGear Support
@@ -128,31 +128,31 @@ To initiate a warranty claim, please provide the following information:
 
 Our customer care team will guide you through the warranty process and provide further instructions on how to proceed.
 
-**Limitations of Liability:**
+Limitations of Liability:
 Our liability under this warranty is limited to the repair or replacement of the defective stove or components. We are not liable for any indirect, incidental, or consequential damages arising from the use or inability to use the stove.
 
 Please refer to the user manual and safety instructions provided with your CompactCook Camping Stove for proper care, maintenance, and safety guidelines.
 
 ## Return Policy
-- **If Membership status "None":**	If you are not satisfied with your purchase, you can return it within 30 days for a full refund. The product must be unused and in its original packaging.
-- **If Membership status "Gold":**	Gold members can return their camping stoves within 60 days of purchase for a full refund or exchange. The product must be unused and in its original packaging.
-- **If Membership status "Platinum":**	Platinum members can return their camping stoves within 90 days of purchase for a full refund or exchange. The product must be unused and in its original packaging. Additionally, Platinum members receive a 10% discount on all camping stove purchases but from the same product brand.
+- If Membership status "None":	If you are not satisfied with your purchase, you can return it within 30 days for a full refund. The product must be unused and in its original packaging.
+- If Membership status "Gold":	Gold members can return their camping stoves within 60 days of purchase for a full refund or exchange. The product must be unused and in its original packaging.
+- If Membership status "Platinum":	Platinum members can return their camping stoves within 90 days of purchase for a full refund or exchange. The product must be unused and in its original packaging. Additionally, Platinum members receive a 10% discount on all camping stove purchases but from the same product brand.
 
 ## Reviews
-1) **Rating:** 5
-   **Review:** I recently purchased the CompactCook Camping Stove, and it has exceeded my expectations. It's compact and lightweight, making it easy to carry during backpacking trips. The stove heats up quickly and provides a steady flame, allowing me to cook my meals efficiently. The build quality is impressive, and it's incredibly easy to set up and use. I highly recommend this stove for all camping enthusiasts!
+1) Rating: 5
+   Review: I recently purchased the CompactCook Camping Stove, and it has exceeded my expectations. It's compact and lightweight, making it easy to carry during backpacking trips. The stove heats up quickly and provides a steady flame, allowing me to cook my meals efficiently. The build quality is impressive, and it's incredibly easy to set up and use. I highly recommend this stove for all camping enthusiasts!
 
-2) **Rating:** 4
-   **Review:** The CompactCook Camping Stove is a reliable companion for outdoor adventures. It's sturdy and well-built, ensuring stability during cooking. The flame control is excellent, allowing precise temperature adjustments. The compact size is perfect for backpacking, and the included carrying case makes transportation a breeze. My only minor gripe is that the ignition system can be a bit finicky at times. Overall, it's a great stove for the price.
+2) Rating: 4
+   Review: The CompactCook Camping Stove is a reliable companion for outdoor adventures. It's sturdy and well-built, ensuring stability during cooking. The flame control is excellent, allowing precise temperature adjustments. The compact size is perfect for backpacking, and the included carrying case makes transportation a breeze. My only minor gripe is that the ignition system can be a bit finicky at times. Overall, it's a great stove for the price.
 
-3) **Rating:** 3
-   **Review:** I have mixed feelings about the CompactCook Camping Stove. On one hand, it's lightweight and easy to assemble. However, I found the heat output to be a bit underwhelming, especially when trying to boil water quickly. The stability is decent, but I would have liked to see better wind resistance. It's an okay stove for basic cooking needs, but if you require more power and efficiency, you might want to explore other options.
+3) Rating: 3
+   Review: I have mixed feelings about the CompactCook Camping Stove. On one hand, it's lightweight and easy to assemble. However, I found the heat output to be a bit underwhelming, especially when trying to boil water quickly. The stability is decent, but I would have liked to see better wind resistance. It's an okay stove for basic cooking needs, but if you require more power and efficiency, you might want to explore other options.
 
-4) **Rating:** 5
-   **Review:** The CompactCook Camping Stove is a fantastic addition to my camping gear. It's compact, lightweight, and incredibly efficient. I love how quickly it heats up, allowing me to prepare meals in no time. The flame control is precise, and the stability is impressive, even on uneven surfaces. The included carrying case is a bonus for easy storage and transportation. I'm extremely satisfied with this stove and would highly recommend it to fellow campers.
+4) Rating: 5
+   Review: The CompactCook Camping Stove is a fantastic addition to my camping gear. It's compact, lightweight, and incredibly efficient. I love how quickly it heats up, allowing me to prepare meals in no time. The flame control is precise, and the stability is impressive, even on uneven surfaces. The included carrying case is a bonus for easy storage and transportation. I'm extremely satisfied with this stove and would highly recommend it to fellow campers.
 
-5) **Rating:** 4
-   **Review:** I've been using the CompactCook Camping Stove for a few camping trips now, and overall, it has performed well. The construction is solid, and it feels durable. The stove ignites easily, and the flame is consistent. The only drawback is that the burner size is a bit small, which limits the size of pots and pans you can use. If you're cooking for a larger group, you may need to consider a larger stove. Nonetheless, it's a reliable and convenient stove for solo or small group camping.
+5) Rating: 4
+   Review: I've been using the CompactCook Camping Stove for a few camping trips now, and overall, it has performed well. The construction is solid, and it feels durable. The stove ignites easily, and the flame is consistent. The only drawback is that the burner size is a bit small, which limits the size of pots and pans you can use. If you're cooking for a larger group, you may need to consider a larger stove. Nonetheless, it's a reliable and convenient stove for solo or small group camping.
 
 ## FAQ
 87) What type of fuel does the CompactCook Camping Stove use?

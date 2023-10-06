@@ -26,20 +26,20 @@ Based on the provided features, here are the technical specifications for the Tr
 
 ## Technical Specs
 
-- **Best Use:** Hiking
-- **Material:** Synthetic
-- **Closure:** Adjustable straps
-- **Footbed:** Cushioned footbed
-- **Outsole:** Rubber with deep treads
-- **Toe Protection:** Yes
-- **Drainage System:** Yes
-- **Midsole:** Shock-absorbing
-- **Insole:** Removable
-- **Suitable For:** Hiking, walking, outdoor activities
-- **Sizes Available:** Various sizes
-- **Colors Available:** Brown
-- **Weight:** 1.5 lbs
-- **Dimensions:** 7-12 (US)
+- Best Use: Hiking
+- Material: Synthetic
+- Closure: Adjustable straps
+- Footbed: Cushioned footbed
+- Outsole: Rubber with deep treads
+- Toe Protection: Yes
+- Drainage System: Yes
+- Midsole: Shock-absorbing
+- Insole: Removable
+- Suitable For: Hiking, walking, outdoor activities
+- Sizes Available: Various sizes
+- Colors Available: Brown
+- Weight: 1.5 lbs
+- Dimensions: 7-12 (US)
 
 Sure! Here's a user guide for the TrekStar Hiking Sandals:
 
@@ -112,7 +112,7 @@ Proper care and maintenance will prolong the life of your TrekStar Hiking Sandal
 Certainly! Here's the Warranty Information for the TrekStar Hiking Sandals:
 
 ## Warranty Information
-- Warranty Coverage: The TrekStar Hiking Sandals are covered by a **1-year limited warranty** from the date of purchase. The warranty covers manufacturing defects and workmanship under normal use.
+- Warranty Coverage: The TrekStar Hiking Sandals are covered by a 1-year limited warranty from the date of purchase. The warranty covers manufacturing defects and workmanship under normal use.
 
 - Warranty Claims: If you encounter any issues with your sandals during the warranty period, please contact our customer care team (details provided below) to initiate a warranty claim. Our team will guide you through the process and assist you with the necessary steps.
 
@@ -123,7 +123,7 @@ Certainly! Here's the Warranty Information for the TrekStar Hiking Sandals:
 - Proof of Purchase: To initiate a warranty claim, you will need to provide a proof of purchase, such as a receipt or order confirmation, clearly indicating the date and place of purchase.
 
 For any warranty-related inquiries or to initiate a warranty claim, please contact our customer care team:
-**TrekStar Hiking Sandals Customer Care**
+TrekStar Hiking Sandals Customer Care
 - Phone: 1-800-123-4567
 - Email: support@trekstar.com
 - Hours of Operation: Monday to Friday, 9:00 AM to 5:00 PM (EST)
@@ -133,25 +133,25 @@ Our customer care team is dedicated to providing excellent service and ensuring 
 Please note that the warranty is valid only for the original purchaser and is non-transferable.
 
 ## Return Policy
-- **If Membership status "None        ":**	Returns are accepted within 30 days of purchase, provided the tent is unused, undamaged and in its original packaging. Customer is responsible for the cost of return shipping. Once the returned item is received, a refund will be issued for the cost of the item minus a 10% restocking fee. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
-- **If Membership status "Gold":**	Returns are accepted within 60 days of purchase, provided the tent is unused, undamaged and in its original packaging. Free return shipping is provided. Once the returned item is received, a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
-- **If Membership status "Platinum":**	Returns are accepted within 90 days of purchase, provided the tent is unused, undamaged and in its original packaging. Free return shipping is provided, and a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "None        ":	Returns are accepted within 30 days of purchase, provided the tent is unused, undamaged and in its original packaging. Customer is responsible for the cost of return shipping. Once the returned item is received, a refund will be issued for the cost of the item minus a 10% restocking fee. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "Gold":	Returns are accepted within 60 days of purchase, provided the tent is unused, undamaged and in its original packaging. Free return shipping is provided. Once the returned item is received, a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "Platinum":	Returns are accepted within 90 days of purchase, provided the tent is unused, undamaged and in its original packaging. Free return shipping is provided, and a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
 
 ## Reviews
-1) **Rating: 5**
-   **Review:** I absolutely love my TrekStar Hiking Sandals! They provide excellent comfort and support during long hikes. The adjustable straps allow for a perfect fit, and the durable construction gives me confidence on rugged terrains. These sandals are a must-have for any outdoor enthusiast!
+1) Rating: 5
+   Review: I absolutely love my TrekStar Hiking Sandals! They provide excellent comfort and support during long hikes. The adjustable straps allow for a perfect fit, and the durable construction gives me confidence on rugged terrains. These sandals are a must-have for any outdoor enthusiast!
 
-2) **Rating: 4**
-   **Review:** The TrekStar Hiking Sandals are great for warm weather adventures. They have a sturdy sole that offers good traction, and the open design keeps my feet cool. The straps are easy to adjust, ensuring a secure fit. The only improvement I would suggest is adding more cushioning for added comfort.
+2) Rating: 4
+   Review: The TrekStar Hiking Sandals are great for warm weather adventures. They have a sturdy sole that offers good traction, and the open design keeps my feet cool. The straps are easy to adjust, ensuring a secure fit. The only improvement I would suggest is adding more cushioning for added comfort.
 
-3) **Rating: 3**
-   **Review:** The TrekStar Hiking Sandals are decent for the price. They are lightweight and breathable, making them suitable for summer hikes. However, I found that the sizing runs slightly small, so I recommend going up a size for a more comfortable fit. The durability could also be improved for longer-lasting use.
+3) Rating: 3
+   Review: The TrekStar Hiking Sandals are decent for the price. They are lightweight and breathable, making them suitable for summer hikes. However, I found that the sizing runs slightly small, so I recommend going up a size for a more comfortable fit. The durability could also be improved for longer-lasting use.
 
-4) **Rating: 5**
-   **Review:** I am impressed with the quality of the TrekStar Hiking Sandals. They are durable and can withstand various terrains. The adjustable straps provide a customized fit, and the sandals offer good arch support. I've worn them on multiple hikes, and they have held up exceptionally well. Highly recommended!
+4) Rating: 5
+   Review: I am impressed with the quality of the TrekStar Hiking Sandals. They are durable and can withstand various terrains. The adjustable straps provide a customized fit, and the sandals offer good arch support. I've worn them on multiple hikes, and they have held up exceptionally well. Highly recommended!
 
-5) **Rating: 4**
-   **Review:** The TrekStar Hiking Sandals are a reliable choice for outdoor activities. They offer excellent breathability, keeping my feet cool on hot days. The traction is reliable on most surfaces, and the adjustable straps allow for a secure and comfortable fit. My only suggestion would be to add more padding to the footbed for enhanced comfort.
+5) Rating: 4
+   Review: The TrekStar Hiking Sandals are a reliable choice for outdoor activities. They offer excellent breathability, keeping my feet cool on hot days. The traction is reliable on most surfaces, and the adjustable straps allow for a secure and comfortable fit. My only suggestion would be to add more padding to the footbed for enhanced comfort.
 
 ## FAQ
 79) Are the TrekStar Hiking Sandals suitable for water-based activities?

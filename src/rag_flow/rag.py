@@ -124,7 +124,9 @@ def rag(
     openai.api_version = azure_open_ai_connection.api_version
     openai.api_key = azure_open_ai_connection.api_key
 
+    # user_intent = question
     user_intent = _summarize_user_intent(question, chat_history)
+    
     context = _get_context(user_intent, azure_search_connection)
     answer = _rag(context, question, chat_history)
 

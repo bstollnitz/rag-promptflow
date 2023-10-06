@@ -27,24 +27,24 @@ Hiking Footwear
 
 ## Technical Specs
 
-- **Best Use**: Hiking
-- **Upper Material**: Synthetic leather, mesh
-- **Waterproof**: Yes
-- **Color:** Black
-- **Dimensions:** 7-12 (US)
-- **Toe Protection**: Reinforced toe cap
-- **Heel Protection**: Reinforced heel
-- **Insole Type**: Cushioned
-- **Midsole Type**: Supportive
-- **Outsole Type**: Traction outsole with multidirectional lugs
-- **Lining Material**: Breathable mesh
-- **Closure Type**: Quick-lace system
-- **Cushioning Material**: EVA foam
-- **Removable Insole**: Yes
-- **Collar and Tongue Padding**: Yes
-- **Weight (per shoe)**: Varies by size
-- **Reflective Accents**: Yes
-- **Mudguard**: Protective mudguard
+- Best Use: Hiking
+- Upper Material: Synthetic leather, mesh
+- Waterproof: Yes
+- Color: Black
+- Dimensions: 7-12 (US)
+- Toe Protection: Reinforced toe cap
+- Heel Protection: Reinforced heel
+- Insole Type: Cushioned
+- Midsole Type: Supportive
+- Outsole Type: Traction outsole with multidirectional lugs
+- Lining Material: Breathable mesh
+- Closure Type: Quick-lace system
+- Cushioning Material: EVA foam
+- Removable Insole: Yes
+- Collar and Tongue Padding: Yes
+- Weight (per shoe): Varies by size
+- Reflective Accents: Yes
+- Mudguard: Protective mudguard
 
 ## User Guide/Manual:
 
@@ -77,16 +77,16 @@ Proper care and maintenance will help prolong the life of your TrailWalker Hikin
 
 ## Caution Information
 
-1. **Do not expose to extreme temperatures**
-2. **Do not machine wash or dry**
-3. **Do not force-dry with heat sources**
-4. **Do not use harsh chemicals or solvents**
-5. **Do not store when wet or damp**
-6. **Do not ignore signs of wear or damage**
-7. **Do not ignore discomfort or pain**
-8. **Do not use for activities beyond their intended purpose**
-9. **Do not share footwear**
-10. **Do not ignore manufacturer's instructions**
+1. Do not expose to extreme temperatures
+2. Do not machine wash or dry
+3. Do not force-dry with heat sources
+4. Do not use harsh chemicals or solvents
+5. Do not store when wet or damp
+6. Do not ignore signs of wear or damage
+7. Do not ignore discomfort or pain
+8. Do not use for activities beyond their intended purpose
+9. Do not share footwear
+10. Do not ignore manufacturer's instructions
 
 ## Warranty Information
 Please read the following warranty information carefully.
@@ -118,25 +118,25 @@ Please read the following warranty information carefully.
    - Any false information provided or attempts to abuse the warranty policy may result in the claim being rejected.
 
 ## Return Policy
-- **If Membership status "None        ":**	Returns are accepted within 30 days of purchase, provided the tent is unused, undamaged and in its original packaging. Customer is responsible for the cost of return shipping. Once the returned item is received, a refund will be issued for the cost of the item minus a 10% restocking fee. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
-- **If Membership status "Gold":**	Returns are accepted within 60 days of purchase, provided the tent is unused, undamaged and in its original packaging. Free return shipping is provided. Once the returned item is received, a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
-- **If Membership status "Platinum":**	Returns are accepted within 90 days of purchase, provided the tent is unused, undamaged and in its original packaging. Free return shipping is provided, and a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "None        ":	Returns are accepted within 30 days of purchase, provided the tent is unused, undamaged and in its original packaging. Customer is responsible for the cost of return shipping. Once the returned item is received, a refund will be issued for the cost of the item minus a 10% restocking fee. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "Gold":	Returns are accepted within 60 days of purchase, provided the tent is unused, undamaged and in its original packaging. Free return shipping is provided. Once the returned item is received, a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
+- If Membership status "Platinum":	Returns are accepted within 90 days of purchase, provided the tent is unused, undamaged and in its original packaging. Free return shipping is provided, and a full refund will be issued. If the item was damaged during shipping or if there is a defect, the customer should contact customer service within 7 days of receiving the item.
 
 ## Reviews
-1) **Rating:** 4.5
-   **Review:** I recently purchased the TrailWalker Hiking Shoes for a weekend hiking trip, and they exceeded my expectations. The fit is comfortable, providing excellent support throughout the journey. The traction is impressive, allowing me to confidently tackle various terrains. The shoes are also durable, showing no signs of wear after a challenging hike. My only minor complaint is that they could provide slightly more cushioning for longer treks. Overall, these shoes are a reliable choice for outdoor enthusiasts.
+1) Rating: 4.5
+   Review: I recently purchased the TrailWalker Hiking Shoes for a weekend hiking trip, and they exceeded my expectations. The fit is comfortable, providing excellent support throughout the journey. The traction is impressive, allowing me to confidently tackle various terrains. The shoes are also durable, showing no signs of wear after a challenging hike. My only minor complaint is that they could provide slightly more cushioning for longer treks. Overall, these shoes are a reliable choice for outdoor enthusiasts.
 
-2) **Rating:** 5
-   **Review:** The TrailWalker Hiking Shoes are fantastic! I've used them extensively on multiple hiking trips, and they have never let me down. The grip on various surfaces is exceptional, providing stability even on slippery trails. The shoes offer ample protection for my feet without sacrificing comfort. Additionally, they have withstood rough conditions and still look almost brand new. I highly recommend these shoes to anyone seeking a reliable and durable option for their hiking adventures.
+2) Rating: 5
+   Review: The TrailWalker Hiking Shoes are fantastic! I've used them extensively on multiple hiking trips, and they have never let me down. The grip on various surfaces is exceptional, providing stability even on slippery trails. The shoes offer ample protection for my feet without sacrificing comfort. Additionally, they have withstood rough conditions and still look almost brand new. I highly recommend these shoes to anyone seeking a reliable and durable option for their hiking adventures.
 
-3) **Rating:** 3.5
-   **Review:** I have mixed feelings about the TrailWalker Hiking Shoes. On the positive side, they offer decent support and have good traction on most terrains. However, I found the sizing to be slightly off, and the shoes took a bit of breaking in before they felt comfortable. Also, while they are durable overall, I noticed some minor wear and tear on the outsole after a few months of regular use. They are a decent choice for occasional hikers but may not be ideal for intense or prolonged expeditions.
+3) Rating: 3.5
+   Review: I have mixed feelings about the TrailWalker Hiking Shoes. On the positive side, they offer decent support and have good traction on most terrains. However, I found the sizing to be slightly off, and the shoes took a bit of breaking in before they felt comfortable. Also, while they are durable overall, I noticed some minor wear and tear on the outsole after a few months of regular use. They are a decent choice for occasional hikers but may not be ideal for intense or prolonged expeditions.
 
-4) **Rating:** 4
-   **Review:** I purchased the TrailWalker Hiking Shoes for a hiking trip in rugged mountain terrain. They performed admirably, providing excellent stability and protection. The waterproofing feature kept my feet dry during unexpected rain showers. The shoes are also lightweight, which is a bonus for long hikes. However, I did notice a small amount of discomfort around the toe area after extended periods of walking. Nevertheless, these shoes are a reliable option for most hiking adventures.
+4) Rating: 4
+   Review: I purchased the TrailWalker Hiking Shoes for a hiking trip in rugged mountain terrain. They performed admirably, providing excellent stability and protection. The waterproofing feature kept my feet dry during unexpected rain showers. The shoes are also lightweight, which is a bonus for long hikes. However, I did notice a small amount of discomfort around the toe area after extended periods of walking. Nevertheless, these shoes are a reliable option for most hiking adventures.
 
-5) **Rating:** 5
-   **Review:** The TrailWalker Hiking Shoes are hands down the best hiking shoes I've ever owned. From the moment I put them on, they felt like a perfect fit. The traction is outstanding, allowing me to confidently navigate challenging trails without slipping. The shoes provide excellent ankle support, which is crucial on uneven terrain. They are also durable and show no signs of wear, even after multiple hikes. I can't recommend these shoes enough for avid hikers. They are worth every penny.
+5) Rating: 5
+   Review: The TrailWalker Hiking Shoes are hands down the best hiking shoes I've ever owned. From the moment I put them on, they felt like a perfect fit. The traction is outstanding, allowing me to confidently navigate challenging trails without slipping. The shoes provide excellent ankle support, which is crucial on uneven terrain. They are also durable and show no signs of wear, even after multiple hikes. I can't recommend these shoes enough for avid hikers. They are worth every penny.
 
 ## FAQ
 49) How long does it take to break in the TrailWalker Hiking Shoes?
