@@ -18,6 +18,11 @@
           "type": [
             "string"
           ]
+        },
+        "chat_history": {
+          "type": [
+            "string"
+          ]
         }
       },
       "source": "relevance_score.jinja2"

@@ -1,53 +1,73 @@
 {
   "flow_runs": [
     {
-      "run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_0",
+      "run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_0",
       "status": "Completed",
       "error": null,
       "inputs": {
-        "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+        "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "Which is your cheapest tent?"
+            },
+            "outputs": {
+              "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+            }
+          }
+        ],
         "context": "# Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n",
-        "question": "Tell me about your tents."
+        "question": "How much does it weigh?"
       },
       "output": {
-        "gpt_coherence": 2.0,
-        "gpt_fluency": 2.0,
+        "gpt_coherence": 4.0,
+        "gpt_fluency": 4.0,
         "gpt_groundedness": 3.0,
         "gpt_relevance": 2.0
       },
       "metrics": {
-        "gpt_coherence": 2.0,
-        "gpt_coherence_pass_rate(%)": 0.0,
-        "gpt_fluency": 2.0,
-        "gpt_fluency_pass_rate(%)": 0.0,
-        "gpt_relevance": 2.0,
-        "gpt_relevance_pass_rate(%)": 0.0,
+        "gpt_coherence": 4.0,
+        "gpt_coherence_pass_rate(%)": 100.0,
+        "gpt_fluency": 4.0,
+        "gpt_fluency_pass_rate(%)": 100.0,
         "gpt_groundedness": 3.0,
-        "gpt_groundedness_pass_rate(%)": 0.0
+        "gpt_groundedness_pass_rate(%)": 0.0,
+        "gpt_relevance": 2.0,
+        "gpt_relevance_pass_rate(%)": 0.0
       },
       "request": null,
-      "parent_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
-      "root_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
+      "parent_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
+      "root_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
       "source_run_id": null,
       "flow_id": "QnA_combined_eval",
-      "start_time": "2023-10-04T09:04:27.273165Z",
-      "end_time": "2023-10-04T09:04:28.701498Z",
+      "start_time": "2023-10-06T13:51:27.125617Z",
+      "end_time": "2023-10-06T13:51:28.383049Z",
       "index": 0,
       "api_calls": [
         {
           "name": "AzureOpenAI.chat",
           "type": "Tool",
           "inputs": {
-            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:",
-            "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nconversation_history: \n{% for item in chat_history %}\n  - user: {{ item.inputs }}\n    assistant: {{ item.outputs }}\n{% endfor %} \nquestion: {{question}}\nanswer: {{answer}}\nstars:",
+            "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "Which is your cheapest tent?"
+                },
+                "outputs": {
+                  "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+                }
+              }
+            ],
             "deployment_name": "gpt-4",
             "max_tokens": 256,
-            "question": "Tell me about your tents.",
+            "question": "How much does it weigh?",
             "temperature": 0.0
           },
-          "output": "2",
-          "start_time": 1696403067.274297,
-          "end_time": 1696403068.334879,
+          "output": "4",
+          "start_time": 1696593087.126991,
+          "end_time": 1696593088.23072,
           "error": null,
           "children": [
             {
@@ -56,7 +76,7 @@
               "inputs": {
                 "api_base": "https://aoai.openai.azure.com/",
                 "api_type": "azure",
-                "api_version": "2023-03-15-preview",
+                "api_version": "2023-07-01-preview",
                 "engine": "gpt-4",
                 "messages": [
                   {
@@ -65,7 +85,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: Tell me about your tents.\nanswer: The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n\nstars:"
+                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nconversation_history: \n  - user: {'question': 'Which is your cheapest tent?'}\n    assistant: {'answer': 'Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!'}\n \nquestion: How much does it weigh?\nanswer: I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?\nstars:"
                   }
                 ],
                 "temperature": 0.0,
@@ -80,28 +100,69 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-85s5tvbLIpglbOwNvaou4LJIpyNQT",
+                "id": "chatcmpl-86fWj0OUKJsMJ6VCu63yg75jK9QZE",
                 "object": "chat.completion",
-                "created": 1696410269,
+                "created": 1696600289,
                 "model": "gpt-4",
+                "prompt_filter_results": [
+                  {
+                    "prompt_index": 0,
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
+                    }
+                  }
+                ],
                 "choices": [
                   {
                     "index": 0,
                     "finish_reason": "stop",
                     "message": {
                       "role": "assistant",
-                      "content": "2"
+                      "content": "4"
+                    },
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
                     }
                   }
                 ],
                 "usage": {
                   "completion_tokens": 1,
-                  "prompt_tokens": 479,
-                  "total_tokens": 480
+                  "prompt_tokens": 560,
+                  "total_tokens": 561
                 }
               },
-              "start_time": 1696403067.355972,
-              "end_time": 1696403068.334802,
+              "start_time": 1696593087.233479,
+              "end_time": 1696593088.230596,
               "error": null,
               "children": null,
               "node_name": null
@@ -113,16 +174,26 @@
           "name": "AzureOpenAI.chat",
           "type": "Tool",
           "inputs": {
-            "prompt": "System: \nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:",
-            "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+            "prompt": "System: \nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nconversation_history: \n{% for item in chat_history %}\n  - user: {{ item.inputs }}\n    assistant: {{ item.outputs }}\n{% endfor %} \nquestion: {{question}}\nanswer: {{answer}}\nstars:",
+            "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "Which is your cheapest tent?"
+                },
+                "outputs": {
+                  "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+                }
+              }
+            ],
             "deployment_name": "gpt-4",
             "max_tokens": 256,
-            "question": "Tell me about your tents.",
+            "question": "How much does it weigh?",
             "temperature": 0.0
           },
-          "output": "2",
-          "start_time": 1696403067.274677,
-          "end_time": 1696403068.400162,
+          "output": "4",
+          "start_time": 1696593087.127423,
+          "end_time": 1696593088.321144,
           "error": null,
           "children": [
             {
@@ -131,7 +202,7 @@
               "inputs": {
                 "api_base": "https://aoai.openai.azure.com/",
                 "api_type": "azure",
-                "api_version": "2023-03-15-preview",
+                "api_version": "2023-07-01-preview",
                 "engine": "gpt-4",
                 "messages": [
                   {
@@ -140,7 +211,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: Tell me about your tents.\nanswer: The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n\nstars:"
+                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nconversation_history: \n  - user: {'question': 'Which is your cheapest tent?'}\n    assistant: {'answer': 'Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!'}\n \nquestion: How much does it weigh?\nanswer: I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?\nstars:"
                   }
                 ],
                 "temperature": 0.0,
@@ -155,28 +226,69 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-85s5tXH4mSKQoLrOFfhaKSubOJLCI",
+                "id": "chatcmpl-86fWjM2MDlSQR1jnP4GZtys65GdwY",
                 "object": "chat.completion",
-                "created": 1696410269,
+                "created": 1696600289,
                 "model": "gpt-4",
+                "prompt_filter_results": [
+                  {
+                    "prompt_index": 0,
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
+                    }
+                  }
+                ],
                 "choices": [
                   {
                     "index": 0,
                     "finish_reason": "stop",
                     "message": {
                       "role": "assistant",
-                      "content": "2"
+                      "content": "4"
+                    },
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
                     }
                   }
                 ],
                 "usage": {
                   "completion_tokens": 1,
-                  "prompt_tokens": 469,
-                  "total_tokens": 470
+                  "prompt_tokens": 550,
+                  "total_tokens": 551
                 }
               },
-              "start_time": 1696403067.354358,
-              "end_time": 1696403068.400109,
+              "start_time": 1696593087.237728,
+              "end_time": 1696593088.320904,
               "error": null,
               "children": null,
               "node_name": null
@@ -188,16 +300,27 @@
           "name": "AzureOpenAI.chat",
           "type": "Tool",
           "inputs": {
-            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\nUser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is presented every other two years\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\"CONTEXT\": {{context}}, \"ANSWER\": {{answer}}}\n\nActual Task Output:",
-            "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\nUser:\nYou will be presented with a CONVERSATION_HISTORY, a QUESTION, a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT and CONVERSATION_HISTORY by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\n    \"QUESTION\": \"How often is Oscar presented?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is presented every other two years\"\n}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\n    \"QUESTION\": \"How important is Oscar?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"\n}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\n    \"QUESTION\": \"What is an allophone?\",\n    \"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \n    \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"\n}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\n    \"QUESTION\": \"How are children reported?\",\n    \"CONTEXT\": \"Some are reported as not having been wanted at all.\", \n    \"ANSWER\": \"All are reported as being completely and fully wanted.\"\n}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\n    \"CONVERSATION_HISTORY\": [\n    {% for item in chat_history %}\n        {\n            \"USER\": {{ item.inputs }}\n            \"ASSISTANT\": {{ item.outputs }}\n        }\n    {% endfor %} ]\n    \"QUESTION\": \"{{question}}\",\n    \"CONTEXT\": {{context}}, \n    \"ANSWER\": \"{{answer}}\"\n}\n\nActual Task Output:",
+            "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "Which is your cheapest tent?"
+                },
+                "outputs": {
+                  "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+                }
+              }
+            ],
             "context": "# Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n",
             "deployment_name": "gpt-4",
             "max_tokens": 256,
+            "question": "How much does it weigh?",
             "temperature": 0.0
           },
           "output": "3",
-          "start_time": 1696403067.275051,
-          "end_time": 1696403068.69132,
+          "start_time": 1696593087.127717,
+          "end_time": 1696593088.373245,
           "error": null,
           "children": [
             {
@@ -206,7 +329,7 @@
               "inputs": {
                 "api_base": "https://aoai.openai.azure.com/",
                 "api_type": "azure",
-                "api_version": "2023-03-15-preview",
+                "api_version": "2023-07-01-preview",
                 "engine": "gpt-4",
                 "messages": [
                   {
@@ -215,7 +338,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is presented every other two years\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\"CONTEXT\": # Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n, \"ANSWER\": The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n}\n\nActual Task Output:"
+                    "content": "You will be presented with a CONVERSATION_HISTORY, a QUESTION, a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT and CONVERSATION_HISTORY by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\n    \"QUESTION\": \"How often is Oscar presented?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is presented every other two years\"\n}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\n    \"QUESTION\": \"How important is Oscar?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"\n}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\n    \"QUESTION\": \"What is an allophone?\",\n    \"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \n    \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"\n}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\n    \"QUESTION\": \"How are children reported?\",\n    \"CONTEXT\": \"Some are reported as not having been wanted at all.\", \n    \"ANSWER\": \"All are reported as being completely and fully wanted.\"\n}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\n    \"CONVERSATION_HISTORY\": [\n            {\n            \"USER\": {'question': 'Which is your cheapest tent?'}\n            \"ASSISTANT\": {'answer': 'Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!'}\n        }\n     ]\n    \"QUESTION\": \"How much does it weigh?\",\n    \"CONTEXT\": # Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n, \n    \"ANSWER\": \"I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?\"\n}\n\nActual Task Output:"
                   }
                 ],
                 "temperature": 0.0,
@@ -230,10 +353,33 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-85s5t5SkEahNuvI1DnldJCW3fZryg",
+                "id": "chatcmpl-86fWjJv3upBJZj7ZFsPWMf7KgGyRp",
                 "object": "chat.completion",
-                "created": 1696410269,
+                "created": 1696600289,
                 "model": "gpt-4",
+                "prompt_filter_results": [
+                  {
+                    "prompt_index": 0,
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
+                    }
+                  }
+                ],
                 "choices": [
                   {
                     "index": 0,
@@ -241,17 +387,35 @@
                     "message": {
                       "role": "assistant",
                       "content": "3"
+                    },
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
                     }
                   }
                 ],
                 "usage": {
                   "completion_tokens": 1,
-                  "prompt_tokens": 798,
-                  "total_tokens": 799
+                  "prompt_tokens": 991,
+                  "total_tokens": 992
                 }
               },
-              "start_time": 1696403067.357881,
-              "end_time": 1696403068.691206,
+              "start_time": 1696593087.235954,
+              "end_time": 1696593088.373162,
               "error": null,
               "children": null,
               "node_name": null
@@ -263,17 +427,27 @@
           "name": "AzureOpenAI.chat",
           "type": "Tool",
           "inputs": {
-            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: {{context}}\nquestion: {{question}}\nanswer: {{answer}}\nstars:",
-            "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\nconversation_history: \n{% for item in chat_history %}\n  - user: {{ item.inputs }}\n    assistant: {{ item.outputs }}\n{% endfor %} \ncontext: \"{{context}}\"\nquestion: \"{{question}}\"\nanswer: \"{{answer}}\"\nstars:",
+            "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "Which is your cheapest tent?"
+                },
+                "outputs": {
+                  "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+                }
+              }
+            ],
             "context": "# Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n",
             "deployment_name": "gpt-4",
             "max_tokens": 256,
-            "question": "Tell me about your tents.",
+            "question": "How much does it weigh?",
             "temperature": 0.0
           },
           "output": "2",
-          "start_time": 1696403067.275248,
-          "end_time": 1696403068.520383,
+          "start_time": 1696593087.12815,
+          "end_time": 1696593088.324435,
           "error": null,
           "children": [
             {
@@ -282,7 +456,7 @@
               "inputs": {
                 "api_base": "https://aoai.openai.azure.com/",
                 "api_type": "azure",
-                "api_version": "2023-03-15-preview",
+                "api_version": "2023-07-01-preview",
                 "engine": "gpt-4",
                 "messages": [
                   {
@@ -291,7 +465,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "Relevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: # Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n\nquestion: Tell me about your tents.\nanswer: The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n\nstars:"
+                    "content": "Relevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\nconversation_history: \n  - user: {'question': 'Which is your cheapest tent?'}\n    assistant: {'answer': 'Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!'}\n \ncontext: \"# Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n\"\nquestion: \"How much does it weigh?\"\nanswer: \"I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?\"\nstars:"
                   }
                 ],
                 "temperature": 0.0,
@@ -306,10 +480,33 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-85s5tYF9wMaRYcKVAX0Q4BTpjU1wu",
+                "id": "chatcmpl-86fWjVcgFe5xf5obk9xwiQGJMXcwb",
                 "object": "chat.completion",
-                "created": 1696410269,
+                "created": 1696600289,
                 "model": "gpt-4",
+                "prompt_filter_results": [
+                  {
+                    "prompt_index": 0,
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
+                    }
+                  }
+                ],
                 "choices": [
                   {
                     "index": 0,
@@ -317,17 +514,35 @@
                     "message": {
                       "role": "assistant",
                       "content": "2"
+                    },
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
                     }
                   }
                 ],
                 "usage": {
                   "completion_tokens": 1,
-                  "prompt_tokens": 803,
-                  "total_tokens": 804
+                  "prompt_tokens": 887,
+                  "total_tokens": 888
                 }
               },
-              "start_time": 1696403067.359246,
-              "end_time": 1696403068.520312,
+              "start_time": 1696593087.240392,
+              "end_time": 1696593088.324383,
               "error": null,
               "children": null,
               "node_name": null
@@ -339,14 +554,14 @@
           "name": "concat_results",
           "type": "Tool",
           "inputs": {
-            "coherence_score": "2"
+            "coherence_score": "4"
           },
           "output": {
-            "gpt_coherence": 2.0,
-            "gpt_coherence_pass_rate": 0
+            "gpt_coherence": 4.0,
+            "gpt_coherence_pass_rate": 1
           },
-          "start_time": 1696403068.335833,
-          "end_time": 1696403068.33611,
+          "start_time": 1696593088.232298,
+          "end_time": 1696593088.232616,
           "error": null,
           "children": null,
           "node_name": "coherence_concat_scores"
@@ -355,14 +570,14 @@
           "name": "concat_results",
           "type": "Tool",
           "inputs": {
-            "fluency_score": "2"
+            "fluency_score": "4"
           },
           "output": {
-            "gpt_fluency": 2.0,
-            "gpt_fluency_pass_rate": 0
+            "gpt_fluency": 4.0,
+            "gpt_fluency_pass_rate": 1
           },
-          "start_time": 1696403068.401133,
-          "end_time": 1696403068.401359,
+          "start_time": 1696593088.325715,
+          "end_time": 1696593088.326206,
           "error": null,
           "children": null,
           "node_name": "fluency_concat_scores"
@@ -377,8 +592,8 @@
             "gpt_relevance": 2.0,
             "gpt_relevance_pass_rate": 0
           },
-          "start_time": 1696403068.521689,
-          "end_time": 1696403068.521993,
+          "start_time": 1696593088.325994,
+          "end_time": 1696593088.326452,
           "error": null,
           "children": null,
           "node_name": "relevance_concat_scores"
@@ -393,8 +608,8 @@
             "gpt_groundedness": 3.0,
             "gpt_groundedness_pass_rate": 0
           },
-          "start_time": 1696403068.692826,
-          "end_time": 1696403068.693257,
+          "start_time": 1696593088.374797,
+          "end_time": 1696593088.375135,
           "error": null,
           "children": null,
           "node_name": "groundedness_concat_scores"
@@ -405,12 +620,12 @@
       "description": "",
       "tags": null,
       "system_metrics": {
-        "duration": 1.428333,
-        "total_tokens": 2553
+        "duration": 1.257432,
+        "total_tokens": 2992
       },
       "result": {
-        "gpt_coherence": 2.0,
-        "gpt_fluency": 2.0,
+        "gpt_coherence": 4.0,
+        "gpt_fluency": 4.0,
         "gpt_groundedness": 3.0,
         "gpt_relevance": 2.0
       },
@@ -420,39 +635,59 @@
   "node_runs": [
     {
       "node": "coherence_score",
-      "flow_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
-      "run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_coherence_score_0",
+      "flow_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
+      "run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_coherence_score_0",
       "status": "Completed",
       "inputs": {
-        "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:",
-        "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+        "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nconversation_history: \n{% for item in chat_history %}\n  - user: {{ item.inputs }}\n    assistant: {{ item.outputs }}\n{% endfor %} \nquestion: {{question}}\nanswer: {{answer}}\nstars:",
+        "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "Which is your cheapest tent?"
+            },
+            "outputs": {
+              "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+            }
+          }
+        ],
         "deployment_name": "gpt-4",
         "max_tokens": 256,
-        "question": "Tell me about your tents.",
+        "question": "How much does it weigh?",
         "temperature": 0.0
       },
-      "output": "2",
+      "output": "4",
       "metrics": null,
       "error": null,
-      "parent_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_0",
-      "start_time": "2023-10-04T09:04:27.274196Z",
-      "end_time": "2023-10-04T09:04:28.335165Z",
+      "parent_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_0",
+      "start_time": "2023-10-06T13:51:27.126879Z",
+      "end_time": "2023-10-06T13:51:28.231302Z",
       "index": 0,
       "api_calls": [
         {
           "name": "AzureOpenAI.chat",
           "type": "Tool",
           "inputs": {
-            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:",
-            "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nconversation_history: \n{% for item in chat_history %}\n  - user: {{ item.inputs }}\n    assistant: {{ item.outputs }}\n{% endfor %} \nquestion: {{question}}\nanswer: {{answer}}\nstars:",
+            "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "Which is your cheapest tent?"
+                },
+                "outputs": {
+                  "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+                }
+              }
+            ],
             "deployment_name": "gpt-4",
             "max_tokens": 256,
-            "question": "Tell me about your tents.",
+            "question": "How much does it weigh?",
             "temperature": 0.0
           },
-          "output": "2",
-          "start_time": 1696403067.274297,
-          "end_time": 1696403068.334879,
+          "output": "4",
+          "start_time": 1696593087.126991,
+          "end_time": 1696593088.23072,
           "error": null,
           "children": [
             {
@@ -461,7 +696,7 @@
               "inputs": {
                 "api_base": "https://aoai.openai.azure.com/",
                 "api_type": "azure",
-                "api_version": "2023-03-15-preview",
+                "api_version": "2023-07-01-preview",
                 "engine": "gpt-4",
                 "messages": [
                   {
@@ -470,7 +705,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: Tell me about your tents.\nanswer: The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n\nstars:"
+                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nconversation_history: \n  - user: {'question': 'Which is your cheapest tent?'}\n    assistant: {'answer': 'Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!'}\n \nquestion: How much does it weigh?\nanswer: I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?\nstars:"
                   }
                 ],
                 "temperature": 0.0,
@@ -485,28 +720,69 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-85s5tvbLIpglbOwNvaou4LJIpyNQT",
+                "id": "chatcmpl-86fWj0OUKJsMJ6VCu63yg75jK9QZE",
                 "object": "chat.completion",
-                "created": 1696410269,
+                "created": 1696600289,
                 "model": "gpt-4",
+                "prompt_filter_results": [
+                  {
+                    "prompt_index": 0,
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
+                    }
+                  }
+                ],
                 "choices": [
                   {
                     "index": 0,
                     "finish_reason": "stop",
                     "message": {
                       "role": "assistant",
-                      "content": "2"
+                      "content": "4"
+                    },
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
                     }
                   }
                 ],
                 "usage": {
                   "completion_tokens": 1,
-                  "prompt_tokens": 479,
-                  "total_tokens": 480
+                  "prompt_tokens": 560,
+                  "total_tokens": 561
                 }
               },
-              "start_time": 1696403067.355972,
-              "end_time": 1696403068.334802,
+              "start_time": 1696593087.233479,
+              "end_time": 1696593088.230596,
               "error": null,
               "children": null,
               "node_name": null
@@ -524,47 +800,67 @@
       },
       "system_metrics": {
         "completion_tokens": 1,
-        "prompt_tokens": 479,
-        "total_tokens": 480,
-        "duration": 1.060969
+        "prompt_tokens": 560,
+        "total_tokens": 561,
+        "duration": 1.104423
       },
-      "result": "2"
+      "result": "4"
     },
     {
       "node": "fluency_score",
-      "flow_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
-      "run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_fluency_score_0",
+      "flow_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
+      "run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_fluency_score_0",
       "status": "Completed",
       "inputs": {
-        "prompt": "System: \nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:",
-        "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+        "prompt": "System: \nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nconversation_history: \n{% for item in chat_history %}\n  - user: {{ item.inputs }}\n    assistant: {{ item.outputs }}\n{% endfor %} \nquestion: {{question}}\nanswer: {{answer}}\nstars:",
+        "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "Which is your cheapest tent?"
+            },
+            "outputs": {
+              "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+            }
+          }
+        ],
         "deployment_name": "gpt-4",
         "max_tokens": 256,
-        "question": "Tell me about your tents.",
+        "question": "How much does it weigh?",
         "temperature": 0.0
       },
-      "output": "2",
+      "output": "4",
       "metrics": null,
       "error": null,
-      "parent_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_0",
-      "start_time": "2023-10-04T09:04:27.274591Z",
-      "end_time": "2023-10-04T09:04:28.400493Z",
+      "parent_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_0",
+      "start_time": "2023-10-06T13:51:27.127339Z",
+      "end_time": "2023-10-06T13:51:28.322856Z",
       "index": 0,
       "api_calls": [
         {
           "name": "AzureOpenAI.chat",
           "type": "Tool",
           "inputs": {
-            "prompt": "System: \nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:",
-            "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+            "prompt": "System: \nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nconversation_history: \n{% for item in chat_history %}\n  - user: {{ item.inputs }}\n    assistant: {{ item.outputs }}\n{% endfor %} \nquestion: {{question}}\nanswer: {{answer}}\nstars:",
+            "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "Which is your cheapest tent?"
+                },
+                "outputs": {
+                  "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+                }
+              }
+            ],
             "deployment_name": "gpt-4",
             "max_tokens": 256,
-            "question": "Tell me about your tents.",
+            "question": "How much does it weigh?",
             "temperature": 0.0
           },
-          "output": "2",
-          "start_time": 1696403067.274677,
-          "end_time": 1696403068.400162,
+          "output": "4",
+          "start_time": 1696593087.127423,
+          "end_time": 1696593088.321144,
           "error": null,
           "children": [
             {
@@ -573,7 +869,7 @@
               "inputs": {
                 "api_base": "https://aoai.openai.azure.com/",
                 "api_type": "azure",
-                "api_version": "2023-03-15-preview",
+                "api_version": "2023-07-01-preview",
                 "engine": "gpt-4",
                 "messages": [
                   {
@@ -582,7 +878,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: Tell me about your tents.\nanswer: The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n\nstars:"
+                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nconversation_history: \n  - user: {'question': 'Which is your cheapest tent?'}\n    assistant: {'answer': 'Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!'}\n \nquestion: How much does it weigh?\nanswer: I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?\nstars:"
                   }
                 ],
                 "temperature": 0.0,
@@ -597,28 +893,69 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-85s5tXH4mSKQoLrOFfhaKSubOJLCI",
+                "id": "chatcmpl-86fWjM2MDlSQR1jnP4GZtys65GdwY",
                 "object": "chat.completion",
-                "created": 1696410269,
+                "created": 1696600289,
                 "model": "gpt-4",
+                "prompt_filter_results": [
+                  {
+                    "prompt_index": 0,
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
+                    }
+                  }
+                ],
                 "choices": [
                   {
                     "index": 0,
                     "finish_reason": "stop",
                     "message": {
                       "role": "assistant",
-                      "content": "2"
+                      "content": "4"
+                    },
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
                     }
                   }
                 ],
                 "usage": {
                   "completion_tokens": 1,
-                  "prompt_tokens": 469,
-                  "total_tokens": 470
+                  "prompt_tokens": 550,
+                  "total_tokens": 551
                 }
               },
-              "start_time": 1696403067.354358,
-              "end_time": 1696403068.400109,
+              "start_time": 1696593087.237728,
+              "end_time": 1696593088.320904,
               "error": null,
               "children": null,
               "node_name": null
@@ -636,47 +973,69 @@
       },
       "system_metrics": {
         "completion_tokens": 1,
-        "prompt_tokens": 469,
-        "total_tokens": 470,
-        "duration": 1.125902
+        "prompt_tokens": 550,
+        "total_tokens": 551,
+        "duration": 1.195517
       },
-      "result": "2"
+      "result": "4"
     },
     {
       "node": "groundedness_score",
-      "flow_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
-      "run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_groundedness_score_0",
+      "flow_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
+      "run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_groundedness_score_0",
       "status": "Completed",
       "inputs": {
-        "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\nUser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is presented every other two years\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\"CONTEXT\": {{context}}, \"ANSWER\": {{answer}}}\n\nActual Task Output:",
-        "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+        "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\nUser:\nYou will be presented with a CONVERSATION_HISTORY, a QUESTION, a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT and CONVERSATION_HISTORY by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\n    \"QUESTION\": \"How often is Oscar presented?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is presented every other two years\"\n}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\n    \"QUESTION\": \"How important is Oscar?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"\n}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\n    \"QUESTION\": \"What is an allophone?\",\n    \"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \n    \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"\n}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\n    \"QUESTION\": \"How are children reported?\",\n    \"CONTEXT\": \"Some are reported as not having been wanted at all.\", \n    \"ANSWER\": \"All are reported as being completely and fully wanted.\"\n}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\n    \"CONVERSATION_HISTORY\": [\n    {% for item in chat_history %}\n        {\n            \"USER\": {{ item.inputs }}\n            \"ASSISTANT\": {{ item.outputs }}\n        }\n    {% endfor %} ]\n    \"QUESTION\": \"{{question}}\",\n    \"CONTEXT\": {{context}}, \n    \"ANSWER\": \"{{answer}}\"\n}\n\nActual Task Output:",
+        "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "Which is your cheapest tent?"
+            },
+            "outputs": {
+              "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+            }
+          }
+        ],
         "context": "# Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n",
         "deployment_name": "gpt-4",
         "max_tokens": 256,
+        "question": "How much does it weigh?",
         "temperature": 0.0
       },
       "output": "3",
       "metrics": null,
       "error": null,
-      "parent_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_0",
-      "start_time": "2023-10-04T09:04:27.274979Z",
-      "end_time": "2023-10-04T09:04:28.691827Z",
+      "parent_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_0",
+      "start_time": "2023-10-06T13:51:27.127641Z",
+      "end_time": "2023-10-06T13:51:28.373919Z",
       "index": 0,
       "api_calls": [
         {
           "name": "AzureOpenAI.chat",
           "type": "Tool",
           "inputs": {
-            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\nUser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is presented every other two years\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\"CONTEXT\": {{context}}, \"ANSWER\": {{answer}}}\n\nActual Task Output:",
-            "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\nUser:\nYou will be presented with a CONVERSATION_HISTORY, a QUESTION, a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT and CONVERSATION_HISTORY by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\n    \"QUESTION\": \"How often is Oscar presented?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is presented every other two years\"\n}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\n    \"QUESTION\": \"How important is Oscar?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"\n}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\n    \"QUESTION\": \"What is an allophone?\",\n    \"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \n    \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"\n}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\n    \"QUESTION\": \"How are children reported?\",\n    \"CONTEXT\": \"Some are reported as not having been wanted at all.\", \n    \"ANSWER\": \"All are reported as being completely and fully wanted.\"\n}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\n    \"CONVERSATION_HISTORY\": [\n    {% for item in chat_history %}\n        {\n            \"USER\": {{ item.inputs }}\n            \"ASSISTANT\": {{ item.outputs }}\n        }\n    {% endfor %} ]\n    \"QUESTION\": \"{{question}}\",\n    \"CONTEXT\": {{context}}, \n    \"ANSWER\": \"{{answer}}\"\n}\n\nActual Task Output:",
+            "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "Which is your cheapest tent?"
+                },
+                "outputs": {
+                  "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+                }
+              }
+            ],
             "context": "# Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n",
             "deployment_name": "gpt-4",
             "max_tokens": 256,
+            "question": "How much does it weigh?",
             "temperature": 0.0
           },
           "output": "3",
-          "start_time": 1696403067.275051,
-          "end_time": 1696403068.69132,
+          "start_time": 1696593087.127717,
+          "end_time": 1696593088.373245,
           "error": null,
           "children": [
             {
@@ -685,7 +1044,7 @@
               "inputs": {
                 "api_base": "https://aoai.openai.azure.com/",
                 "api_type": "azure",
-                "api_version": "2023-03-15-preview",
+                "api_version": "2023-07-01-preview",
                 "engine": "gpt-4",
                 "messages": [
                   {
@@ -694,7 +1053,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is presented every other two years\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\"CONTEXT\": # Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n, \"ANSWER\": The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n}\n\nActual Task Output:"
+                    "content": "You will be presented with a CONVERSATION_HISTORY, a QUESTION, a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT and CONVERSATION_HISTORY by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT and CONVERSATION_HISTORY.\n3. an integer score between 1 and 5 and if such integer score does not exists, use 1: It is not possible to determine whether the ANSWER is true or false without further information.\n\nRead the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails.\n\nNote the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\n    \"QUESTION\": \"How often is Oscar presented?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is presented every other two years\"\n}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\n    \"QUESTION\": \"How important is Oscar?\",\n    \"CONTEXT\": \"The Academy Awards, also known as the Oscars are awards for artistic and technical merit for the film industry. They are presented annually by the Academy of Motion Picture Arts and Sciences, in recognition of excellence in cinematic achievements as assessed by the Academy's voting membership. The Academy Awards are regarded by many as the most prestigious, significant awards in the entertainment industry in the United States and worldwide.\", \n    \"ANSWER\": \"Oscar is very important awards in the entertainment industry in the United States. And it's also significant worldwide\"\n}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\n    \"QUESTION\": \"What is an allophone?\",\n    \"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \n    \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"\n}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\n    \"QUESTION\": \"How are children reported?\",\n    \"CONTEXT\": \"Some are reported as not having been wanted at all.\", \n    \"ANSWER\": \"All are reported as being completely and fully wanted.\"\n}\n## Example Task #4 Output:\n1\n\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context.\n\n## Actual Task Input:\n{\n    \"CONVERSATION_HISTORY\": [\n            {\n            \"USER\": {'question': 'Which is your cheapest tent?'}\n            \"ASSISTANT\": {'answer': 'Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!'}\n        }\n     ]\n    \"QUESTION\": \"How much does it weigh?\",\n    \"CONTEXT\": # Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n, \n    \"ANSWER\": \"I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?\"\n}\n\nActual Task Output:"
                   }
                 ],
                 "temperature": 0.0,
@@ -709,10 +1068,33 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-85s5t5SkEahNuvI1DnldJCW3fZryg",
+                "id": "chatcmpl-86fWjJv3upBJZj7ZFsPWMf7KgGyRp",
                 "object": "chat.completion",
-                "created": 1696410269,
+                "created": 1696600289,
                 "model": "gpt-4",
+                "prompt_filter_results": [
+                  {
+                    "prompt_index": 0,
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
+                    }
+                  }
+                ],
                 "choices": [
                   {
                     "index": 0,
@@ -720,17 +1102,35 @@
                     "message": {
                       "role": "assistant",
                       "content": "3"
+                    },
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
                     }
                   }
                 ],
                 "usage": {
                   "completion_tokens": 1,
-                  "prompt_tokens": 798,
-                  "total_tokens": 799
+                  "prompt_tokens": 991,
+                  "total_tokens": 992
                 }
               },
-              "start_time": 1696403067.357881,
-              "end_time": 1696403068.691206,
+              "start_time": 1696593087.235954,
+              "end_time": 1696593088.373162,
               "error": null,
               "children": null,
               "node_name": null
@@ -748,49 +1148,69 @@
       },
       "system_metrics": {
         "completion_tokens": 1,
-        "prompt_tokens": 798,
-        "total_tokens": 799,
-        "duration": 1.416848
+        "prompt_tokens": 991,
+        "total_tokens": 992,
+        "duration": 1.246278
       },
       "result": "3"
     },
     {
       "node": "relevance_score",
-      "flow_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
-      "run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_relevance_score_0",
+      "flow_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
+      "run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_relevance_score_0",
       "status": "Completed",
       "inputs": {
-        "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: {{context}}\nquestion: {{question}}\nanswer: {{answer}}\nstars:",
-        "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+        "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\nconversation_history: \n{% for item in chat_history %}\n  - user: {{ item.inputs }}\n    assistant: {{ item.outputs }}\n{% endfor %} \ncontext: \"{{context}}\"\nquestion: \"{{question}}\"\nanswer: \"{{answer}}\"\nstars:",
+        "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "Which is your cheapest tent?"
+            },
+            "outputs": {
+              "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+            }
+          }
+        ],
         "context": "# Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n",
         "deployment_name": "gpt-4",
         "max_tokens": 256,
-        "question": "Tell me about your tents.",
+        "question": "How much does it weigh?",
         "temperature": 0.0
       },
       "output": "2",
       "metrics": null,
       "error": null,
-      "parent_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_0",
-      "start_time": "2023-10-04T09:04:27.275175Z",
-      "end_time": "2023-10-04T09:04:28.520852Z",
+      "parent_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_0",
+      "start_time": "2023-10-06T13:51:27.128069Z",
+      "end_time": "2023-10-06T13:51:28.324997Z",
       "index": 0,
       "api_calls": [
         {
           "name": "AzureOpenAI.chat",
           "type": "Tool",
           "inputs": {
-            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: {{context}}\nquestion: {{question}}\nanswer: {{answer}}\nstars:",
-            "answer": "The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n",
+            "prompt": "System:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric.\n\nUser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\nconversation_history: \n{% for item in chat_history %}\n  - user: {{ item.inputs }}\n    assistant: {{ item.outputs }}\n{% endfor %} \ncontext: \"{{context}}\"\nquestion: \"{{question}}\"\nanswer: \"{{answer}}\"\nstars:",
+            "answer": "I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?",
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "Which is your cheapest tent?"
+                },
+                "outputs": {
+                  "answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!"
+                }
+              }
+            ],
             "context": "# Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n",
             "deployment_name": "gpt-4",
             "max_tokens": 256,
-            "question": "Tell me about your tents.",
+            "question": "How much does it weigh?",
             "temperature": 0.0
           },
           "output": "2",
-          "start_time": 1696403067.275248,
-          "end_time": 1696403068.520383,
+          "start_time": 1696593087.12815,
+          "end_time": 1696593088.324435,
           "error": null,
           "children": [
             {
@@ -799,7 +1219,7 @@
               "inputs": {
                 "api_base": "https://aoai.openai.azure.com/",
                 "api_type": "azure",
-                "api_version": "2023-03-15-preview",
+                "api_version": "2023-07-01-preview",
                 "engine": "gpt-4",
                 "messages": [
                   {
@@ -808,7 +1228,7 @@
                   },
                   {
                     "role": "user",
-                    "content": "Relevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: # Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n\nquestion: Tell me about your tents.\nanswer: The TrailMaster X4 Tent is a great choice for your next camping trip. \n\nAnd King Charles visited France in September 2023.\n\nstars:"
+                    "content": "Relevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\nconversation_history: \n  - user: {'question': 'Which is your cheapest tent?'}\n    assistant: {'answer': 'Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior, durable and waterproof materials, easy setup, and other convenient features. Let me know if you have any other questions!'}\n \ncontext: \"# Information about product item_number: 1\nTrailMaster X4 Tent, price $250,\n\n## Brand\nOutdoorLiving\n\n## Category\nTents\n\n## Features\n- Polyester material for durability\n- Spacious interior to accommodate multiple people\n- Easy setup with included instructions\n- Water-resistant construction to withstand light rain\n- Mesh panels for ventilation and insect protection\n- Rainfly included for added weather protection\n- Multiple doors for convenient entry and exit\n- Interior pockets for organizing small items\n- Reflective guy lines for improved visibility at night\n- Freestanding design for easy setup and relocation\n- Carry bag included for convenient storage and transportation\n\"\nquestion: \"How much does it weigh?\"\nanswer: \"I apologize for the confusion, but I don't have information about the weight of the SkyView 2-Person Tent. Is there anything else I can assist you with?\"\nstars:"
                   }
                 ],
                 "temperature": 0.0,
@@ -823,10 +1243,33 @@
                 "user": ""
               },
               "output": {
-                "id": "chatcmpl-85s5tYF9wMaRYcKVAX0Q4BTpjU1wu",
+                "id": "chatcmpl-86fWjVcgFe5xf5obk9xwiQGJMXcwb",
                 "object": "chat.completion",
-                "created": 1696410269,
+                "created": 1696600289,
                 "model": "gpt-4",
+                "prompt_filter_results": [
+                  {
+                    "prompt_index": 0,
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
+                    }
+                  }
+                ],
                 "choices": [
                   {
                     "index": 0,
@@ -834,17 +1277,35 @@
                     "message": {
                       "role": "assistant",
                       "content": "2"
+                    },
+                    "content_filter_results": {
+                      "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                      },
+                      "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                      }
                     }
                   }
                 ],
                 "usage": {
                   "completion_tokens": 1,
-                  "prompt_tokens": 803,
-                  "total_tokens": 804
+                  "prompt_tokens": 887,
+                  "total_tokens": 888
                 }
               },
-              "start_time": 1696403067.359246,
-              "end_time": 1696403068.520312,
+              "start_time": 1696593087.240392,
+              "end_time": 1696593088.324383,
               "error": null,
               "children": null,
               "node_name": null
@@ -862,43 +1323,43 @@
       },
       "system_metrics": {
         "completion_tokens": 1,
-        "prompt_tokens": 803,
-        "total_tokens": 804,
-        "duration": 1.245677
+        "prompt_tokens": 887,
+        "total_tokens": 888,
+        "duration": 1.196928
       },
       "result": "2"
     },
     {
       "node": "coherence_concat_scores",
-      "flow_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
-      "run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_coherence_concat_scores_0",
+      "flow_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
+      "run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_coherence_concat_scores_0",
       "status": "Completed",
       "inputs": {
-        "coherence_score": "2"
+        "coherence_score": "4"
       },
       "output": {
-        "gpt_coherence": 2.0,
-        "gpt_coherence_pass_rate": 0
+        "gpt_coherence": 4.0,
+        "gpt_coherence_pass_rate": 1
       },
       "metrics": null,
       "error": null,
-      "parent_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_0",
-      "start_time": "2023-10-04T09:04:28.335784Z",
-      "end_time": "2023-10-04T09:04:28.336194Z",
+      "parent_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_0",
+      "start_time": "2023-10-06T13:51:28.232240Z",
+      "end_time": "2023-10-06T13:51:28.232720Z",
       "index": 0,
       "api_calls": [
         {
           "name": "concat_results",
           "type": "Tool",
           "inputs": {
-            "coherence_score": "2"
+            "coherence_score": "4"
           },
           "output": {
-            "gpt_coherence": 2.0,
-            "gpt_coherence_pass_rate": 0
+            "gpt_coherence": 4.0,
+            "gpt_coherence_pass_rate": 1
           },
-          "start_time": 1696403068.335833,
-          "end_time": 1696403068.33611,
+          "start_time": 1696593088.232298,
+          "end_time": 1696593088.232616,
           "error": null,
           "children": null,
           "node_name": "coherence_concat_scores"
@@ -912,44 +1373,44 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.00041
+        "duration": 0.00048
       },
       "result": {
-        "gpt_coherence": 2.0,
-        "gpt_coherence_pass_rate": 0
+        "gpt_coherence": 4.0,
+        "gpt_coherence_pass_rate": 1
       }
     },
     {
       "node": "fluency_concat_scores",
-      "flow_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
-      "run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_fluency_concat_scores_0",
+      "flow_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
+      "run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_fluency_concat_scores_0",
       "status": "Completed",
       "inputs": {
-        "fluency_score": "2"
+        "fluency_score": "4"
       },
       "output": {
-        "gpt_fluency": 2.0,
-        "gpt_fluency_pass_rate": 0
+        "gpt_fluency": 4.0,
+        "gpt_fluency_pass_rate": 1
       },
       "metrics": null,
       "error": null,
-      "parent_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_0",
-      "start_time": "2023-10-04T09:04:28.401077Z",
-      "end_time": "2023-10-04T09:04:28.401447Z",
+      "parent_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_0",
+      "start_time": "2023-10-06T13:51:28.325650Z",
+      "end_time": "2023-10-06T13:51:28.326320Z",
       "index": 0,
       "api_calls": [
         {
           "name": "concat_results",
           "type": "Tool",
           "inputs": {
-            "fluency_score": "2"
+            "fluency_score": "4"
           },
           "output": {
-            "gpt_fluency": 2.0,
-            "gpt_fluency_pass_rate": 0
+            "gpt_fluency": 4.0,
+            "gpt_fluency_pass_rate": 1
           },
-          "start_time": 1696403068.401133,
-          "end_time": 1696403068.401359,
+          "start_time": 1696593088.325715,
+          "end_time": 1696593088.326206,
           "error": null,
           "children": null,
           "node_name": "fluency_concat_scores"
@@ -963,17 +1424,17 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.00037
+        "duration": 0.00067
       },
       "result": {
-        "gpt_fluency": 2.0,
-        "gpt_fluency_pass_rate": 0
+        "gpt_fluency": 4.0,
+        "gpt_fluency_pass_rate": 1
       }
     },
     {
       "node": "relevance_concat_scores",
-      "flow_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
-      "run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_relevance_concat_scores_0",
+      "flow_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
+      "run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_relevance_concat_scores_0",
       "status": "Completed",
       "inputs": {
         "relevance_score": "2"
@@ -984,9 +1445,9 @@
       },
       "metrics": null,
       "error": null,
-      "parent_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_0",
-      "start_time": "2023-10-04T09:04:28.521610Z",
-      "end_time": "2023-10-04T09:04:28.522116Z",
+      "parent_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_0",
+      "start_time": "2023-10-06T13:51:28.325945Z",
+      "end_time": "2023-10-06T13:51:28.326561Z",
       "index": 0,
       "api_calls": [
         {
@@ -999,8 +1460,8 @@
             "gpt_relevance": 2.0,
             "gpt_relevance_pass_rate": 0
           },
-          "start_time": 1696403068.521689,
-          "end_time": 1696403068.521993,
+          "start_time": 1696593088.325994,
+          "end_time": 1696593088.326452,
           "error": null,
           "children": null,
           "node_name": "relevance_concat_scores"
@@ -1014,7 +1475,7 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.000506
+        "duration": 0.000616
       },
       "result": {
         "gpt_relevance": 2.0,
@@ -1023,8 +1484,8 @@
     },
     {
       "node": "groundedness_concat_scores",
-      "flow_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590",
-      "run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_groundedness_concat_scores_0",
+      "flow_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8",
+      "run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_groundedness_concat_scores_0",
       "status": "Completed",
       "inputs": {
         "groundesness_score": "3"
@@ -1035,9 +1496,9 @@
       },
       "metrics": null,
       "error": null,
-      "parent_run_id": "d9b02f1f-df93-4bac-bac2-a4adde12a590_0",
-      "start_time": "2023-10-04T09:04:28.692748Z",
-      "end_time": "2023-10-04T09:04:28.693394Z",
+      "parent_run_id": "2d345a86-2876-49ff-b3ac-67b8ba8098e8_0",
+      "start_time": "2023-10-06T13:51:28.374715Z",
+      "end_time": "2023-10-06T13:51:28.375259Z",
       "index": 0,
       "api_calls": [
         {
@@ -1050,8 +1511,8 @@
             "gpt_groundedness": 3.0,
             "gpt_groundedness_pass_rate": 0
           },
-          "start_time": 1696403068.692826,
-          "end_time": 1696403068.693257,
+          "start_time": 1696593088.374797,
+          "end_time": 1696593088.375135,
           "error": null,
           "children": null,
           "node_name": "groundedness_concat_scores"
@@ -1065,7 +1526,7 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.000646
+        "duration": 0.000544
       },
       "result": {
         "gpt_groundedness": 3.0,
@@ -1074,26 +1535,26 @@
     },
     {
       "node": "coherence_aggregate_variants_results",
-      "flow_run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d",
-      "run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d_coherence_aggregate_variants_results_reduce",
+      "flow_run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e",
+      "run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e_coherence_aggregate_variants_results_reduce",
       "status": "Completed",
       "inputs": {
         "results": [
           {
-            "gpt_coherence": 2.0,
-            "gpt_coherence_pass_rate": 0
+            "gpt_coherence": 4.0,
+            "gpt_coherence_pass_rate": 1
           }
         ]
       },
       "output": {
-        "gpt_coherence": 2.0,
-        "gpt_coherence_pass_rate": 0.0
+        "gpt_coherence": 4.0,
+        "gpt_coherence_pass_rate": 100.0
       },
       "metrics": null,
       "error": null,
-      "parent_run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d",
-      "start_time": "2023-10-04T09:04:28.702773Z",
-      "end_time": "2023-10-04T09:04:28.707549Z",
+      "parent_run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e",
+      "start_time": "2023-10-06T13:51:28.384659Z",
+      "end_time": "2023-10-06T13:51:28.386564Z",
       "index": null,
       "api_calls": [
         {
@@ -1102,17 +1563,17 @@
           "inputs": {
             "results": [
               {
-                "gpt_coherence": 2.0,
-                "gpt_coherence_pass_rate": 0
+                "gpt_coherence": 4.0,
+                "gpt_coherence_pass_rate": 1
               }
             ]
           },
           "output": {
-            "gpt_coherence": 2.0,
-            "gpt_coherence_pass_rate": 0.0
+            "gpt_coherence": 4.0,
+            "gpt_coherence_pass_rate": 100.0
           },
-          "start_time": 1696403068.702847,
-          "end_time": 1696403068.707387,
+          "start_time": 1696593088.384762,
+          "end_time": 1696593088.386391,
           "error": null,
           "children": null,
           "node_name": "coherence_aggregate_variants_results"
@@ -1126,35 +1587,35 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.004776
+        "duration": 0.001905
       },
       "result": {
-        "gpt_coherence": 2.0,
-        "gpt_coherence_pass_rate": 0.0
+        "gpt_coherence": 4.0,
+        "gpt_coherence_pass_rate": 100.0
       }
     },
     {
       "node": "fluency_aggregate_variants_results",
-      "flow_run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d",
-      "run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d_fluency_aggregate_variants_results_reduce",
+      "flow_run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e",
+      "run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e_fluency_aggregate_variants_results_reduce",
       "status": "Completed",
       "inputs": {
         "results": [
           {
-            "gpt_fluency": 2.0,
-            "gpt_fluency_pass_rate": 0
+            "gpt_fluency": 4.0,
+            "gpt_fluency_pass_rate": 1
           }
         ]
       },
       "output": {
-        "gpt_fluency": 2.0,
-        "gpt_fluency_pass_rate": 0.0
+        "gpt_fluency": 4.0,
+        "gpt_fluency_pass_rate": 100.0
       },
       "metrics": null,
       "error": null,
-      "parent_run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d",
-      "start_time": "2023-10-04T09:04:28.703192Z",
-      "end_time": "2023-10-04T09:04:28.708086Z",
+      "parent_run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e",
+      "start_time": "2023-10-06T13:51:28.385318Z",
+      "end_time": "2023-10-06T13:51:28.387224Z",
       "index": null,
       "api_calls": [
         {
@@ -1163,17 +1624,17 @@
           "inputs": {
             "results": [
               {
-                "gpt_fluency": 2.0,
-                "gpt_fluency_pass_rate": 0
+                "gpt_fluency": 4.0,
+                "gpt_fluency_pass_rate": 1
               }
             ]
           },
           "output": {
-            "gpt_fluency": 2.0,
-            "gpt_fluency_pass_rate": 0.0
+            "gpt_fluency": 4.0,
+            "gpt_fluency_pass_rate": 100.0
           },
-          "start_time": 1696403068.703244,
-          "end_time": 1696403068.707936,
+          "start_time": 1696593088.385386,
+          "end_time": 1696593088.387083,
           "error": null,
           "children": null,
           "node_name": "fluency_aggregate_variants_results"
@@ -1187,17 +1648,17 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.004894
+        "duration": 0.001906
       },
       "result": {
-        "gpt_fluency": 2.0,
-        "gpt_fluency_pass_rate": 0.0
+        "gpt_fluency": 4.0,
+        "gpt_fluency_pass_rate": 100.0
       }
     },
     {
       "node": "groundedness_aggregate_variants_results",
-      "flow_run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d",
-      "run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d_groundedness_aggregate_variants_results_reduce",
+      "flow_run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e",
+      "run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e_groundedness_aggregate_variants_results_reduce",
       "status": "Completed",
       "inputs": {
         "results": [
@@ -1213,9 +1674,9 @@
       },
       "metrics": null,
       "error": null,
-      "parent_run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d",
-      "start_time": "2023-10-04T09:04:28.708382Z",
-      "end_time": "2023-10-04T09:04:28.710374Z",
+      "parent_run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e",
+      "start_time": "2023-10-06T13:51:28.387846Z",
+      "end_time": "2023-10-06T13:51:28.388486Z",
       "index": null,
       "api_calls": [
         {
@@ -1233,8 +1694,8 @@
             "gpt_groundedness": 3.0,
             "gpt_groundedness_pass_rate": 0.0
           },
-          "start_time": 1696403068.708445,
-          "end_time": 1696403068.710237,
+          "start_time": 1696593088.387906,
+          "end_time": 1696593088.38835,
           "error": null,
           "children": null,
           "node_name": "groundedness_aggregate_variants_results"
@@ -1248,7 +1709,7 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.001992
+        "duration": 0.00064
       },
       "result": {
         "gpt_groundedness": 3.0,
@@ -1257,8 +1718,8 @@
     },
     {
       "node": "relevance_aggregate_variants_results",
-      "flow_run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d",
-      "run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d_relevance_aggregate_variants_results_reduce",
+      "flow_run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e",
+      "run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e_relevance_aggregate_variants_results_reduce",
       "status": "Completed",
       "inputs": {
         "results": [
@@ -1274,9 +1735,9 @@
       },
       "metrics": null,
       "error": null,
-      "parent_run_id": "f7691fc1-9dbd-4e72-b1b2-a8353611da1d",
-      "start_time": "2023-10-04T09:04:28.709174Z",
-      "end_time": "2023-10-04T09:04:28.709845Z",
+      "parent_run_id": "32c9594d-df7f-4411-8b7d-5a3f1dbe9e5e",
+      "start_time": "2023-10-06T13:51:28.389009Z",
+      "end_time": "2023-10-06T13:51:28.389784Z",
       "index": null,
       "api_calls": [
         {
@@ -1294,8 +1755,8 @@
             "gpt_relevance": 2.0,
             "gpt_relevance_pass_rate": 0.0
           },
-          "start_time": 1696403068.709232,
-          "end_time": 1696403068.709701,
+          "start_time": 1696593088.389082,
+          "end_time": 1696593088.389647,
           "error": null,
           "children": null,
           "node_name": "relevance_aggregate_variants_results"
@@ -1309,7 +1770,7 @@
         "stderr": ""
       },
       "system_metrics": {
-        "duration": 0.000671
+        "duration": 0.000775
       },
       "result": {
         "gpt_relevance": 2.0,

@@ -3,12 +3,22 @@ name: QnA Combined Evaluation
 environment:
   python_requirements_txt: requirements.txt
 inputs:
+  chat_history:
+    type: list
+    default:
+    - inputs:
+        question: Which is your cheapest tent?
+      outputs:
+        answer: Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It
+          offers spacious interior, durable and waterproof materials, easy
+          setup, and other convenient features. Let me know if you have any
+          other questions!
   question:
     type: string
-    default: Tell me about your tents.
+    default: How much does it weigh?
   context:
     type: string
-    default: | 
+    default: |
       # Information about product item_number: 1
       TrailMaster X4 Tent, price $250,
 
@@ -32,10 +42,9 @@ inputs:
       - Carry bag included for convenient storage and transportation
   answer:
     type: string
-    default: |
-      The TrailMaster X4 Tent is a great choice for your next camping trip. 
-
-      And King Charles visited France in September 2023.
+    default: I apologize for the confusion, but I don't have information about the
+      weight of the SkyView 2-Person Tent. Is there anything else I can assist
+      you with?
 outputs:
   gpt_coherence:
     type: object
@@ -49,7 +58,6 @@ outputs:
   gpt_relevance:
     type: object
     reference: ${relevance_concat_scores.output.gpt_relevance}
-
 nodes:
 - name: coherence_score
   type: llm
@@ -57,6 +65,7 @@ nodes:
     type: code
     path: coherence/coherence_score.jinja2
   inputs:
+    chat_history: ${inputs.chat_history}
     question: ${inputs.question}
     answer: ${inputs.answer}
     max_tokens: 256
@@ -79,13 +88,13 @@ nodes:
   inputs:
     results: ${coherence_concat_scores.output}
   aggregation: true
-
 - name: fluency_score
   type: llm
   source:
     type: code
     path: fluency/fluency_score.jinja2
   inputs:
+    chat_history: ${inputs.chat_history}
     question: ${inputs.question}
     answer: ${inputs.answer}
     max_tokens: 256
@@ -108,18 +117,19 @@ nodes:
   inputs:
     results: ${fluency_concat_scores.output}
   aggregation: true
-
 - name: groundedness_score
   type: llm
   source:
     type: code
     path: groundedness/groundedness_score.jinja2
   inputs:
+    chat_history: ${inputs.chat_history}
     context: ${inputs.context}
     answer: ${inputs.answer}
     max_tokens: 256
     deployment_name: gpt-4
     temperature: 0
+    question: ${inputs.question}
   connection: azure_open_ai_connection
   api: chat
 - name: groundedness_concat_scores
@@ -137,13 +147,13 @@ nodes:
   inputs:
     results: ${groundedness_concat_scores.output}
   aggregation: true
-
 - name: relevance_score
   type: llm
   source:
     type: code
     path: relevance/relevance_score.jinja2
   inputs:
+    chat_history: ${inputs.chat_history}
     question: ${inputs.question}
     context: ${inputs.context}
     answer: ${inputs.answer}

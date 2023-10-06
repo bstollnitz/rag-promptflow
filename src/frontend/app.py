@@ -12,9 +12,10 @@ def start_chat():
 @cl.on_message
 async def main(question: str, question_id: str):
     message_history = cl.user_session.get("message_history")
+    chat_app = PromptFlowChat(prompt_flow=promptflow_folder)
+    test_case = {"chat_history": chat_app._chat_history_to_pf(message_history), "question": question}
     message_history.append({"role": "user", "content": question})
 
-    chat_app = PromptFlowChat(prompt_flow=promptflow_folder)
     response = await cl.make_async(chat_app)(messages=message_history, 
                                              stream=True)
 
@@ -22,7 +23,6 @@ async def main(question: str, question_id: str):
 
     msg = cl.Message(content="")
     extra_args = None
-    session_info = None
     for chunk in response:
         if chunk["object"] == "chat.completion.chunk":
             if "content" in chunk["choices"][0]["delta"]:
@@ -31,10 +31,14 @@ async def main(question: str, question_id: str):
             if "extra_args" in chunk["choices"][0]:
                 extra_args = chunk["choices"][0]["extra_args"]
                 # add some metadata to help with debugging
-                await cl.Message(content=f"#### Intent:\n{extra_args['intent']}", parent_id=question_id).send()
-                await cl.Message(content=f"#### Context:\n```yaml\n{yaml.dump(extra_args['context'])}\n```", parent_id=question_id).send()
+                if "intent" in extra_args:
+                    await cl.Message(content=f"#### Intent:\n{extra_args['intent']}", parent_id=question_id).send()
+                if "context" in extra_args:
+                    context_id = await cl.Message(content=f"#### Context:\n", parent_id=question_id).send()
+                    for item in extra_args["context"]:
+                        await cl.Message(content=f"##{item}\n", parent_id=context_id).send()
 
-    message_content = msg.content
+    await cl.Message(content=f"#### Download as testcase:\n```json\n{json.dumps(test_case)}\n```", parent_id=question_id).send()
 
-    message_history.append({"role": "assistant", "content": message_content})
+    message_history.append({"role": "assistant", "content": msg.content})
     await msg.send()

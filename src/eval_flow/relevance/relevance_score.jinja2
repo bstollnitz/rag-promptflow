@@ -36,7 +36,12 @@ question: What are the main attractions of the Queen's Royal Castle?
 answer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.
 stars: 5
 
-context: {{context}}
-question: {{question}}
-answer: {{answer}}
+conversation_history: 
+{% for item in chat_history %}
+  - user: {{ item.inputs }}
+    assistant: {{ item.outputs }}
+{% endfor %} 
+context: "{{context}}"
+question: "{{question}}"
+answer: "{{answer}}"
 stars:
