@@ -5,14 +5,13 @@ import os, openai
 import promptflow as pf
 
 class ChatApp:
-    extra_args :dict = {}
+    context :dict = {}
     configuration :dict = None
 
 class PromptFlowChat(ChatApp):
     def __init__(self, 
                  prompt_flow):
-        messages_name="chat_history" 
-        question_name, answer_name = self.find_input_output_names(prompt_flow)
+        messages_name, question_name, answer_name = self.find_input_output_names(prompt_flow)
         self.prompt_flow = prompt_flow
         self.question = question_name
         self.answer = answer_name
@@ -20,6 +19,7 @@ class PromptFlowChat(ChatApp):
 
     def find_input_output_names(self, prompt_flow):
         prompt_flow = os.path.join(prompt_flow, "flow.dag.yaml")
+        messages_name, question_name, answer_name = None, None, None
         with open( prompt_flow, "r") as f:
             prompt_flow = yaml.safe_load(f)
         # find the field in the flow that has the is_chat_input: true
@@ -27,20 +27,24 @@ class PromptFlowChat(ChatApp):
             if "is_chat_input" in field and field["is_chat_input"]:
                 question_name = name
                 break   
+        for name, field in prompt_flow["inputs"].items():
+            if "is_chat_history" in field and field["is_chat_history"]:
+                messages_name = name
+                break   
         for name, field in prompt_flow["outputs"].items():
             if "is_chat_output" in field and field["is_chat_output"]:
                 answer_name = name
                 break   
-        return question_name, answer_name
+        return messages_name, question_name, answer_name
         
-    def __call__(self, messages, stream=False, extra_args={}, session_state={}) -> str:
-        return self.run(messages=messages, stream=stream, extra_args=extra_args)
+    def __call__(self, messages, stream=False, context={}, session_state={}) -> str:
+        return self.chat_completion(messages=messages, stream=stream, context=context)
 
     def stream_response(self, answer, result):
         response = {"object": "chat.completion.chunk", "choices": []}
         response["choices"].append({"index": 0, 
-                                    "delta": {"role": "assistant"}, 
-                                    "extra_args": result})
+                                    "delta": {"role": "assistant", 
+                                              "context": result}})
         yield response
 
         for token in answer:
@@ -49,19 +53,22 @@ class PromptFlowChat(ChatApp):
                                         "delta": {"content": token}})
             yield response
 
-    def run(self, messages, stream, extra_args):
-        adjusted_kwargs = extra_args.copy()
+    def chat_completion(self, messages, stream, context={}, session_state={}):
+        adjusted_kwargs = context.copy()
         adjusted_kwargs[self.question] = messages[-1]["content"]
         pf_chat_history = self._chat_history_to_pf(messages)
         if not self.chat_history in adjusted_kwargs:
             adjusted_kwargs[self.chat_history] = pf_chat_history
         elif len(pf_chat_history) > 0:
-            raise ValueError(f"chat_history in extra_args with non-empty chat history: {pf_chat_history}")
+            raise ValueError(f"chat_history in context with non-empty chat history: {pf_chat_history}")
 
         cli = pf.PFClient()
         result = cli.test(self.prompt_flow, inputs=adjusted_kwargs)
 
-        answer = result.pop(self.answer)
+        if self.answer is not None:  
+            answer = result.pop(self.answer)
+        else:
+            answer = None
 
         if stream:
             return self.stream_response(answer, result)
@@ -76,8 +83,9 @@ class PromptFlowChat(ChatApp):
 
             response = {"object": "chat.completion", "choices": []}
             response["choices"].append({"index": 0, 
-                                        "message": {"content": answer, "role": "assistant"}, 
-                                        "extra_args": result})
+                                        "message": {"content": answer, 
+                                                    "role": "assistant", 
+                                                    "context": result}})
             return response
 
     def _chat_history_to_openai(self, chat_history: list) -> list:
@@ -137,20 +145,22 @@ class AzureOpenAIChat(ChatApp):
             return env_var
         
 
-    def __call__(self, messages, stream=False, extra_args={}) -> str:
-        return self.run(messages=messages, stream=stream, extra_args=extra_args)
+    def __call__(self, messages, stream=False, context={}, session_state={}) -> str:
+        return self.chat_completion(messages=messages, stream=stream, context=context, session_state=session_state)
 
-    def run(self, messages, stream, extra_args):
+    def chat_completion(self, messages, stream, context, session_state):
         openai.api_base = self.api_base
         openai.api_key = self.api_key
         openai.api_version = "2023-03-15-preview" 
         openai.api_type = "azure"
 
+        messages = self.start_messages + messages
+        
         response = openai.ChatCompletion.create(
             engine=self.deployment_name,
             messages=messages,
             stream=stream,
-            **extra_args
+            **context
         )
 
         return response
@@ -164,8 +174,8 @@ class PythonFunctionChat(ChatApp):
         module = importlib.import_module(module_name)
         self.fn = getattr(module, function_name)
 
-    def __call__(self, messages, stream=False, extra_args={}) -> str:
-        return self.fn(messages=messages, stream=stream, extra_args=extra_args)
+    def __call__(self, messages, stream=False, context={}) -> str:
+        return self.fn(messages=messages, stream=stream, context=context)
 
 def load_chat_app(yaml_file):
     """Load chat app from yaml file"""
@@ -192,8 +202,8 @@ def load_chat_app(yaml_file):
                                    api_key=chat_yaml["api_key"])
 
 
-    if "extra_args" in chat_yaml:
-        chat_app.extra_args = chat_yaml["extra_args"]
+    if "context" in chat_yaml:
+        chat_app.context = chat_yaml["context"]
     
     if "start_messages" in chat_yaml:
         chat_app.start_messages = chat_yaml["start_messages"]

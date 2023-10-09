@@ -1,26 +1,14 @@
 {"chat_history": [], "question": "Do you have any tents available under $200?"}
-{"chat_history": [], "question": "Can you recommend a good pair of hiking boots?"}
-{"chat_history": [], "question": "Is this sleeping bag suitable for sub-zero temperatures?"}
-{"chat_history": [], "question": "Do you offer any discounts on outdoor gear for members?"}
-{"chat_history": [], "question": "What is the warranty on your backpacks?"}
-{"chat_history": [], "question": "Are there any lightweight rain jackets available?"}
 {"chat_history": [], "question": "Can I get a comparison between two different mountain bikes?"}
 {"chat_history": [], "question": "Do you carry any vegan or eco-friendly outdoor gear?"}
-{"chat_history": [], "question": "Can you help me find a suitable camping stove?"}
 {"chat_history": [], "question": "Are your climbing ropes UIAA certified?"}
 {"chat_history": [], "question": "Do you have any recommendations for a family camping tent?"}
-{"chat_history": [], "question": "Can I return or exchange an item purchased online in-store?"}
-{"chat_history": [], "question": "Is there a difference between men’s and women’s hiking shoes?"}
 {"chat_history": [], "question": "Do you offer any gear rental services?"}
 {"chat_history": [], "question": "Can you suggest some essential gear for a beginner hiker?"}
+{"chat_history": [], "question": "Can I return or exchange an item purchased online in-store?"}
 {"chat_history": [], "question": "Are there any waterproof hiking pants available?"}
 {"chat_history": [], "question": "How do I maintain and clean my CozyNights sleeping bag?"}
 {"chat_history": [], "question": "Do you have any inflatable kayaks in stock?"}
-{"chat_history": [], "question": "Can you help me choose the right size of hiking boots?"}
-{"chat_history": [], "question": "Do you have any specials on ski equipment?"}
-{"chat_history": [], "question": "Is there a discount for military personnel?"}
-{"chat_history": [], "question": "Can I purchase a gift card online?"}
-{"chat_history": [], "question": "How do I choose the right backpack for a multi-day hike?"}
 {"chat_history": [], "question": "Which GPS device would you recommend for backcountry navigation?"}
 {"chat_history": [], "question": "Do you have any advice on layering clothes for cold weather hiking?"}
 {"chat_history": [], "question": "Do you have any compasses? Which ones can you recommend?"}
@@ -29,4 +17,8 @@
 {"chat_history": [{"inputs": {"question": "which is your cheapest tent?"}, "outputs": {"answer": "Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It offers spacious interior comfort for two people, durable and waterproof materials, easy and quick setup with color-coded poles, and multiple features for convenience and storage. If you have any more questions or need further assistance, feel free to ask!"}}], "question": "how much does it weigh?"}
 {"chat_history": [{"inputs": {"question": "what are your 3 best-selling tents?"}, "outputs": {"answer": "Our three best-selling tents are:\n\n1. Alpine Explorer Tent - $350\n2. TrailMaster X4 Tent - $250\n3. SkyView 2-Person Tent - $200"}}], "question": "what is the weight of each of them?"}
 {"chat_history": [{"inputs": {"question": "Can you help me find a suitable camping stove?"}, "outputs": {"answer": "Certainly! I'd be happy to help you find a suitable camping stove. What specific requirements or features are you looking for in a camping stove?"}}, {"inputs": {"question": "It needs to be portable and gas-powered."}, "outputs": {"answer": "I recommend considering the CompactCook Camping Stove. It is a portable and lightweight stove that runs on gas. It is compatible with various fuel types, including butane, propane, and isobutane. The stove is foldable, making it easy to carry and store. It also has a sturdy base for stability during cooking. Additionally, it comes with built-in safety features such as a flame control valve. The CompactCook Camping Stove is designed specifically for camping and hiking, making it an ideal choice for outdoor enthusiasts."}}], "question": "how much does it cost?"}
-
+{"chat_history": [], "question": "where can I best go hiking in the seattle area?"}
+{"chat_history": [], "question": "How often should I treat my gear with waterproofing spray?"}
+{"chat_history": [{"inputs": {"question": "I need a tent for 8 people -- what can you recommend?"}, "outputs": {"answer": "I recommend the Alpine Explorer Tent, which has a capacity of 8 people. It offers a spacious interior with a room divider for added privacy. The tent is easy to set up and features excellent ventilation to reduce condensation. It is also waterproof and comes with a gear loft for organizing your camping gear. The Alpine Explorer Tent is priced at $350."}}], "question": "cool -- what does it weigh?"}
+{"chat_history": [], "question": "Is the CozyNights sleeping bag suitable for sub-zero temperatures?"}
+{"chat_history": [{"inputs": {"question": "Is the CozyNights sleeping bag suitable for sub-zero temperatures?"}, "outputs": {"answer": "The CozyNights Sleeping Bag is not suitable for sub-zero temperatures. It is rated for 3-season use and has a temperature rating of 20\u00b0F to 60\u00b0F (-6\u00b0C to 15\u00b0C). If you need a sleeping bag for sub-zero temperatures, I recommend considering a different model specifically designed for cold weather camping."}}, {"inputs": {"question": "which one would you recommend?"}, "outputs": {"answer": "If you're looking for a sleeping bag suitable for sub-zero temperatures, I would recommend the MountainDream Sleeping Bag. It is rated for temperatures as low as 15\u00b0F (-9\u00b0C), making it suitable for 4-season use. It has premium synthetic insulation for warmth and comfort, a durable and water-resistant shell material, and features like an adjustable hood and insulated draft tube to keep you warm in colder conditions. The MountainDream Sleeping Bag is a great option for cold weather camping."}}], "question": "how much does it cost?"}
