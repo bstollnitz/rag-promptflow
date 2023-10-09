@@ -18,7 +18,7 @@ async def main(question: str, question_id: str):
     help_text = f"""#### Commands:
 - `/eval` - evaluate the current conversation
 - `/help` - show this help message
-- `/add_test` - add the current conversation to the test set ({test_set})
+- `/add_test` - add the current conversation to the test set (`{test_set}`)
 - anything else - continue the conversation
 """
     if question.startswith("/eval"):
