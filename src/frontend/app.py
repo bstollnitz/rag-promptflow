@@ -92,7 +92,7 @@ async def call_eval(command: str, command_id: str):
 async def add_test(command: str, command_id: str):
     messages = cl.user_session.get("messages")
     if len(messages) == 0:
-        await cl.Message(content=f"#### No messages to evaluate").send()
+        await cl.Message(content=f"#### No messages to add").send()
         return
 
     chat_app = PromptFlowChat(prompt_flow=promptflow_folder)
