@@ -72,7 +72,7 @@ def _get_context(
         credential=AzureKeyCredential(azure_search_connection.api_key),
     )
 
-    docs = search_client.search(search_text="", vectors=[query_vector], top=5)
+    docs = search_client.search(search_text="", vectors=[query_vector], top=1)
     context = [doc["content"] for doc in docs]
 
     return context
@@ -124,8 +124,8 @@ def rag(
     openai.api_version = azure_open_ai_connection.api_version
     openai.api_key = azure_open_ai_connection.api_key
 
-    # user_intent = question
-    user_intent = _summarize_user_intent(question, chat_history)
+    user_intent = question
+    # user_intent = _summarize_user_intent(question, chat_history)
     
     context = _get_context(user_intent, azure_search_connection)
     answer = _rag(context, question, chat_history)
