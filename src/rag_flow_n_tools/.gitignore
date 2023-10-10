@@ -1,7 +1,0 @@
-.env
-__pycache__/
-.promptflow/*
-!.promptflow/flow.tools.json
-.runs/
-connection_azure_open_ai.yaml
-connection_cognitive_search.yaml
