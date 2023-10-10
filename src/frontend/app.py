@@ -1,6 +1,6 @@
 import openai
 import chainlit as cl
-from chat_api import PromptFlowChat
+from frontend.chat_util import PromptFlowChat
 import promptflow as pf
 import os
 import yaml, json
