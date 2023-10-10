@@ -1,0 +1,2 @@
+﻿displayName,status,createdOn,duration,gpt_coherence,gpt_coherence_pass_rate(%),gpt_fluency,gpt_fluency_pass_rate(%),gpt_groundedness,gpt_groundedness_pass_rate(%),gpt_relevance,gpt_relevance_pass_rate(%)
+"eval_step_3","Completed","2023-10-10T13:48:24.1054048+00:00","58688.1524","3.57","64.29","3.81","71.43","4.43","78.57","3.61","64.29"
