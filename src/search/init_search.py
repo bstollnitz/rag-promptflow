@@ -29,6 +29,7 @@ from dotenv import load_dotenv
 from langchain.document_loaders import DirectoryLoader, UnstructuredMarkdownLoader
 from langchain.text_splitter import Language, RecursiveCharacterTextSplitter
 import math
+import tiktoken
 load_dotenv()
 
 # Config for Azure Search.
@@ -148,11 +149,15 @@ def initialize(search_index_client: SearchIndexClient):
     # Load our data.
     docs = load_and_split_documents()
 
+    # count the tokens in each document (for rag retrieval, not for the embedding)
+    encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
+    token_sizes = [len(encoding.encode(doc["content"])) for doc in docs]
     batch_size = 16
     num_batches = math.ceil(len(docs) / batch_size)
 
     # Embed our documents.
     print(f"embedding {len(docs)} documents in {num_batches} batches of {batch_size}. using embedding deployment {AZURE_OPENAI_EMBEDDING_DEPLOYMENT}")
+    print(f"Total tokens: {sum(token_sizes)}, average tokens: {int(sum(token_sizes) / len(token_sizes))}")
     for i in range(num_batches):
         start_idx = i * batch_size
         end_idx = min(start_idx + batch_size, len(docs))
