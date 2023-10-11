@@ -61,8 +61,8 @@ def load_and_split_documents() -> list[dict]:
         DATA_DIR, loader_cls=UnstructuredMarkdownLoader, show_progress=True
     )
     docs = loader.load()
-
     print(f"loaded {len(docs)} documents")
+
     # Split our documents.
     splitter = RecursiveCharacterTextSplitter.from_language(
         language=Language.MARKDOWN, chunk_size=5000, chunk_overlap=100
@@ -151,6 +151,7 @@ def initialize(search_index_client: SearchIndexClient):
     batch_size = 16
     num_batches = math.ceil(len(docs) / batch_size)
 
+    # Embed our documents.
     print(f"embedding {len(docs)} documents in {num_batches} batches of {batch_size}. using embedding deployment {AZURE_OPENAI_EMBEDDING_DEPLOYMENT}")
     for i in range(num_batches):
         start_idx = i * batch_size
