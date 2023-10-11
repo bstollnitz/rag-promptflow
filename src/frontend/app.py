@@ -60,7 +60,7 @@ async def call_chat(question: str, question_id: str):
                     for item in context["context"]:
                         await cl.Message(content=f"##{item}\n", parent_id=context_id).send()
 
-    await cl.Message(content=f"#### Download as testcase:\n```json\n{json.dumps(test_case)}\n```", parent_id=question_id).send()
+    # await cl.Message(content=f"#### Download as testcase:\n```json\n{json.dumps(test_case)}\n```", parent_id=question_id).send()
 
     message_history.append({"role": "assistant", "content": msg.content})
     messages.append({"role": "assistant", "content": msg.content, "context": context})
