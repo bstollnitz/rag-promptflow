@@ -6,19 +6,19 @@ Our application implements a typical Retrieval-Augmented Generation (RAG) scenar
 
 ## Pre-requisites
 - You need to have an Azure subscription. You can get a [free subscription](https://azure.microsoft.com/en-us/free) to try it out.
-- Create a "Cognitive Search" resource on Azure.
-- Create an "Azure OpenAI" resource. Create three deployments within this resource: 
-    - A deployment for the text-embedding-ada-002 model, with any name you'd like.
-    - A deployment for the gpt-35-turbo model, with any name you'd like.
-    - A deployment for the gpt-4 model, called "gpt-4".
+- Create a [Cognitive Search](https://learn.microsoft.com/en-us/azure/search/) resource on Azure.
+- Create an [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/) resource on Azure. Create two deployments within this resource: 
+    - A deployment for the "text-embedding-ada-002" model, version "2", called "text-embedding-ada-002"
+    - A deployment for the "gpt-35-turbo" model, version "0613", called "gpt-35-turbo-0613"
+    - A deployment for the "gpt-4" model, version "0613", , called "gpt-4"
 - Create an "Azure Machine Learning" resource on Azure. In the [Machine Learning Studio](https://ml.azure.com/), go to the "Prompt flow" tab, and create two connections:
     - A connection to the Azure OpenAI resource, called "azure_open_ai_connection".
     - A connection to the Cognitive Search resource, called "cognitive_search_connection".
 - Add a ".env" file to the project with the following variables set:
     - **AZURE_OPENAI_API_BASE** - Go to https://oai.azure.com/, "Chat Playground", "View code", and find the API base in the code.
     - **AZURE_OPENAI_API_KEY** - In the same window, copy the "Key" at the bottom.
-    - **AZURE_OPENAI_CHATGPT_DEPLOYMENT** - In the same window, find the name of the deployment for the "gpt-35-turbo" model.
-    - **AZURE_OPENAI_EMBEDDING_DEPLOYMENT** - Click on "Deployments" and find the name of the deployment for the "text-embedding-ada-002" model.
+    - **AZURE_OPENAI_CHATGPT_DEPLOYMENT** - Set to "gpt-35-turbo-0613". In the same window, makes sure that is the name of the model deployment.
+    - **AZURE_OPENAI_EMBEDDING_DEPLOYMENT** - Set to "text-embedding-ada-002". In the same window, makes sure that is the name of the model deployment.
     - **AZURE_SEARCH_ENDPOINT** - Go to https://portal.azure.com/, find your "Cognitive Search" resource, and find the "Url".
     - **AZURE_SEARCH_KEY** - On the same resource page, click on "Settings", then "Keys", then copy the "Primary admin key".
 - Install the PromptFlow VS Code extension.
