@@ -14,7 +14,9 @@ def start_chat():
     cl.user_session.set("messages", [])
 
 @cl.on_message
-async def main(question: str, question_id: str):
+async def main(message: cl.Message):
+    question = message.content 
+    question_id = message.id
     help_text = f"""#### Commands:
 - `/eval` - evaluate the current conversation
 - `/help` - show this help message
