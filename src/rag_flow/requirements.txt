@@ -1,2 +1,2 @@
-promptflow==0.1.0b7.post1
+promptflow
 azure-search-documents==11.4.0b9
