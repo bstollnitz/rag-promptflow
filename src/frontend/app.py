@@ -17,12 +17,14 @@ def start_chat():
 async def main(message: cl.Message):
     question = message.content 
     question_id = message.id
+    with open(test_set) as f:
+        test_cases = f.readlines()
     help_text = f"""#### Commands:
 - `/eval` - evaluate the current conversation
-- `/help` - show this help message
 - `/add_test` - add the current conversation to the test set (`{test_set}`)
+- `/test [<number>]` - run the test case with the given number (`0-{len(test_cases)-1}`). If no number is given, run the last test case.
 - `/config` - show the current configuration
-- `/test <number>` - run the test case with the given number
+- `/help` - show this help message
 - anything else - continue the conversation
 """
     config_text = f"""| **Property** | **Value** |
@@ -111,7 +113,10 @@ async def run_test(command: str, command_id: str):
         test_cases = f.readlines()
     # get the test case -- if the line number is out of range, return show an error
     try:
-        test_number = int(command.split(" ")[1])
+        if len(command.split(" ")) < 2:
+            test_number = -1
+        else:
+            test_number = int(command.split(" ")[1])
         test_case = json.loads(test_cases[test_number])
     except IndexError:
         await cl.Message(content=f"#### Test case `{test_number}` not found\nValid test case numbers are 0-{len(test_cases)-1}").send()
