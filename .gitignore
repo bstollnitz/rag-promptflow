@@ -128,3 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 **/cache.db*
+data/reproduce/**/*.csv
+**/.DS_Store

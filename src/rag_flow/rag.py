@@ -44,7 +44,7 @@ def _summarize_user_intent(query: str, chat_history: list[str]) -> str:
     chat_intent_completion = openai.ChatCompletion.create(
         deployment_id=AZURE_OPENAI_CHATGPT_DEPLOYMENT,
         messages=messages,
-        temperature=0.7,
+        temperature=0,
         max_tokens=1024,
         n=1,
     )
@@ -99,7 +99,7 @@ def _rag(context_list: list[str], query: str, chat_history: list[dict]) -> Gener
     chat_completion = openai.ChatCompletion.create(
         deployment_id=AZURE_OPENAI_CHATGPT_DEPLOYMENT,
         messages=messages,
-        temperature=0.7,
+        temperature=0,
         max_tokens=1024,
         n=1,
         stream=True,

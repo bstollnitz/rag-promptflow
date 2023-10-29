@@ -21,14 +21,26 @@ async def main(message: cl.Message):
 - `/eval` - evaluate the current conversation
 - `/help` - show this help message
 - `/add_test` - add the current conversation to the test set (`{test_set}`)
+- `/config` - show the current configuration
+- `/test <number>` - run the test case with the given number
 - anything else - continue the conversation
 """
-    if question.startswith("/eval"):
+    config_text = f"""| **Property** | **Value** |
+| --- | --- |
+| promptflow_folder | {promptflow_folder} |
+| eval_flow_folder | {eval_flow_folder} |
+| test_set | {test_set} |
+"""
+    if question.startswith("/config"):
+        await cl.Message(content=config_text).send()
+    elif question.startswith("/eval"):
         await call_eval(question, question_id)
     elif question.startswith("/add_test"):
         await add_test(question, question_id)
     elif question.startswith("/help"):
         await cl.Message(content=help_text).send()
+    elif question.startswith("/test"):
+        await run_test(question, question_id)
     else:
         await call_chat(question, question_id)
 
@@ -91,6 +103,43 @@ async def call_eval(command: str, command_id: str):
 
     await cl.Message(content=f"```yaml\n{yaml.dump(result)}```").send()
 
+async def run_test(command: str, command_id: str):
+    chat_app = PromptFlowChat(prompt_flow=promptflow_folder)
+    # parse the test number from the command
+    # read the test set
+    with open(test_set) as f:
+        test_cases = f.readlines()
+    # get the test case -- if the line number is out of range, return show an error
+    try:
+        test_number = int(command.split(" ")[1])
+        test_case = json.loads(test_cases[test_number])
+    except IndexError:
+        await cl.Message(content=f"#### Test case `{test_number}` not found\nValid test case numbers are 0-{len(test_cases)-1}").send()
+        return
+    except ValueError:
+        await cl.Message(content=f"#### Invalid test case number `{command.split(' ')[1]}`\nPlease provide an integer number.").send()
+        return
+    
+    # run the test case
+    # reset the message history
+    cl.user_session.set("message_history", [])
+    cl.user_session.set("messages", [])
+    # restore the message history
+    author = "User"
+    for message in chat_app._chat_history_to_openai(test_case["chat_history"]):
+        cl.user_session.get("message_history").append(message)
+        cl.user_session.get("messages").append(message)
+        print(message)
+        msg = cl.Message(content=message["content"], author=author)
+        await msg.send()
+        author = "Assistant" if author == "User" else "User"
+    msg = cl.Message(test_case["question"], author="User")
+    await msg.send()
+    await call_chat(test_case["question"], msg.id)
+    await call_eval(test_case["question"], msg.id)
+
+
+
 async def add_test(command: str, command_id: str):
     messages = cl.user_session.get("messages")
     if len(messages) == 0:
@@ -108,4 +157,7 @@ async def add_test(command: str, command_id: str):
     with open(test_set, "a") as f:
         f.write(json.dumps(test_case) + "\n")
 
-    await cl.Message(content=f"Added the following test case:\n\n```yaml\n{yaml.dump(test_case)}```").send()
+    with open(test_set) as f:
+        test_cases = f.readlines()
+    await cl.Message(content=f"Added the following test case:\n\n```yaml\n{yaml.dump(test_case)}```\nIts number is {len(test_cases)-1}").send()
+
