@@ -32,7 +32,7 @@ def rag(
     chat_completion = openai.ChatCompletion.create(
         deployment_id=deployment_name,
         messages=messages,
-        temperature=0.7,
+        temperature=0,
         max_tokens=1024,
         n=1,
         stream=True

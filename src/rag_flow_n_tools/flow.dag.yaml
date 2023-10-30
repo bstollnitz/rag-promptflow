@@ -29,7 +29,7 @@ nodes:
     path: summarize_user_intent_llm.jinja2
   inputs:
     deployment_name: ${config.output.AZURE_OPENAI_CHATGPT_DEPLOYMENT}
-    temperature: 0.7
+    temperature: 0
     top_p: 1
     max_tokens: 256
     presence_penalty: 0
