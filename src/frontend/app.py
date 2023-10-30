@@ -23,6 +23,7 @@ async def main(message: cl.Message):
 - `/eval` - evaluate the current conversation
 - `/add_test` - add the current conversation to the test set (`{test_set}`)
 - `/test [<number>]` - run the test case with the given number (`0-{len(test_cases)-1}`). If no number is given, run the last test case.
+- `/list_tests` - list all test cases
 - `/config` - show the current configuration
 - `/help` - show this help message
 - anything else - continue the conversation
@@ -43,6 +44,8 @@ async def main(message: cl.Message):
         await cl.Message(content=help_text).send()
     elif question.startswith("/test"):
         await run_test(question, question_id)
+    elif question.startswith("/list_tests"):
+        await list_tests(question, question_id)
     else:
         await call_chat(question, question_id)
 
@@ -104,6 +107,25 @@ async def call_eval(command: str, command_id: str):
     ))
 
     await cl.Message(content=f"```yaml\n{yaml.dump(result)}```").send()
+
+async def list_tests(command: str, command_id: str):
+    with open(test_set) as f:
+        test_cases = f.readlines()
+    # result = ""
+    # for i, test_case in enumerate(test_cases):
+    #     result += f"{i-1}: {test_case}"
+    # msg = await cl.Message(content=f"```{result}```").send()
+    # result = {}
+    # for i, test_case in enumerate(test_cases):
+    #     result[f"{i:0>3}"] = json.loads(test_case)
+    # print(result)
+    result = []
+    for i, test_case in enumerate(test_cases):
+        row = json.loads(test_case)
+        row["number"] = i
+        result.append(row)
+    
+    msg = await cl.Message(content=f"```yaml{yaml.dump(result)}```").send()
 
 async def run_test(command: str, command_id: str):
     chat_app = PromptFlowChat(prompt_flow=promptflow_folder)
