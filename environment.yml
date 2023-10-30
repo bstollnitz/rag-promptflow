@@ -1,4 +1,4 @@
-name: rag-promptflow
+name: rag
 channels:
   - anaconda
   - pytorch

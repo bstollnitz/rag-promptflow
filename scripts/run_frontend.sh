@@ -1,0 +1,1 @@
+chainlit run src/frontend/app.py -w
