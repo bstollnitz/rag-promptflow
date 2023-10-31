@@ -19,3 +19,4 @@ dependencies:
     - jinja2
     - chainlit
     - tiktoken
+    - chainlit
