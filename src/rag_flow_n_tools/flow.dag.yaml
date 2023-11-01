@@ -36,7 +36,7 @@ nodes:
     frequency_penalty: 0
     chat_history: ${inputs.chat_history}
     query: ${inputs.question}
-  connection: connection-azure-open-ai
+  connection: azure_open_ai_connection
   api: chat
   aggregation: false
 - name: get_context
@@ -46,9 +46,9 @@ nodes:
     path: get_context.py
   inputs:
     question: ${summarize_user_intent_llm.output}
-    azure_open_ai_connection: connection-azure-open-ai
+    azure_open_ai_connection: azure_open_ai_connection
     embedding_deployment: ${config.output.AZURE_OPENAI_EMBEDDING_DEPLOYMENT}
-    azure_search_connection: connection-cognitive-search
+    azure_search_connection: cognitive_search_connection
     index_name: rag-promptflow-index
   aggregation: false
 - name: rag_system_prompt
@@ -68,7 +68,7 @@ nodes:
     system_prompt: ${rag_system_prompt.output}
     chat_history: ${inputs.chat_history}
     query: ${inputs.question}
-    azure_open_ai_connection: connection-azure-open-ai
+    azure_open_ai_connection: azure_open_ai_connection
     deployment_name: ${config.output.AZURE_OPENAI_CHATGPT_DEPLOYMENT}
   aggregation: false
 - name: config
