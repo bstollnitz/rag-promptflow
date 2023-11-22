@@ -1,0 +1,40 @@
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  chat_history:
+    type: list
+    is_chat_history: true
+    default:
+    - inputs:
+        question: Which is your cheapest tent?
+      outputs:
+        answer: Our cheapest tent is the SkyView 2-Person Tent, priced at $200. It
+          offers spacious interior, durable and waterproof materials, easy
+          setup, and other convenient features. Let me know if you have any
+          other questions!
+  question:
+    type: string
+    is_chat_input: true
+    default: Tell me about it
+outputs:
+  answer:
+    type: string
+    reference: ${rag.outputs.answer}
+    is_chat_output: true
+  context:
+    type: string
+    reference: ${rag.outputs.context}
+  intent:
+    type: string
+    reference: ${rag.outputs.intent}
+nodes:
+- name: rag
+  type: python
+  source:
+    type: code
+    path: rag.py
+  inputs:
+    question: ${inputs.question}
+    chat_history: ${inputs.chat_history}
+    azure_open_ai_connection: azure_open_ai_connection
+    azure_search_connection: cognitive_search_connection

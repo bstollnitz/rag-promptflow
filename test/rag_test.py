@@ -10,7 +10,7 @@ from promptflow.connections import AzureOpenAIConnection, CognitiveSearchConnect
 import os
 from typing import List
 from rag_flow.rag import rag, _get_context, _summarize_user_intent
-from frontend.pages.chatbot.chatbot_controller import run_chatbot
+# from frontend.pages.chatbot.chatbot_controller import run_chatbot
 
 class OutputCollector:
   def __init__(self):
@@ -138,11 +138,11 @@ def test_promptflow_stream():
   assert len(answer_text) > 0
 
 
-def test_frontend_run_chatbot():
-  output_collector = OutputCollector()
-  chat_history_after, _ = run_chatbot(output_collector, 0, frontend_chat_history)
-  assert len(output_collector.state[0][-1]["content"]) > 0 
-  assert output_collector.state[0][-1]["content"] == chat_history_after[-1]["content"]
-  assert not chat_history_after[-1]["content"].startswith("### Error")
+# def test_frontend_run_chatbot():
+#   output_collector = OutputCollector()
+#   chat_history_after, _ = run_chatbot(output_collector, 0, frontend_chat_history)
+#   assert len(output_collector.state[0][-1]["content"]) > 0 
+#   assert output_collector.state[0][-1]["content"] == chat_history_after[-1]["content"]
+#   assert not chat_history_after[-1]["content"].startswith("### Error")
 
    

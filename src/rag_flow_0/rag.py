@@ -24,35 +24,6 @@ AZURE_OPENAI_CHATGPT_DEPLOYMENT = "gpt-35-turbo-0613"
 # Azure Cognitive Search index name
 AZURE_SEARCH_INDEX_NAME = "rag-promptflow-index"
 
-
-def _summarize_user_intent(query: str, chat_history: list[str]) -> str:
-    """
-    Creates a user message containing the user intent, by summarizing the chat
-    history and user query.
-    """
-    jinja_template = os.path.join(os.path.dirname(__file__), "summarize_user_intent.jinja2")
-    with open(jinja_template, encoding="utf-8") as f:
-        template = Template(f.read())
-    prompt = template.render(query=query, chat_history=chat_history)
-    messages = [
-        {
-            "role": SYSTEM,
-            "content": prompt,
-        }
-    ]
-
-    chat_intent_completion = openai.ChatCompletion.create(
-        deployment_id=AZURE_OPENAI_CHATGPT_DEPLOYMENT,
-        messages=messages,
-        temperature=0,
-        max_tokens=1024,
-        n=1,
-    )
-    user_intent = chat_intent_completion.choices[0].message.content
-
-    return user_intent
-
-
 def _get_context(
     question: str, azure_search_connection: CognitiveSearchConnection
 ) -> list[str]:
@@ -72,7 +43,7 @@ def _get_context(
         credential=AzureKeyCredential(azure_search_connection.api_key),
     )
 
-    docs = search_client.search(search_text=question, vectors=[query_vector], top=5)
+    docs = search_client.search(search_text=question, vectors=[query_vector], top=1)
     context = [doc["content"] for doc in docs]
 
     return context
@@ -123,10 +94,8 @@ def rag(
     openai.api_base = azure_open_ai_connection.api_base
     openai.api_version = azure_open_ai_connection.api_version
     openai.api_key = azure_open_ai_connection.api_key
-
-    user_intent = _summarize_user_intent(question, chat_history)
     
-    context = _get_context(user_intent, azure_search_connection)
+    context = _get_context(question, azure_search_connection)
     answer = _rag(context, question, chat_history)
 
-    return {"answer": answer, "context": context, "intent": user_intent}
+    return {"answer": answer, "context": context, "intent": question}
