@@ -149,10 +149,11 @@ class AzureOpenAIChat(ChatApp):
         return self.chat_completion(messages=messages, stream=stream, context=context, session_state=session_state)
 
     def chat_completion(self, messages, stream, context, session_state):
-        openai.api_base = self.api_base
-        openai.api_key = self.api_key
-        openai.api_version = "2023-03-15-preview" 
-        openai.api_type = "azure"
+        # TODO: The 'openai.api_base' option isn't read in the client API. You will need to pass it when you instantiate the client, e.g. 'OpenAI(api_base=self.api_base)'
+        # openai.api_base = self.api_base
+        
+         
+        
 
         messages = self.start_messages + messages
         

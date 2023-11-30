@@ -10,11 +10,11 @@ dependencies:
     - openai
     - azure-identity
     - azure-ai-ml
-    - promptflow==0.1.0b8
-    - promptflow-tools==0.1.0b9
+    - promptflow
+    - promptflow-tools
     - langchain
     - unstructured[all-docs]
-    - azure-search-documents==11.4.0b9
+    - azure-search-documents
     - pytest
     - jinja2
     - chainlit

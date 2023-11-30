@@ -4,9 +4,10 @@ Combine documents and question in a prompt and send it to an LLM to get the answ
 from typing import Generator
 
 import openai, os
+from openai import AzureOpenAI
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
-from azure.search.documents.models import Vector
+from azure.search.documents.models import VectorizedQuery, QueryType, QueryCaptionType, QueryAnswerType
 from jinja2 import Template
 from promptflow.connections import AzureOpenAIConnection, CognitiveSearchConnection
 
@@ -25,7 +26,7 @@ AZURE_OPENAI_CHATGPT_DEPLOYMENT = "gpt-35-turbo-0613"
 AZURE_SEARCH_INDEX_NAME = "rag-promptflow-index"
 
 
-def _summarize_user_intent(query: str, chat_history: list[str]) -> str:
+def _summarize_user_intent(query: str, chat_history: list[str], aoai_client: AzureOpenAI) -> str:
     """
     Creates a user message containing the user intent, by summarizing the chat
     history and user query.
@@ -41,8 +42,8 @@ def _summarize_user_intent(query: str, chat_history: list[str]) -> str:
         }
     ]
 
-    chat_intent_completion = openai.ChatCompletion.create(
-        deployment_id=AZURE_OPENAI_CHATGPT_DEPLOYMENT,
+    chat_intent_completion = aoai_client.chat.completions.create(
+        model=AZURE_OPENAI_CHATGPT_DEPLOYMENT,
         messages=messages,
         temperature=0,
         max_tokens=1024,
@@ -54,17 +55,18 @@ def _summarize_user_intent(query: str, chat_history: list[str]) -> str:
 
 
 def _get_context(
-    question: str, azure_search_connection: CognitiveSearchConnection
+    question: str, azure_search_connection: CognitiveSearchConnection, aoai_client: AzureOpenAI
 ) -> list[str]:
     """
     Gets the relevant documents from Azure Cognitive Search.
     """
-    query_vector = Vector(
-        value=openai.Embedding.create(
-            engine=AZURE_OPENAI_EMBEDDING_DEPLOYMENT, input=question
-        )["data"][0]["embedding"],
-        fields="embedding",
-    )
+    response=aoai_client.embeddings.create(
+            model=AZURE_OPENAI_EMBEDDING_DEPLOYMENT, 
+            input=question)
+
+    vector_query = VectorizedQuery(vector=response.data[0].embedding, 
+                                    k_nearest_neighbors=3, 
+                                    fields="embedding")
 
     search_client = SearchClient(
         endpoint=azure_search_connection.api_base,
@@ -72,9 +74,17 @@ def _get_context(
         credential=AzureKeyCredential(azure_search_connection.api_key),
     )
 
-    docs = search_client.search(search_text=question, vectors=[query_vector], top=5)
-    context = [doc["content"] for doc in docs]
+    results = search_client.search(  
+        search_text=question,  
+        vector_queries=[vector_query],
+        query_type=QueryType.SEMANTIC, 
+        semantic_configuration_name='default', 
+        query_caption=QueryCaptionType.EXTRACTIVE, 
+        query_answer=QueryAnswerType.EXTRACTIVE,
+        top=5
+    )
 
+    context = [doc["content"] for doc in results]
     return context
 
 def _chat_history_to_openai(chat_history: list[dict]) -> list[dict]:
@@ -84,7 +94,7 @@ def _chat_history_to_openai(chat_history: list[dict]) -> list[dict]:
         openai_chat_history.append({"role": "assistant", "content": item["outputs"]["answer"]})
     return openai_chat_history
 
-def _rag(context_list: list[str], query: str, chat_history: list[dict]) -> Generator[str, None, None]:
+def _rag(context_list: list[str], query: str, chat_history: list[dict], aoai_client: AzureOpenAI) -> Generator[str, None, None]:
     """
     Asks the LLM to answer the user's query with the context provided.
     """
@@ -96,8 +106,8 @@ def _rag(context_list: list[str], query: str, chat_history: list[dict]) -> Gener
     messages.insert(0, {"role": SYSTEM, "content": system_prompt})
     messages.append({"role": USER, "content": query})
 
-    chat_completion = openai.ChatCompletion.create(
-        deployment_id=AZURE_OPENAI_CHATGPT_DEPLOYMENT,
+    chat_completion = aoai_client.chat.completions.create(
+        model=AZURE_OPENAI_CHATGPT_DEPLOYMENT,
         messages=messages,
         temperature=0,
         max_tokens=1024,
@@ -106,9 +116,10 @@ def _rag(context_list: list[str], query: str, chat_history: list[dict]) -> Gener
     )
 
     for chunk in chat_completion:
-        if chunk["object"] == "chat.completion.chunk":
-            token = chunk["choices"][0]["delta"].get("content", "")
-            yield token
+        if chunk.object == "chat.completion.chunk":
+            token = chunk.choices[0].delta.content 
+            if token:
+                yield token
 
     return
 
@@ -119,14 +130,14 @@ def rag(
     azure_open_ai_connection: AzureOpenAIConnection,
     azure_search_connection: CognitiveSearchConnection,
 ) -> dict[str, any]:
-    openai.api_type = azure_open_ai_connection.api_type
-    openai.api_base = azure_open_ai_connection.api_base
-    openai.api_version = azure_open_ai_connection.api_version
-    openai.api_key = azure_open_ai_connection.api_key
-
-    user_intent = _summarize_user_intent(question, chat_history)
+    aoai_client = AzureOpenAI(
+        api_key = azure_open_ai_connection.api_key,  
+        api_version = azure_open_ai_connection.api_version,
+        azure_endpoint = azure_open_ai_connection.api_base 
+    )
+    user_intent = _summarize_user_intent(question, chat_history, aoai_client)
     
-    context = _get_context(user_intent, azure_search_connection)
-    answer = _rag(context, question, chat_history)
+    context = _get_context(user_intent, azure_search_connection, aoai_client)
+    answer = _rag(context, question, chat_history, aoai_client)
 
     return {"answer": answer, "context": context, "intent": user_intent}

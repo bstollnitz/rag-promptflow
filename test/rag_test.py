@@ -6,10 +6,11 @@ if "TEST_PYTHONPATH" in os.environ:
   sys.path.append(os.environ["TEST_PYTHONPATH"])
 
 import promptflow as pf
+from openai import AzureOpenAI
 from promptflow.connections import AzureOpenAIConnection, CognitiveSearchConnection
 import os
 from typing import List
-from rag_flow.rag import rag, _get_context, _summarize_user_intent
+from rag_flow_3.rag import rag, _get_context, _summarize_user_intent
 # from frontend.pages.chatbot.chatbot_controller import run_chatbot
 
 class OutputCollector:
@@ -37,6 +38,15 @@ def chat_connection() -> AzureOpenAIConnection:
       api_version="2023-03-15-preview",
   )
 
+def aoai_client() -> AzureOpenAI:
+    azure_open_ai_connection = chat_connection()
+    aoai_client = AzureOpenAI(
+        api_key = azure_open_ai_connection.api_key,  
+        api_version = azure_open_ai_connection.api_version,
+        azure_endpoint = azure_open_ai_connection.api_base 
+    )
+    return aoai_client
+
 def search_connection() -> CognitiveSearchConnection:
   load_secrets(["AZURE_SEARCH_ENDPOINT", "AZURE_SEARCH_KEY"])
   return CognitiveSearchConnection(
@@ -44,7 +54,7 @@ def search_connection() -> CognitiveSearchConnection:
     api_key=os.environ["AZURE_SEARCH_KEY"],
   )
 
-prompt_flow_path = "src/rag_flow"
+prompt_flow_path = "src/rag_flow_3"
 
 tent_system_prompt = """
 You are supporting a customer service agent in their chat with a 
@@ -78,24 +88,16 @@ intent_chat_history = [
 
 def test_product_search():
   import openai
-  azure_open_ai_connection = chat_connection()
-  openai.api_type = azure_open_ai_connection.api_type
-  openai.api_base = azure_open_ai_connection.api_base
-  openai.api_version = azure_open_ai_connection.api_version
-  openai.api_key = azure_open_ai_connection.api_key
   result = _get_context(  question="Tell me about your SummitClimber Backpack",
-                            azure_search_connection=search_connection())
+                            azure_search_connection=search_connection(),
+                            aoai_client=aoai_client())
   assert any("SummitClimber Backpack" in doc for doc in result)
 
 def test_summarize_user_intent():
-  import openai
-  azure_open_ai_connection = chat_connection()
-  openai.api_type = azure_open_ai_connection.api_type
-  openai.api_base = azure_open_ai_connection.api_base
-  openai.api_version = azure_open_ai_connection.api_version
-  openai.api_key = azure_open_ai_connection.api_key
+
   result = _summarize_user_intent(query="Tell me more about it",
-                            chat_history=intent_chat_history)
+                            chat_history=intent_chat_history,
+                            aoai_client=aoai_client())
   assert "Alpine Explorer Tent" in result
 
 
@@ -145,4 +147,3 @@ def test_promptflow_stream():
 #   assert output_collector.state[0][-1]["content"] == chat_history_after[-1]["content"]
 #   assert not chat_history_after[-1]["content"].startswith("### Error")
 
-   

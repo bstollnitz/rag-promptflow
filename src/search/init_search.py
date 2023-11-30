@@ -13,17 +13,22 @@ from azure.search.documents import SearchClient
 from azure.search.documents.indexes import SearchIndexClient
 from azure.search.documents.indexes.models import (
     HnswParameters,
-    HnswVectorSearchAlgorithmConfiguration,
-    PrioritizedFields,
+    HnswAlgorithmConfiguration,
+    SemanticPrioritizedFields,
     SearchableField,
     SearchField,
     SearchFieldDataType,
     SearchIndex,
+    SemanticSearch,
     SemanticConfiguration,
-    SemanticField,
-    SemanticSettings,
+    SemanticField, 
     SimpleField,
     VectorSearch,
+    VectorSearchAlgorithmKind,
+    VectorSearchAlgorithmMetric,
+    ExhaustiveKnnAlgorithmConfiguration,
+    ExhaustiveKnnParameters,
+    VectorSearchProfile
 )
 from dotenv import load_dotenv
 from langchain.document_loaders import DirectoryLoader, UnstructuredMarkdownLoader
@@ -35,12 +40,12 @@ load_dotenv()
 # Config for Azure Search.
 AZURE_SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT")
 AZURE_SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
-AZURE_SEARCH_INDEX_NAME = "rag-promptflow-index"
+AZURE_SEARCH_INDEX_NAME = os.getenv("AZURE_SEARCH_INDEX_NAME")
 
 # Config for Azure OpenAI.
 AZURE_OPENAI_API_TYPE = "azure"
 AZURE_OPENAI_API_BASE = os.getenv("AZURE_OPENAI_API_BASE")
-AZURE_OPENAI_API_VERSION = "2023-03-15-preview"
+AZURE_OPENAI_API_VERSION = "2023-07-01-preview"
 AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
 AZURE_OPENAI_EMBEDDING_DEPLOYMENT = os.getenv("AZURE_OPENAI_EMBEDDING_DEPLOYMENT")
 
@@ -98,43 +103,67 @@ def get_index(name: str) -> SearchIndex:
         SearchField(
             name="embedding",
             type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
+            searchable=True, 
             # Size of the vector created by the text-embedding-ada-002 model.
             vector_search_dimensions=1536,
-            vector_search_configuration="default",
-        ),
+            vector_search_profile_name="myHnswProfile"
+        )
     ]
 
     # The "content" field should be prioritized for semantic ranking.
-    semantic_settings = SemanticSettings(
-        configurations=[
-            SemanticConfiguration(
+    semantic_config = SemanticConfiguration(
                 name="default",
-                prioritized_fields=PrioritizedFields(
+                prioritized_fields=SemanticPrioritizedFields(
                     title_field=None,
-                    prioritized_content_fields=[SemanticField(field_name="content")],
+                    keywords_fields=[],
+                    content_fields=[SemanticField(field_name="content")]
                 ),
             )
-        ]
-    )
+
 
     # For vector search, we want to use the HNSW (Hierarchical Navigable Small World)
     # algorithm (a type of approximate nearest neighbor search algorithm) with cosine
     # distance.
     vector_search = VectorSearch(
-        algorithm_configurations=[
-            HnswVectorSearchAlgorithmConfiguration(
-                name="default",
-                kind="hnsw",
-                parameters=HnswParameters(metric="cosine"),
+        algorithms=[
+            HnswAlgorithmConfiguration(
+                name="myHnsw",
+                kind=VectorSearchAlgorithmKind.HNSW,
+                parameters=HnswParameters(
+                    m=4,
+                    ef_construction=400,
+                    ef_search=500,
+                    metric=VectorSearchAlgorithmMetric.COSINE
+                )
+            ),
+            ExhaustiveKnnAlgorithmConfiguration(
+                name="myExhaustiveKnn",
+                kind=VectorSearchAlgorithmKind.EXHAUSTIVE_KNN,
+                parameters=ExhaustiveKnnParameters(
+                    metric=VectorSearchAlgorithmMetric.COSINE
+                )
+            )
+        ],
+        profiles=[
+            VectorSearchProfile(
+                name="myHnswProfile",
+                algorithm_configuration_name="myHnsw",
+            ),
+            VectorSearchProfile(
+                name="myExhaustiveKnnProfile",
+                algorithm_configuration_name="myExhaustiveKnn",
             )
         ]
     )
+
+    # Create the semantic settings with the configuration
+    semantic_search = SemanticSearch(configurations=[semantic_config])
 
     # Create the search index.
     index = SearchIndex(
         name=name,
         fields=fields,
-        semantic_settings=semantic_settings,
+        semantic_search=semantic_search,
         vector_search=vector_search,
     )
 
@@ -146,6 +175,12 @@ def initialize(search_index_client: SearchIndexClient):
     Initializes an Azure Cognitive Search index with our custom data, using vector
     search.
     """
+    aoai_client = openai.AzureOpenAI(
+        api_key = AZURE_OPENAI_API_KEY,  
+        api_version = AZURE_OPENAI_API_VERSION,
+        azure_endpoint = AZURE_OPENAI_API_BASE 
+    )
+
     # Load our data.
     docs = load_and_split_documents()
 
@@ -162,13 +197,13 @@ def initialize(search_index_client: SearchIndexClient):
         start_idx = i * batch_size
         end_idx = min(start_idx + batch_size, len(docs))
         batch_docs = docs[start_idx:end_idx]
-        embeddings = openai.Embedding.create(
-            engine=AZURE_OPENAI_EMBEDDING_DEPLOYMENT,
+        embeddings = aoai_client.embeddings.create(
+            model=AZURE_OPENAI_EMBEDDING_DEPLOYMENT,
             input=[doc["content"] for doc in batch_docs]
-        )["data"]
+        ).data
 
         for j, doc in enumerate(batch_docs):
-            doc["embedding"] = embeddings[j]["embedding"]
+            doc["embedding"] = embeddings[j].embedding
 
     # Create an Azure Cognitive Search index.
     print(f"creating index {AZURE_SEARCH_INDEX_NAME}")

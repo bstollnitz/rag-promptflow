@@ -1,2 +1,2 @@
 promptflow
-azure-search-documents==11.4.0b9
+azure-search-documents

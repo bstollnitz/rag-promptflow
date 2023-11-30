@@ -16,4 +16,5 @@
         "PYTHONPATH": "${workspaceFolder}/src"
     },
     "python.terminal.activateEnvironment": true,
+    "notebook.output.wordWrap": true,
 }
